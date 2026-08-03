@@ -1,0 +1,75 @@
+# 第四阶段 PPT 修订日志
+
+原始目录：`郭立华2026秋数学PPT`
+修订输出：`dist\ppt_revised`
+
+## 修订记录
+- ﻿2026-07-15T21:27:27 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第一章\1.1 正数和负数.pptx
+- 2026-07-15T21:27:30 removed possible watermark in 1.1 正数和负数/last
+- 2026-07-15T21:27:30 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第一章\1.2 有理数及其大小比较.pptx
+- 2026-07-15T21:27:34 text replacement in 1.2 有理数及其大小比较/slide18/notes4
+- 2026-07-15T21:27:35 text replacement in 1.2 有理数及其大小比较/slide20/shape5
+- 2026-07-15T21:27:35 removed possible watermark in 1.2 有理数及其大小比较/last
+- 2026-07-15T21:27:35 updated 1.2 slide 4 notes
+- 2026-07-15T21:27:35 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第三章\3.1.pptx
+- 2026-07-15T21:27:37 removed possible watermark in 3.1/last
+- 2026-07-15T21:27:38 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第三章\3.2.pptx
+- 2026-07-15T21:27:39 text replacement in 3.2/slide7/shape4
+- 2026-07-15T21:27:39 text replacement in 3.2/slide7/shape7
+- 2026-07-15T21:27:40 removed possible watermark in 3.2/last
+- 2026-07-15T21:27:40 added 3.2 slide 7 worked example
+- 2026-07-15T21:27:40 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第二章\2.1.pptx
+- 2026-07-15T21:27:43 removed possible watermark in 2.1/last
+- 2026-07-15T21:27:43 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第二章\2.2.pptx
+- 2026-07-15T21:27:43 text replacement in 2.2/slide1/shape5
+- 2026-07-15T21:27:46 text replacement in 2.2/slide14/shape11
+- 2026-07-15T21:27:46 removed possible watermark in 2.2/last
+- 2026-07-15T21:27:47 added corrected 2.2 slide 5 exercise text
+- 2026-07-15T21:27:47 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第二章\2.3.pptx
+- 2026-07-15T21:27:50 removed possible watermark in 2.3/last
+- 2026-07-15T21:27:50 inserted slide '科学记数法：大数的简洁表示'
+- 2026-07-15T21:27:50 inserted slide '科学记数法例题'
+- 2026-07-15T21:27:50 inserted slide '近似数与精确度'
+- 2026-07-15T21:27:50 inserted slide '综合练习'
+- 2026-07-15T21:27:50 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第五章\5.1.pptx
+- 2026-07-15T21:27:53 removed possible watermark in 5.1/last
+- 2026-07-15T21:27:53 inserted slide '等式的基本事实'
+- 2026-07-15T21:27:53 inserted slide '等式的性质 1'
+- 2026-07-15T21:27:53 inserted slide '等式的性质 2'
+- 2026-07-15T21:27:54 inserted slide '利用等式的性质解方程'
+- 2026-07-15T21:27:54 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第五章\5.2.pptx
+- 2026-07-15T21:27:55 text replacement in 5.2/slide7/shape7
+- 2026-07-15T21:27:55 text replacement in 5.2/slide7/shape14
+- 2026-07-15T21:27:57 removed possible watermark in 5.2/last
+- 2026-07-15T21:27:57 added stable ordinary math text on 5.2 slide 7
+- 2026-07-15T21:27:57 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第五章\5.3.pptx
+- 2026-07-15T21:28:00 removed possible watermark in 5.3/last
+- 2026-07-15T21:28:01 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第六章\6.1.pptx
+- 2026-07-15T21:28:04 removed possible watermark in 6.1/last
+- 2026-07-15T21:28:05 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第六章\6.2.pptx
+- 2026-07-15T21:28:06 text replacement in 6.2/slide7/shape5
+- 2026-07-15T21:28:06 text replacement in 6.2/slide7/shape8
+- 2026-07-15T21:28:06 text replacement in 6.2/slide7/shape11
+- 2026-07-15T21:28:06 text replacement in 6.2/slide7/shape14
+- 2026-07-15T21:28:08 removed possible watermark in 6.2/last
+- 2026-07-15T21:28:08 added stable ordinary math text on 6.2 slide 7
+- 2026-07-15T21:28:08 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第六章\6.3.pptx
+- 2026-07-15T21:28:10 removed possible watermark in 6.3/last
+- 2026-07-15T21:28:11 inserted slide '余角和补角'
+- 2026-07-15T21:28:11 inserted slide '余角和补角的重要性质'
+- 2026-07-15T21:28:11 inserted slide '例题与练习'
+- 2026-07-15T21:28:11 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第六章\6.4.pptx
+- 2026-07-15T21:28:12 text replacement in 6.4/slide1/shape4
+- 2026-07-15T21:28:14 removed possible watermark in 6.4/last
+- 2026-07-15T21:28:14 replaced invalid 6.4 running-track explanation on slide 6
+- 2026-07-15T21:28:15 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第四章\4.1.pptx
+- 2026-07-15T21:28:16 text replacement in 4.1/slide5/shape5
+- 2026-07-15T21:28:16 text replacement in 4.1/slide5/shape11
+- 2026-07-15T21:28:18 removed possible watermark in 4.1/last
+- 2026-07-15T21:28:19 added corrected definition on 4.1
+- 2026-07-15T21:28:20 open C:\Users\RanchoTao\Desktop\郭立华2026秋数学\dist\ppt_revised\第四章\4.2.pptx
+- 2026-07-15T21:28:21 text replacement in 4.2/slide5/shape8
+- 2026-07-15T21:28:22 text replacement in 4.2/slide11/shape5
+- 2026-07-15T21:28:22 text replacement in 4.2/slide11/shape9
+- 2026-07-15T21:28:22 text replacement in 4.2/slide11/shape10
+- 2026-07-15T21:28:23 removed possible watermark in 4.2/last

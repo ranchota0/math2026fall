@@ -1,0 +1,46 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+\setCJKmainfont[BoldFont={LXGW Neo XiHei}]{LXGW Neo ZhiSong}
+\setCJKsansfont[AutoFakeBold=2]{LXGW Neo XiHei}
+\setCJKmonofont{LXGW Neo XiHei}
+\setCJKfamilyfont{zhhei}[AutoFakeBold=2]{LXGW Neo XiHei}
+\providecommand{\heiti}{\CJKfamily{zhhei}}
+\input{tex/lessonplan/hepingjie_render.tex}
+\usetikzlibrary{calc}
+\begin{document}
+
+\LPBackgroundPage{1}{
+  \LPCenterBox{\LPDateYearX}{\LPDateY}{12mm}{5mm}{}
+  \LPCenterBox{\LPDateMonthX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPDateDayX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPRecordPageX}{\LPRecordPageY}{10mm}{5mm}{1}
+  \LPHeaderCell{\LPTopicX}{\LPTopicY}{\LPTopicW}{8mm}{正数和负数}
+  \LPHeaderCell{\LPTypeX}{\LPTypeY}{\LPTypeW}{8mm}{概念形成课}
+  \LPCenterBox{\LPUnitTotalX}{\LPUnitTotalY}{12mm}{5mm}{7}
+  \LPCenterBox{\LPTopicTotalX}{\LPTopicTotalY}{12mm}{5mm}{1}
+  \LPCenterBox{\LPCurrentPeriodX}{\LPCurrentPeriodY}{12mm}{5mm}{1}
+  \LPTextBox{\LPBodyX}{\LPObjectiveY}{\LPBodyW}{\LPObjectiveH}{\LPPlainLine{说出并解释认识正数、负数和 0，使用本节规范术语表达。}\LPPlainLine{按规范步骤完成正数、负数和 0 的意义，并说明关键依据。}\LPPlainLine{判断并订正与“结合实际情境准确确定正负方向和基准”有关的常见错误。}\LPPlainLine{在变式或实际情境中运用本节方法，完整写出过程和结论。}}
+  \LPTextBox{\LPBodyX}{\LPKeyPointY}{\LPBodyW}{\LPKeyPointH}{正数、负数和 0 的意义；相反意义的量的表示}
+  \LPTextBox{\LPBodyX}{\LPDifficultyY}{\LPBodyW}{\LPDifficultyH}{结合实际情境准确确定正负方向和基准}
+  \LPTextBox{\LPBodyX}{\LPMethodY}{\LPBodyW}{\LPMethodH}{问题引导；比较归纳；正反例辨析}
+  \LPTextBox{\LPBodyX}{\LPMediaY}{\LPBodyW}{\LPMediaH}{PPT；黑板；反馈卡；步骤卡}
+  \LPTextBox{\LPBodyX}{\LPBlackboardY}{\LPBodyW}{\LPBlackboardH}{\LPBoardTitle{正数和负数}\LPBoardLine{1}{核心：大于 $0$ 的数是正数，小于 $0$ 的数是负数，$0$ 既不是正数也不是负数。}\LPBoardLine{2}{方法：先定基准和正方向，再用正负号表示相反意义的量。}\LPBoardLine{3}{例题：写出下列量：收入 80 元、支出 35 元。 答：规定收入为正，则分别记作 $+80$ 元、$-35$ 元。}\LPBoardLine{4}{易错：判断：$0$ 是最小的正数。 纠正：错误；$0$ 既不是正数也不是负数。}\LPBoardLine{5}{检查：条件、依据、步骤、符号或单位逐项核对。}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{情境引入}{\LPTeacherPart{问题}{某地白天气温为零上 $6^\circ\mathrm C$，夜间为零下 $4^\circ\mathrm C$，怎样用数区分？}\LPTeacherPart{组织}{出示题目或情境，先让学生独立判断，再请两名学生说明依据。}\LPTeacherPart{说明}{零上记作 $+6$，零下记作 $-4$，$0$ 是正负的分界。}\LPTeacherPart{纠错}{若学生只报结论，追问基准、条件或运算依据，要求补成完整句。}\LPTeacherPart{归纳}{把情境中的信息转化为数学对象和关系。}\LPTeacherPart{意图}{用具体问题激活先修经验，并明确本节需要解决的核心矛盾。}}{\LPStudentPart{活动}{独立观察或计算，圈出关键信息后口头说明。}\LPStudentPart{预期}{零上记作 $+6$，零下记作 $-4$，$0$ 是正负的分界。}}{5}
+\LPProcessRow{比较与抽象}{\LPTeacherPart{问题}{正数、负数和 $0$ 分别怎样判断？}\LPTeacherPart{组织}{组织观察、比较或试算，板书学生给出的共同点，并逐项核对术语。}\LPTeacherPart{说明}{大于 $0$ 的数是正数，小于 $0$ 的数是负数，$0$ 既不是正数也不是负数。}\LPTeacherPart{例题}{基础例题：写出下列量：收入 80 元、支出 35 元。 规范解答：规定收入为正，则分别记作 $+80$ 元、$-35$ 元。}\LPTeacherPart{对应练习}{即时练习：把 $-7,+2.5,0,-\frac13$ 分成正数、负数和 $0$。 答案：正数 $+2.5$；负数 $-7,-\frac13$；$0$ 单列。}\LPTeacherPart{纠错}{用反例检查是否真正满足条件，提醒按“先定基准和正方向，再用正负号表示相反意义的量”说明。}\LPTeacherPart{归纳}{先定基准和正方向，再用正负号表示相反意义的量}\LPTeacherPart{意图}{让核心结论由可检验的观察或运算形成，而不是直接记忆。}}{\LPStudentPart{活动}{在图形、算式或表格中标注条件，与同桌归纳共同特征。}\LPStudentPart{预期}{大于 $0$ 的数是正数，小于 $0$ 的数是负数，$0$ 既不是正数也不是负数。}}{7}
+\LPProcessRow{正例示范}{\LPTeacherPart{问题}{解答“海拔 $-12$ m 表示什么？若高于海平面 8 m 怎样记？”前应先确定什么？}\LPTeacherPart{组织}{教师按题意、依据、步骤和结论顺序板演；学生在每一步旁标注作用。}\LPTeacherPart{说明}{规范解答：表示低于海平面 12 m；高于海平面 8 m 记作 $+8$ m。}\LPTeacherPart{例题}{变式例题：海拔 $-12$ m 表示什么？若高于海平面 8 m 怎样记？ 解答：表示低于海平面 12 m；高于海平面 8 m 记作 $+8$ m。}\LPTeacherPart{对应练习}{对应练习：向东走 5 m 记作 $+5$ m，向西走 3 m 怎样记？ 答案：$-3$ m。}\LPTeacherPart{纠错}{若一步跳到结论，要求补写关键关系或中间步骤，并用原题条件检验。}\LPTeacherPart{归纳}{解题流程：先定基准和正方向，再用正负号表示相反意义的量。}\LPTeacherPart{意图}{用完整例题建立可模仿的书写顺序和检查方法。}}{\LPStudentPart{活动}{先独立完成，再与板演对照步骤、符号、单位或图形标记。}\LPStudentPart{预期}{能得到 表示低于海平面 12 m；高于海平面 8 m 记作 $+8$ m。，并说出关键依据。}}{7}}
+}
+
+\LPBackgroundPage{3}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{表示与应用}{\LPTeacherPart{问题}{某水库水位比警戒线高 0.6 m 记作 $+0.6$ m，低 0.25 m 怎样记并解释？}\LPTeacherPart{组织}{要求学生先写条件关系或示意，再完成计算并解释结果；抽取两种方法比较。}\LPTeacherPart{说明}{记作 $-0.25$ m，负号表示低于警戒线这一基准。}\LPTeacherPart{例题}{应用例题：某水库水位比警戒线高 0.6 m 记作 $+0.6$ m，低 0.25 m 怎样记并解释？ 解答：记作 $-0.25$ m，负号表示低于警戒线这一基准。}\LPTeacherPart{对应练习}{即时变式：允许误差为 $\pm0.2$ mm，$+0.1$ mm 表示什么？ 答案：比标准长度长 $0.1$ mm。}\LPTeacherPart{纠错}{若答案脱离条件或单位，要求回到题干逐项对应并作合理性检查。}\LPTeacherPart{归纳}{先识别结构，再选择方法，最后解释结果。}\LPTeacherPart{意图}{把核心方法迁移到不同表示方式或实际情境中。}}{\LPStudentPart{活动}{独立列式或作图，小组内互查条件、步骤和答语。}\LPStudentPart{预期}{记作 $-0.25$ m，负号表示低于警戒线这一基准。}}{6}
+\LPProcessRow{易错辨析}{\LPTeacherPart{问题}{判断：$0$ 是最小的正数。}\LPTeacherPart{组织}{展示错解，要求学生只圈第一处错误，写出依据后再完整订正。}\LPTeacherPart{说明}{错误；$0$ 既不是正数也不是负数。}\LPTeacherPart{例题}{易错辨析：判断：$0$ 是最小的正数。}\LPTeacherPart{对应练习}{纠错要求：写出第一处错误，并按“先定基准和正方向，再用正负号表示相反意义的量”重做。参考：错误；$0$ 既不是正数也不是负数。}\LPTeacherPart{纠错}{不接受只写“错”或只改答案；必须指出错误对象、正确规则和订正过程。}\LPTeacherPart{归纳}{纠错顺序：定位错误、说明依据、规范订正、回题检验。}\LPTeacherPart{意图}{利用典型错误暴露概念边界、符号习惯或条件遗漏。}}{\LPStudentPart{活动}{独立找错、写依据、完成订正，再与同桌互评理由是否完整。}\LPStudentPart{预期}{错误；$0$ 既不是正数也不是负数。}}{5}
+\LPProcessRow{归纳迁移}{\LPTeacherPart{问题}{三道练习分别考查哪个要点，先做哪一道能最快暴露问题？}\LPTeacherPart{组织}{组织限时题组：①把 $-7,+2.5,0,-\frac13$ 分成正数、负数和 $0$。 ②向东走 5 m 记作 $+5$ m，向西走 3 m 怎样记？ ③允许误差为 $\pm0.2$ mm，$+0.1$ mm 表示什么？；完成后按答案自查。}\LPTeacherPart{说明}{答案：①正数 $+2.5$；负数 $-7,-\frac13$；$0$ 单列。 ②$-3$ m。 ③比标准长度长 $0.1$ mm。}\LPTeacherPart{对应练习}{机动题：写出下列量：收入 80 元、支出 35 元。 学有余力者换一种方法说明；答案要点：规定收入为正，则分别记作 $+80$ 元、$-35$ 元。}\LPTeacherPart{纠错}{正确率低于 70\% 时暂停机动题，按核心方法示范一道，再让学生订正同类错题。}\LPTeacherPart{归纳}{先定基准和正方向，再用正负号表示相反意义的量}\LPTeacherPart{意图}{集中检查方法稳定性，并为反馈测试前的即时补救提供依据。}}{\LPStudentPart{活动}{限时完成三题，按概念、步骤或应用给错因分类，并订正一题。}\LPStudentPart{预期}{能够依据“先定基准和正方向，再用正负号表示相反意义的量”完成题组并说清错因。}}{5}}
+}
+
+\LPBackgroundPage{4}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessPageFourH}{\LPProcessRow{当堂检测}{\LPTeacherPart{问题}{四道反馈题中，哪一题最能检验本节核心方法？}\LPTeacherPart{组织}{投放 10 分反馈卡：①2 分，正数、负数和 $0$ 分别怎样判断？ ②2 分，向东走 5 m 记作 $+5$ m，向西走 3 m 怎样记？ ③2 分，判断：$0$ 是最小的正数。 ④4 分，某水库水位比警戒线高 0.6 m 记作 $+0.6$ m，低 0.25 m 怎样记并解释？}\LPTeacherPart{说明}{参考答案：①大于 $0$ 的数是正数，小于 $0$ 的数是负数，$0$ 既不是正数也不是负数。 ②$-3$ m。 ③错误；$0$ 既不是正数也不是负数。 ④记作 $-0.25$ m，负号表示低于警戒线这一基准。}\LPTeacherPart{纠错}{公布答案后学生自评并举牌统计：9 分及以上完成提高任务；7—8 分订正；7 分以下接受针对性补练。}\LPTeacherPart{归纳}{达标标准：10 分制 9 分及以上完全达标，7—8 分基本达标，7 分以下补练。}\LPTeacherPart{意图}{用概念、技能、纠错和综合四类任务覆盖本节目标。}}{\LPStudentPart{活动}{独立完成，按答案自评；把错误标为概念、步骤、条件或表达问题。}\LPStudentPart{预期}{能完成四类题并用核心术语说明至少一道题的依据。}}{6}
+\LPProcessRow{回顾总结与作业}{\LPTeacherPart{问题}{本节研究了什么、关键步骤是什么、最容易错在哪里？}\LPTeacherPart{组织}{请学生各用一句话回答三个问题，教师据此补全板书并布置分层作业。}\LPTeacherPart{说明}{A 组：①把 $-7,+2.5,0,-\frac13$ 分成正数、负数和 $0$。 ②向东走 5 m 记作 $+5$ m，向西走 3 m 怎样记？ ③允许误差为 $\pm0.2$ mm，$+0.1$ mm 表示什么？ ④判断：$0$ 是最小的正数。；答案：①正数 $+2.5$；负数 $-7,-\frac13$；$0$ 单列。 ②$-3$ m。 ③比标准长度长 $0.1$ mm。 ④错误；$0$ 既不是正数也不是负数。。B 组：①海拔 $-12$ m 表示什么？若高于海平面 8 m 怎样记？ ②某水库水位比警戒线高 0.6 m 记作 $+0.6$ m，低 0.25 m 怎样记并解释？；答案要点：①表示低于海平面 12 m；高于海平面 8 m 记作 $+8$ m。 ②记作 $-0.25$ m，负号表示低于警戒线这一基准。。C 组选做：围绕“正数和负数”自编一道含易错条件的题并给出解答与检查方法。}\LPTeacherPart{纠错}{作业答案必须包含必要步骤或依据；只写结果的题次日先口述方法再补写。}\LPTeacherPart{归纳}{核心方法：先定基准和正方向，再用正负号表示相反意义的量。课后反思区域由任课教师课后填写。}\LPTeacherPart{意图}{由学生完成结构化回顾，把课堂方法迁移到分层课后任务。}}{\LPStudentPart{活动}{说出一个结论、一个步骤和一个易错点，记录 A、B、C 三组作业。}\LPStudentPart{预期}{能用“先定基准和正方向，再用正负号表示相反意义的量”概括本节方法，并知道如何自查。}}{4}}
+}
+\end{document}

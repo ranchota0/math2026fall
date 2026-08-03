@@ -1,0 +1,274 @@
+meta:
+  lesson_id: C06-L07
+  title: 角的比较与运算
+  lesson_type: 几何探究课
+  source_pages: [173, 174, 175]
+  teaching_date:
+    year: ''
+    month: ''
+    day: ''
+  unit_total_periods: 7
+  topic_total_periods: 1
+  current_period: 1
+
+objectives:
+  - 用观察、叠合或度量比较角的大小，说明角的大小与边长无关。
+  - 根据图形写出角的和差关系，进行简单度分秒加减运算。
+  - 说出角平分线的定义，用文字和符号表示相等角。
+  - 在角的计算图中标注已知关系、列式并说明依据。
+
+key_points:
+  - 角的比较方法、和差关系、度分秒运算及角平分线的表示。
+
+difficulties:
+  - 从射线顺序识别角的和差，并在度分秒减法中正确借位。
+
+methods:
+  - 类比探究
+  - 画图测量
+  - 图形说理
+
+media:
+  - PPT
+  - 黑板
+  - 量角器
+  - 半透明纸
+
+blackboard:
+  title: 角的比较与运算
+  lines:
+    - 比较：观察；叠合；度量。角的大小与边长无关。
+    - 和差：$\angle AOC=\angle AOB+\angle BOC$。
+    - 度分秒：$1^\circ=60'$，$1'=60''$；满 60 进 1，不够减借 1 作 60。
+    - 角平分线：$\angle AOB=\angle BOC=\frac12\angle AOC$。
+    - 读图：先标射线顺序，再判断用和还是差。
+
+process:
+  - stage: 观察与比较
+    page: 2
+    figure: angle_compare
+    teacher:
+      questions:
+        - 左图的边更长，它的角就一定更大吗？
+        - 不用量角器，怎样把两个角放在一起比较？
+      actions:
+        - 出示边长不同、张开程度不同的两个角；示范让顶点和一边重合的叠合法。
+      explanation:
+        - 另一边落在内部，角较小；重合，角相等；落在外部，角较大。角的大小只由张开程度决定。
+      correction:
+        - 对“边越长角越大”的回答，用延长角的两边而角度不变进行反问。
+      example:
+        - 比较图中两角：左角边长但张开小，右角边短但张开大，所以右角较大。
+      practice:
+        - 画一个边较短但角较大的反例，并与同桌用叠合法说明。
+      summary:
+        - 比较角可用叠合法或度量法，不能看边长。
+    student:
+      actions:
+        - 先目测判断，再用描图纸叠合或量角器验证。
+        - 画反例并说明比较依据。
+      expected_response:
+        - 边长不决定角大小；顶点和一边重合后，看另一边的位置。
+    design_intent:
+      - 用直观冲突和动手验证形成可靠的角大小判断标准。
+    minutes: 7
+
+  - stage: 角的和差
+    page: 2
+    figure: angle_sum
+    teacher:
+      questions:
+        - 射线 $OB$ 在 $\angle AOC$ 内部，大角由哪两个相邻小角组成？
+        - 由和式还能写出哪两个差式？
+      actions:
+        - 让学生按 $OA,OB,OC$ 的顺序在图上描弧，再口述和差关系。
+      explanation:
+        - '$\angle AOC=\angle AOB+\angle BOC$；$\angle AOB=\angle AOC-\angle BOC$。'
+      correction:
+        - 若角名中顶点不居中，要求先圈出公共顶点 $O$ 再重写。
+      example:
+        - 已知 $\angle AOC=80^\circ$，$\angle AOB=35^\circ$，则 $\angle BOC=45^\circ$。
+      practice:
+        - 已知 $\angle AOC=96^\circ$，$\angle BOC=41^\circ$，求 $\angle AOB$，答案 $55^\circ$。
+      summary:
+        - 先看射线顺序确定整体与部分，再列和式或差式。
+    student:
+      actions:
+        - 在图中标出三个角，写一个和式和两个差式。
+        - 完成对应练习并同桌检查角名。
+      expected_response:
+        - 大角等于两个相邻小角之和；练习中用 $96^\circ-41^\circ$。
+    design_intent:
+      - 类比线段和差，把图形关系转化为角的算式。
+    minutes: 6
+
+  - stage: 对应练习与图形标注
+    page: 2
+    teacher:
+      questions:
+        - 只看图形外观能断定两个角相等吗？
+        - 图上没有关系标记时，应依据什么列式？
+      actions:
+        - 出示一幅有相等弧标记和一幅只有内部射线的图，组织判断与说明。
+      explanation:
+        - 图形是关系的示意；相等必须来自已知条件、定义或规范标记。
+      correction:
+        - 不接受“看起来一样大”，要求指出已知文字或相等弧。
+      example:
+        - 仅知 $OB$ 在 $\angle AOC$ 内部，不能判断 $OB$ 是角平分线。
+      practice:
+        - 为 $\angle AOB=\angle BOC$ 补上相等弧，并写出 $\angle AOC=2\angle AOB$。
+      summary:
+        - 先标条件，再用条件说明关系。
+    student:
+      actions:
+        - 比较两幅图，圈出有效的已知标记。
+        - 给图补弧并写符号关系。
+      expected_response:
+        - 只有位置不能说明平分；必须有已知条件或相等角标记。
+    design_intent:
+      - 建立“图形不能代替条件”的几何说理意识。
+    minutes: 5
+
+  - stage: 度分秒运算
+    page: 3
+    teacher:
+      questions:
+        - 计算 $180^\circ-53^\circ17'$ 时，0 分不够减 17 分怎么办？
+        - $48^\circ35'+26^\circ40'$ 中 75 分怎样处理？
+      actions:
+        - 板演借位和进位，要求度与度、分与分竖向对齐。
+      explanation:
+        - >-
+          $180^\circ=179^\circ60'$，故差为 $126^\circ43'$；$75'=1^\circ15'$。
+      correction:
+        - 对十进制计算错误，要求在算式旁写 $1^\circ=60'$ 再订正。
+      example:
+        - >-
+          $180^\circ-53^\circ17'=179^\circ60'-53^\circ17'=126^\circ43'$。
+      practice:
+        - 计算 $90^\circ-37^\circ25'=52^\circ35'$；$48^\circ35'+26^\circ40'=75^\circ15'$。
+      summary:
+        - 同单位相加减，满 60 进 1，不够减借 1 作 60。
+    student:
+      actions:
+        - 独立写出借位或进位过程，并用不同标记圈出度和分。
+        - 同桌互查单位是否对齐。
+      expected_response:
+        - 能写出 $179^\circ60'$，并正确完成进位、借位。
+    design_intent:
+      - 用一加一减集中处理六十进制的核心易错点。
+    minutes: 7
+
+  - stage: 角平分线
+    page: 3
+    figure: angle_bisector
+    teacher:
+      questions:
+        - $OB$ 平分 $\angle AOC$，相等的是哪两个角？
+        - 角平分线是点、线段、直线还是射线？
+      actions:
+        - 组织折纸或描图验证两角重合，在图中补相等弧并写符号关系。
+      explanation:
+        - 从角的顶点出发，把角分成两个相等角的射线叫作角平分线；$\angle AOB=\angle BOC=\frac12\angle AOC$。
+      correction:
+        - 将“角平分线是角内部一个点”改为“从顶点出发的一条射线”。
+      example:
+        - $OB$ 平分 $\angle AOC$，$\angle AOC=76^\circ$，则 $\angle AOB=38^\circ$。
+      practice:
+        - $\angle AOC=110^\circ$，$OB$ 平分它，求 $\angle BOC$，答案 $55^\circ$。
+      summary:
+        - 文字条件、图形标记和符号关系要相互对应。
+    student:
+      actions:
+        - 折、描或画出角平分线，标相等弧。
+        - 用文字和符号各说一次定义，再完成半角计算。
+      expected_response:
+        - 相等角是 $\angle AOB$ 与 $\angle BOC$；角平分线是一条射线。
+    design_intent:
+      - 通过操作、语言和符号三种表示建立角平分线概念。
+    minutes: 5
+
+  - stage: 图形计算
+    page: 3
+    figure: angle_composite
+    teacher:
+      questions:
+        - 图中射线顺序为 $OA,OB,OD,OC$，$\angle DOC$ 是用和还是用差求？
+        - 哪一步先用角平分线，哪一步再用角的和差？
+      actions:
+        - 要求学生先在图上标 $50^\circ$ 和 $18^\circ$，再列式，不允许脱离图直接算。
+      explanation:
+        - $OB$ 平分 $\angle AOC=100^\circ$，故 $\angle BOC=50^\circ$；$\angle DOC=50^\circ-18^\circ=32^\circ$。
+      correction:
+        - 若误用加法，回到射线顺序，让学生用手势指出整体角与已知小角。
+      example:
+        - 已知 $\angle AOC=100^\circ$、$\angle BOD=18^\circ$，求 $\angle DOC=32^\circ$。
+      practice:
+        - 若 $\angle AOC=120^\circ$、$OB$ 平分它、$\angle BOD=25^\circ$，求 $\angle DOC$，答案 $35^\circ$。
+      summary:
+        - 先用定义求半角，再按射线顺序列和差式。
+    student:
+      actions:
+        - 在图中标注已知角，圈出整体角，写两步算式。
+        - 与同桌互查“先半角、后和差”的依据。
+      expected_response:
+        - $\angle BOC=50^\circ$，$OD$ 在其内部，所以用减法得到 $32^\circ$。
+    design_intent:
+      - 把角平分线与和差关系串成两步图形计算链条。
+    minutes: 5
+
+  - stage: 当堂检测
+    page: 4
+    teacher:
+      questions:
+        - 哪一道题需要先画图或补标记再计算？
+      actions:
+        - 投放 4 题：①说明角大小与边长的关系；②写 $\angle AOC$ 的和式；③算 $70^\circ-28^\circ45'$；④$OD$ 平分 $64^\circ$ 的角，求半角。
+      explanation:
+        - 答案：无关；$\angle AOC=\angle AOB+\angle BOC$；$41^\circ15'$；$32^\circ$。
+      correction:
+        - 学生自评后教师抽查借位题和角名；低于 3 题正确者先补图、再重算。
+      example: []
+      practice: []
+      summary:
+        - 达标标准：4 题正确 3 题及以上，且图形关系表达规范。
+    student:
+      actions:
+        - 独立完成，按答案自评并圈出错误属于“读图、单位或定义”哪一类。
+      expected_response:
+        - 能正确借位、写角名并用角平分线求半角。
+    design_intent:
+      - 用短检测覆盖比较、和差、度分秒与角平分线四个目标。
+    minutes: 6
+
+  - stage: 回顾总结与作业
+    page: 4
+    teacher:
+      questions:
+        - 本节比较角、计算角分别用了什么方法？
+        - 看图计算前必须先做什么？
+        - 六十进制和角平分线各有哪些易错点？
+      actions:
+        - 根据学生回答整理板书，布置分层作业。
+      explanation:
+        - 基础巩固：画图表示一个和式；计算 $63^\circ20'+18^\circ50'$ 与 $120^\circ-46^\circ35'$；求 $86^\circ$ 的半角。提升思考：自画含角平分线和内部射线的图，给数据并求一个角。
+      correction:
+        - 若总结只报答案，追问“这个结论来自哪一幅图、哪个定义或哪条换算关系”。
+      example: []
+      practice: []
+      summary:
+        - 比较靠叠合/度量，计算先读图列关系，度分秒按六十进制，角平分线先写相等角。
+    student:
+      actions:
+        - 说出一个方法、一个关系式和一个易错点。
+        - 记录分层作业，选做题先画图再编数据。
+      expected_response:
+        - 能用“先标条件、再列关系、最后计算”概括图形计算方法。
+    design_intent:
+      - 用回顾性问题把四个知识点整合为可迁移的读图与计算方法。
+    minutes: 4
+
+reflection:
+  mode: blank
+  text: ''

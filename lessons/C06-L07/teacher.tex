@@ -1,0 +1,99 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+\usepackage{tex/course}
+\input{tex/commands.tex}
+\input{lessons/C06-L07/assets/angle_figures.tex}
+
+\SetCourseDocType{教师教学设计}
+
+\begin{document}
+\CourseTitle{角的比较与运算}{C06-L07 教师教学设计}
+
+\TeacherMeta{第六章 几何图形初步；6.3.2 角的比较与运算；教材第173--175页}{新授课}{45分钟}{类比线段比较与运算，学习角的大小比较、角的和差及角平分线。}
+
+\SectionTitle{教材分析}
+本课建立在角的概念、表示和度量基础上。教材通过叠合、度量等方法比较角的大小，再引入角的和与差，并借助平角中的角度计算和角平分线概念发展几何说理。它与前面线段的比较、和差、中点形成类比，是后续余角、补角和几何推理的基础。
+
+\SectionTitle{学情分析}
+学生会量角和读角，但常把图形大小误认为角的大小，也容易在度分运算中忘记借位。角平分线与线段中点有相似性，可通过类比帮助理解，但要强调角平分线是一条射线。
+
+\SectionTitle{教学目标}
+\ObjectiveList
+{会用观察、叠合或度量比较角的大小，并能用符号表示角的和与差。}
+{会进行简单的度分角度加减运算。}
+{理解角平分线的意义，能结合图形进行简单说理。}
+
+\SectionTitle{教学重点与难点}
+\begin{InfoTable}
+\InfoRow{教学重点}{角的比较；角的和差；角平分线。}
+\InfoRow{教学难点}{度分运算中的借位；根据图形关系表达角的和差。}
+\end{InfoTable}
+
+\SectionTitle{教学方法及教学手段}
+采用类比迁移、动手叠合、图形观察、板演运算和纠错讨论。几何图形均用TikZ绘制，保留黑白打印可读性。
+
+\SectionTitle{教学准备}
+教师准备：量角器、三角板、投影图形。学生准备：量角器、直尺、铅笔。
+
+\SectionTitle{具体教学流程}
+\begin{FlowTable}
+\flowrow{复习引入}{回顾线段比较和中点，提出角能否类似比较与运算。}{回忆线段叠合、度量和中点概念。}{用旧知搭桥，降低几何抽象难度。}{5}
+\flowrow{角的比较}{展示两个角，组织观察、叠合和度量三种比较方法。}{动手比较，并说明哪种方法最可靠。}{明确角的大小由张开程度决定。}{8}
+\flowrow{角的和差}{借图说明若射线OB在角AOC内部，则角AOC由两个角组成。}{看图写出角的和差关系。}{建立图形关系与符号表达的对应。}{8}
+\flowrow{度分运算}{板演平角中已知一角求另一角，强调1度等于60分和借位。}{完成同类计算并核对单位。}{突破度分减法难点。}{8}
+\flowrow{角平分线}{类比线段中点，引出角平分线并画图说明两个相等角。}{用语言和符号描述角平分线。}{形成概念并连接图形说理。}{7}
+\flowrow{当堂训练}{安排基础、提高、拓展任务，巡视度分运算和图形表达。}{独立完成，小组互查符号和计算。}{巩固新知并收集反馈。}{6}
+\flowrow{总结评价}{归纳比较方法、和差表达、平分线含义。}{完成自评，说出一个易错点。}{促进方法结构化。}{3}
+\end{FlowTable}
+
+\SectionTitle{典型例题}
+\SubsectionTitle{例1 角的和差}
+\begin{center}
+\AngleSumFigure
+\end{center}
+若射线\(OB\)在\(\angle AOC\)内部，则
+\[
+\angle AOC=\angle AOB+\angle BOC,\quad
+\angle BOC=\angle AOC-\angle AOB.
+\]
+
+\SubsectionTitle{例2 平角中的角度计算}
+\begin{center}
+\StraightAngleFigure
+\end{center}
+若\(A,O,B\)在同一直线上，\(\angle AOC=53^\circ17'\)，则\(\angle BOC=180^\circ-53^\circ17'=126^\circ43'\)。
+
+\SubsectionTitle{例3 角平分线}
+\begin{center}
+\AngleBisectorFigure
+\end{center}
+如果\(OB\)平分\(\angle AOC\)，则\(\angle AOB=\angle BOC=\frac{1}{2}\angle AOC\)。
+
+\SectionTitle{易错点与纠错策略}
+\begin{enumerate}
+\item 把角边画得长就认为角大。纠错策略：强调角的大小看张开程度，不看边的长短。
+\item 度分减法忘记借位。纠错策略：把\(180^\circ\)写成\(179^\circ60'\)再减。
+\item 把角平分线说成一个点。纠错策略：强调角平分线是从顶点出发的一条射线。
+\end{enumerate}
+
+\SectionTitle{分层练习及答案}
+\answer{Q1}{角的大小与两边张开的程度有关，与边画得长短无关。}
+\answer{Q2}{若射线OB在角AOC内部，则\(\angle AOC=\angle AOB+\angle BOC\)，\(\angle AOB=\angle AOC-\angle BOC\)。}
+\answer{Q3}{\(\angle BOC=180^\circ-48^\circ35'=131^\circ25'\)。}
+\answer{Q4}{若OB平分角AOC且\(\angle AOC=70^\circ\)，则\(\angle AOB=\angle BOC=35^\circ\)。}
+\answer{Q5}{\(\angle AOD=\angle AOB+\angle BOC+\angle COD\)。学生应能结合图形按相邻角相加表达。}
+\answer{Q6}{七等分周角时每份约为\(360^\circ\div7\)，取到分约为\(51^\circ26'\)。}
+
+\SectionTitle{板书设计}
+\begin{enumerate}
+\item 角的比较：观察、叠合、度量。
+\item 角的运算：大角等于相邻小角之和；小角可由大角减另一小角。
+\item 角平分线：从角的顶点出发，把一个角分成相等的两个角的射线。
+\end{enumerate}
+
+\SectionTitle{作业设计}
+基础：完成角的比较和简单和差计算。提高：整理两道度分减法题并写出借位过程。拓展：画一个含三条内部射线的角，写出三条角的和差关系。
+
+\SectionTitle{教学反思预设}
+重点观察学生是否能根据图形准确写出角的和差关系。若度分运算错误集中，应补充“先统一单位再计算”的专项练习。
+
+\end{document}

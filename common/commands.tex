@@ -1,0 +1,33 @@
+% Semantic commands shared by teacher and student documents.
+
+\newcommand{\lessonTitle}[2]{%
+  \begin{center}
+    {\Large\bfseries #1}\\[0.4em]
+    {\normalsize #2}
+  \end{center}
+  \markboth{#1}{#1}
+}
+
+\newcommand{\sectionTitle}[1]{%
+  \section*{\color{projectblue}#1}
+  \addcontentsline{toc}{section}{#1}
+}
+
+\newcommand{\blankline}[1][1]{%
+  \par\noindent\makebox[\linewidth]{\dotfill}\par
+  \ifnum#1>1
+    \vspace{#1\baselineskip}
+  \fi
+}
+
+\newcommand{\studentSpace}[1][2]{%
+  \par\vspace{#1\baselineskip}
+}
+
+\newcommand{\teacherNote}[1]{%
+  \par\noindent{\bfseries 教师提示：}#1\par
+}
+
+\newcommand{\placeholderText}[1]{%
+  \par\noindent{\color{projectgray}#1}\par
+}

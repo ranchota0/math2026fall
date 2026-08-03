@@ -1,0 +1,71 @@
+\newcommand{\AngleSumFigure}{%
+\begin{tikzpicture}[scale=1.0]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (3.2,0);
+  \coordinate (B) at (2.35,1.45);
+  \coordinate (C) at (0.95,2.35);
+  \draw[course line] (O) -- (A);
+  \draw[course line] (O) -- (B);
+  \draw[course line] (O) -- (C);
+  \node[below] at (O) {$O$};
+  \node[right] at (A) {$A$};
+  \node[right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \pic[angle mark, "$\alpha$", angle radius=0.62cm] {angle=A--O--B};
+  \pic[angle mark, "$\beta$", angle radius=0.92cm] {angle=B--O--C};
+\end{tikzpicture}}
+
+\newcommand{\StraightAngleFigure}{%
+\begin{tikzpicture}[scale=1.0]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (-2.7,0);
+  \coordinate (B) at (2.7,0);
+  \coordinate (C) at (1.45,1.9);
+  \draw[course line] (A) -- (B);
+  \draw[course line] (O) -- (C);
+  \node[below] at (O) {$O$};
+  \node[left] at (A) {$A$};
+  \node[right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \pic[angle mark, "$53^\circ17'$", angle radius=0.8cm] {angle=A--O--C};
+\end{tikzpicture}}
+
+\newcommand{\AngleBisectorFigure}{%
+\begin{tikzpicture}[scale=1.0]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (3.0,0);
+  \coordinate (B) at (2.55,1.15);
+  \coordinate (C) at (1.5,2.55);
+  \draw[course line] (O) -- (A);
+  \draw[course line] (O) -- (B);
+  \draw[course line] (O) -- (C);
+  \node[below] at (O) {$O$};
+  \node[right] at (A) {$A$};
+  \node[right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \pic[angle mark, angle radius=0.55cm] {angle=A--O--B};
+  \pic[angle mark, angle radius=0.75cm] {angle=B--O--C};
+  \node at (1.25,0.47) {\small $35^\circ$};
+  \node at (1.05,1.05) {\small $35^\circ$};
+\end{tikzpicture}}
+
+\newcommand{\AnglePracticeFigure}{%
+\begin{tikzpicture}[scale=1.0]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (3.0,0);
+  \coordinate (B) at (2.45,1.2);
+  \coordinate (C) at (1.2,2.35);
+  \coordinate (D) at (-0.35,2.65);
+  \draw[course line] (O) -- (A);
+  \draw[course line] (O) -- (B);
+  \draw[course line] (O) -- (C);
+  \draw[course line] (O) -- (D);
+  \node[below] at (O) {$O$};
+  \node[right] at (A) {$A$};
+  \node[right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \node[left] at (D) {$D$};
+  \pic[angle mark, angle radius=0.55cm] {angle=A--O--B};
+  \pic[angle mark, angle radius=0.78cm] {angle=B--O--C};
+  \pic[angle mark, angle radius=1.01cm] {angle=C--O--D};
+\end{tikzpicture}}

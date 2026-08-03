@@ -1,0 +1,21 @@
+lesson_id: C05-L05
+chapter: 第五章 一元一次方程
+section: "5.2 解一元一次方程"
+lesson_title: 移项解一元一次方程
+lesson_type: new_lesson
+textbook_page_start: 122
+textbook_page_end: 124
+period_minutes: 45
+prerequisite:
+  - 理解方程和方程的解
+  - 掌握等式的性质
+  - 会合并同类项并将系数化为 1
+learning_objectives:
+  - 理解移项的意义，知道移项实质上来源于等式的性质。
+  - 会用移项、合并同类项、系数化为 1 解一元一次方程。
+  - 能从实际问题中找到表示同一个量的两个式子并列方程。
+teacher_output: C05_L05_移项解一元一次方程_教学设计.tex
+student_output: C05_L05_移项解一元一次方程_学生学案.tex
+source_pdf: references/textbook.pdf
+source_pages: [122, 123, 124]
+manual_review_status: pending

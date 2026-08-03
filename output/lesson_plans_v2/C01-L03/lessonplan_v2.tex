@@ -1,0 +1,73 @@
+% !TeX program = xelatex
+
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}
+\input{tex/lessonplan/hepingjie_render.tex}
+\usepackage{tikz}
+
+\begin{document}
+
+\LPBackgroundPage{1}{
+  \LPCenterBox{\LPDateYearX}{\LPDateY}{12mm}{5mm}{}
+  \LPCenterBox{\LPDateMonthX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPDateDayX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPRecordPageX}{\LPRecordPageY}{10mm}{5mm}{1}
+  \LPTextBox{\LPTopicX}{\LPTopicY}{\LPTopicW}{8mm}{数轴}
+  \LPTextBox{\LPTypeX}{\LPTypeY}{\LPTypeW}{8mm}{新授课}
+  \LPCenterBox{\LPUnitTotalX}{\LPUnitTotalY}{12mm}{5mm}{7}
+  \LPCenterBox{\LPTopicTotalX}{\LPTopicTotalY}{12mm}{5mm}{1}
+  \LPCenterBox{\LPCurrentPeriodX}{\LPCurrentPeriodY}{12mm}{5mm}{1}
+  \LPTextBox{\LPBodyX}{\LPObjectiveY}{\LPBodyW}{\LPObjectiveH}{\LPItems{\item 能说出数轴的定义和原点、正方向、单位长度三个要素。
+\item 能规范画数轴，并判断常见错图缺少的要素。
+\item 能在数轴上表示整数、分数和小数，并按位置读数。
+\item 能用数轴说明方向和距离，形成数形结合意识。
+}}
+  \LPTextBox{\LPBodyX}{\LPKeyPointY}{\LPBodyW}{\LPKeyPointH}{数轴三要素；规范画数轴；在数轴上表示和读取有理数。}
+  \LPTextBox{\LPBodyX}{\LPDifficultyY}{\LPBodyW}{\LPDifficultyH}{统一单位长度后准确表示负数、分数、小数，并解释数轴上的方向和距离。}
+  \LPTextBox{\LPBodyX}{\LPMethodY}{\LPBodyW}{\LPMethodH}{情境导入; 观察归纳; 示范作图; 错图辨析; 即时反馈}
+  \LPTextBox{\LPBodyX}{\LPMediaY}{\LPBodyW}{\LPMediaH}{PPT; 黑板; 直尺; 温度计示意}
+  \LPTextBox{\LPBodyX}{\LPBlackboardY}{\LPBodyW}{\LPBlackboardH}{\begin{enumerate}[leftmargin=1.4em,itemsep=0.4mm,topsep=0pt]
+\item 课题：数轴。
+\item 定义：规定了原点、正方向、单位长度的直线。
+\item 画法：画直线，定原点，标正方向，取单位长度，标刻度。
+\item 例题：表示 $3,-2,0.5,-\frac52$。
+\item 易错：漏箭头，单位不统一，负数顺序写反。
+\end{enumerate}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{导入与旧知激活}{{\heiti 导入题}\par 问题1：温度计上 0 上方 3 格记作多少？下方 2 格记作多少？问题2：一名同学从校门向东走 4 米，再向西走 6 米，若向东为正，两个位置怎样表示？教师追问：这些图都有什么共同结构？引出需要一条有 0、方向、单位的直线。}{\LPStudentItems{\item 观察温度计和方向距离图。
+\item 回答 0、正方向和距离的含义。
+\item 用一句话说明为什么需要统一刻度。
+}}{5}
+\LPProcessRow{概念与判断}{{\heiti 例题1 认识与判断}\par 题目：判断三幅图是否是数轴：A 只有直线和刻度，没有原点；B 有原点和刻度，没有箭头；C 有原点和箭头，但刻度间距不相等。关键问：少了什么还能稳定表示数吗？规范答：三幅都不是完整数轴，分别缺原点、正方向、统一单位长度。即时练习：判断一条标有 0、1、2 但间距不等的直线是否为数轴，答：不是。}{\LPStudentItems{\item 独立判断三幅图是否是数轴。
+\item 在错误图旁写出缺少的要素。
+\item 同桌互查并口头说明判断依据。
+}}{8}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{规范画法与基础例题}{{\heiti 例题2 画数轴并表示数}\par 题目：画一条数轴，并表示 $3$、$-2$、$0.5$、$-\frac52$。教师问：先标数还是先定单位长度？学生应答：先确定统一单位。规范步骤：画直线，定原点，向右为正，取等长刻度；$3$ 在原点右侧 3 个单位，$-2$ 在左侧 2 个单位，$0.5$ 在 0 和 1 中点，$-\frac52=-2.5$ 在 -3 与 -2 中点。\begin{center}\begin{tikzpicture}[x=6mm,y=6mm]\draw[->] (-5.4,0)--(4.6,0);\foreach \x in {-5,-4,...,4}{\draw(\x,.1)--(\x,-.1) node[below]{\scriptsize \x};}\foreach \x/\t in {-2.5/{-\frac52},0.5/{0.5},3/{3}}{\fill(\x,0)circle(1.5pt)node[above]{\scriptsize $\t$};}\end{tikzpicture}\end{center}}{\LPStudentItems{\item 按步骤画一条数轴。
+\item 先说方向和距离，再标点。
+\item 板演一名学生的作图，其他学生用三要素评价。
+}}{11}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{变式与易错纠正}{{\heiti 例题3 易错辨析}\par 题目：小明把 $-4,-2,1,3$ 从左到右标成 $1,3,-2,-4$，他说“负号只是方向，不影响大小顺序”。教师问：在数轴上向右数值怎样变化？规范答：向右数值增大，所以从左到右应为 $-4,-2,1,3$。即时练习：把 $-3,0,2,-1.5$ 按数轴从左到右排列，答：$-3,-1.5,0,2$。}{\LPStudentItems{\item 完成排列与读数练习。
+\item 指出错图中方向、单位或顺序的问题。
+\item 若出错，先重画刻度再改点的位置。
+}}{8}
+\LPProcessRow{随堂练习与补救}{{\heiti 练习组}\par 1. 判断：有原点、有箭头但刻度不等的图是不是数轴？2. 画数轴表示 $-3,1.5,2$。3. 点 P 在原点左侧 4 个单位，点 Q 在右侧 $\frac12$ 个单位，写出对应数并比较。答案：不是；按统一单位标点；P 为 -4，Q 为 0.5，$-4<0.5$。巡视关注：单位不等、负数方向错。低于 70\% 时全班重画一条标准数轴。}{\LPStudentItems{\item 独立完成三题。
+\item 同桌互判并圈出错误原因。
+\item 订正时必须写“方向”和“距离”。
+}}{8}}
+}
+
+\LPBackgroundPage{4}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessPageFourH}{\LPProcessRow{反馈测试、小结与作业}{{\heiti 课堂反馈测试 5分}\par 共 10 分。1. 数轴三要素是什么？3分。2. 在数轴上表示 $-1.5$ 和 $2$，说明位置。3分。3. 判断：只有刻度没有箭头的直线也可以叫数轴。2分。4. 点 A 在原点左侧 3 个单位，点 B 在右侧 2 个单位，写出对应数并比较大小。2分。答案：原点、正方向、单位长度；$-1.5$ 在 -2 与 -1 中点，$2$ 在右侧 2 单位；错误；A 为 -3，B 为 2，$-3<2$。90\%以上做提高题，70\%-89\%订正，70\%以下补画数轴。\par {\heiti 分层作业}\par A组：1. 写出数轴三要素。2. 判断有无原点、箭头、等距刻度的三幅图。3. 画数轴表示 $-3,0,2$。4. 表示 $1.5,-2.5$。5. 读出点 A、B、C 的数：A 在 -2，B 在 0.5，C 在 3。B组：1. 说明为什么单位长度不能忽长忽短。2. 用数轴表示向东 5 米和向西 3 米。3. 改正把负数标在右侧的错图。C组选做：自编一个能用数轴解释方向和距离的情境。答案要点：按三要素检查，负数在原点左侧，方向和距离都要说明。}{\LPStudentItems{\item 5 分钟独立完成反馈测试。
+\item 用一句话总结：数轴是数和点的对应工具。
+\item 说出一个最容易错的地方并记录分层作业。
+}}{5}}
+}
+
+\end{document}

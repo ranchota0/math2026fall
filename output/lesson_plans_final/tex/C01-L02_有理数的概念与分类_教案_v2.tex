@@ -1,0 +1,46 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+\setCJKmainfont[BoldFont={LXGW Neo XiHei}]{LXGW Neo ZhiSong}
+\setCJKsansfont[AutoFakeBold=2]{LXGW Neo XiHei}
+\setCJKmonofont{LXGW Neo XiHei}
+\setCJKfamilyfont{zhhei}[AutoFakeBold=2]{LXGW Neo XiHei}
+\providecommand{\heiti}{\CJKfamily{zhhei}}
+\input{tex/lessonplan/hepingjie_render.tex}
+\usetikzlibrary{calc}
+\begin{document}
+
+\LPBackgroundPage{1}{
+  \LPCenterBox{\LPDateYearX}{\LPDateY}{12mm}{5mm}{}
+  \LPCenterBox{\LPDateMonthX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPDateDayX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPRecordPageX}{\LPRecordPageY}{10mm}{5mm}{1}
+  \LPHeaderCell{\LPTopicX}{\LPTopicY}{\LPTopicW}{8mm}{有理数的概念与分类}
+  \LPHeaderCell{\LPTypeX}{\LPTypeY}{\LPTypeW}{8mm}{概念形成课}
+  \LPCenterBox{\LPUnitTotalX}{\LPUnitTotalY}{12mm}{5mm}{7}
+  \LPCenterBox{\LPTopicTotalX}{\LPTopicTotalY}{12mm}{5mm}{4}
+  \LPCenterBox{\LPCurrentPeriodX}{\LPCurrentPeriodY}{12mm}{5mm}{1}
+  \LPTextBox{\LPBodyX}{\LPObjectiveY}{\LPBodyW}{\LPObjectiveH}{\LPPlainLine{说出并解释整数、分数和有理数，使用本节规范术语表达。}\LPPlainLine{按规范步骤完成有理数的概念，并说明关键依据。}\LPPlainLine{判断并订正与“有限小数、无限循环小数与分数形式的关系”有关的常见错误。}\LPPlainLine{在变式或实际情境中运用本节方法，完整写出过程和结论。}}
+  \LPTextBox{\LPBodyX}{\LPKeyPointY}{\LPBodyW}{\LPKeyPointH}{有理数的概念；按不同标准进行有理数分类}
+  \LPTextBox{\LPBodyX}{\LPDifficultyY}{\LPBodyW}{\LPDifficultyH}{有限小数、无限循环小数与分数形式的关系}
+  \LPTextBox{\LPBodyX}{\LPMethodY}{\LPBodyW}{\LPMethodH}{问题引导；比较归纳；正反例辨析}
+  \LPTextBox{\LPBodyX}{\LPMediaY}{\LPBodyW}{\LPMediaH}{PPT；黑板；反馈卡；步骤卡}
+  \LPTextBox{\LPBodyX}{\LPBlackboardY}{\LPBodyW}{\LPBlackboardH}{\LPBoardTitle{有理数的概念与分类}\LPBoardLine{1}{核心：可分为整数和分数；也可分为正有理数、$0$ 和负有理数。}\LPBoardLine{2}{方法：先看能否写成整数或分数，再按指定标准分类且不重不漏。}\LPBoardLine{3}{例题：将 $-4,0,\frac35,-2.7,8$ 按整数和分数分类。 答：整数为 $-4,0,8$；分数为 $\frac35,-2.7$。}\LPBoardLine{4}{易错：判断：有理数只包括正整数和负分数。 纠正：错误；还包括负整数、正分数和 $0$。}\LPBoardLine{5}{检查：条件、依据、步骤、符号或单位逐项核对。}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{情境引入}{\LPTeacherPart{问题}{整数 $-3,0,5$ 与分数 $\frac12,-1.25$ 能否放入同一个数的集合？}\LPTeacherPart{组织}{出示题目或情境，先让学生独立判断，再请两名学生说明依据。}\LPTeacherPart{说明}{都能写成整数或分数形式，统称有理数。}\LPTeacherPart{纠错}{若学生只报结论，追问基准、条件或运算依据，要求补成完整句。}\LPTeacherPart{归纳}{把情境中的信息转化为数学对象和关系。}\LPTeacherPart{意图}{用具体问题激活先修经验，并明确本节需要解决的核心矛盾。}}{\LPStudentPart{活动}{独立观察或计算，圈出关键信息后口头说明。}\LPStudentPart{预期}{都能写成整数或分数形式，统称有理数。}}{5}
+\LPProcessRow{比较与抽象}{\LPTeacherPart{问题}{有理数怎样按两种标准分类？}\LPTeacherPart{组织}{组织观察、比较或试算，板书学生给出的共同点，并逐项核对术语。}\LPTeacherPart{说明}{可分为整数和分数；也可分为正有理数、$0$ 和负有理数。}\LPTeacherPart{例题}{基础例题：将 $-4,0,\frac35,-2.7,8$ 按整数和分数分类。 规范解答：整数为 $-4,0,8$；分数为 $\frac35,-2.7$。}\LPTeacherPart{对应练习}{即时练习：$0.25$ 是分数还是整数？ 答案：是分数，因为 $0.25=\frac14$。}\LPTeacherPart{纠错}{用反例检查是否真正满足条件，提醒按“先看能否写成整数或分数，再按指定标准分类且不重不漏”说明。}\LPTeacherPart{归纳}{先看能否写成整数或分数，再按指定标准分类且不重不漏}\LPTeacherPart{意图}{让核心结论由可检验的观察或运算形成，而不是直接记忆。}}{\LPStudentPart{活动}{在图形、算式或表格中标注条件，与同桌归纳共同特征。}\LPStudentPart{预期}{可分为整数和分数；也可分为正有理数、$0$ 和负有理数。}}{7}
+\LPProcessRow{正例示范}{\LPTeacherPart{问题}{解答“将 $-2,0,1.6,-\frac79,5$ 按正、零、负分类。”前应先确定什么？}\LPTeacherPart{组织}{教师按题意、依据、步骤和结论顺序板演；学生在每一步旁标注作用。}\LPTeacherPart{说明}{规范解答：正有理数 $1.6,5$；$0$；负有理数 $-2,-\frac79$。}\LPTeacherPart{例题}{变式例题：将 $-2,0,1.6,-\frac79,5$ 按正、零、负分类。 解答：正有理数 $1.6,5$；$0$；负有理数 $-2,-\frac79$。}\LPTeacherPart{对应练习}{对应练习：负整数是否都是负有理数？ 答案：是，整数属于有理数。}\LPTeacherPart{纠错}{若一步跳到结论，要求补写关键关系或中间步骤，并用原题条件检验。}\LPTeacherPart{归纳}{解题流程：先看能否写成整数或分数，再按指定标准分类且不重不漏。}\LPTeacherPart{意图}{用完整例题建立可模仿的书写顺序和检查方法。}}{\LPStudentPart{活动}{先独立完成，再与板演对照步骤、符号、单位或图形标记。}\LPStudentPart{预期}{能得到 正有理数 $1.6,5$；$0$；负有理数 $-2,-\frac79$。，并说出关键依据。}}{7}}
+}
+
+\LPBackgroundPage{3}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{表示与应用}{\LPTeacherPart{问题}{某组数据为 $-1.5,2,0,-3,\frac12$，分别统计正、负和零的个数。}\LPTeacherPart{组织}{要求学生先写条件关系或示意，再完成计算并解释结果；抽取两种方法比较。}\LPTeacherPart{说明}{正数 2 个，负数 2 个，零 1 个。}\LPTeacherPart{例题}{应用例题：某组数据为 $-1.5,2,0,-3,\frac12$，分别统计正、负和零的个数。 解答：正数 2 个，负数 2 个，零 1 个。}\LPTeacherPart{对应练习}{即时变式：$0$ 是否属于整数集合？ 答案：属于整数，也属于有理数。}\LPTeacherPart{纠错}{若答案脱离条件或单位，要求回到题干逐项对应并作合理性检查。}\LPTeacherPart{归纳}{先识别结构，再选择方法，最后解释结果。}\LPTeacherPart{意图}{把核心方法迁移到不同表示方式或实际情境中。}}{\LPStudentPart{活动}{独立列式或作图，小组内互查条件、步骤和答语。}\LPStudentPart{预期}{正数 2 个，负数 2 个，零 1 个。}}{6}
+\LPProcessRow{易错辨析}{\LPTeacherPart{问题}{判断：有理数只包括正整数和负分数。}\LPTeacherPart{组织}{展示错解，要求学生只圈第一处错误，写出依据后再完整订正。}\LPTeacherPart{说明}{错误；还包括负整数、正分数和 $0$。}\LPTeacherPart{例题}{易错辨析：判断：有理数只包括正整数和负分数。}\LPTeacherPart{对应练习}{纠错要求：写出第一处错误，并按“先看能否写成整数或分数，再按指定标准分类且不重不漏”重做。参考：错误；还包括负整数、正分数和 $0$。}\LPTeacherPart{纠错}{不接受只写“错”或只改答案；必须指出错误对象、正确规则和订正过程。}\LPTeacherPart{归纳}{纠错顺序：定位错误、说明依据、规范订正、回题检验。}\LPTeacherPart{意图}{利用典型错误暴露概念边界、符号习惯或条件遗漏。}}{\LPStudentPart{活动}{独立找错、写依据、完成订正，再与同桌互评理由是否完整。}\LPStudentPart{预期}{错误；还包括负整数、正分数和 $0$。}}{5}
+\LPProcessRow{归纳迁移}{\LPTeacherPart{问题}{三道练习分别考查哪个要点，先做哪一道能最快暴露问题？}\LPTeacherPart{组织}{组织限时题组：①$0.25$ 是分数还是整数？ ②负整数是否都是负有理数？ ③$0$ 是否属于整数集合？；完成后按答案自查。}\LPTeacherPart{说明}{答案：①是分数，因为 $0.25=\frac14$。 ②是，整数属于有理数。 ③属于整数，也属于有理数。}\LPTeacherPart{对应练习}{机动题：将 $-4,0,\frac35,-2.7,8$ 按整数和分数分类。 学有余力者换一种方法说明；答案要点：整数为 $-4,0,8$；分数为 $\frac35,-2.7$。}\LPTeacherPart{纠错}{正确率低于 70\% 时暂停机动题，按核心方法示范一道，再让学生订正同类错题。}\LPTeacherPart{归纳}{先看能否写成整数或分数，再按指定标准分类且不重不漏}\LPTeacherPart{意图}{集中检查方法稳定性，并为反馈测试前的即时补救提供依据。}}{\LPStudentPart{活动}{限时完成三题，按概念、步骤或应用给错因分类，并订正一题。}\LPStudentPart{预期}{能够依据“先看能否写成整数或分数，再按指定标准分类且不重不漏”完成题组并说清错因。}}{5}}
+}
+
+\LPBackgroundPage{4}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessPageFourH}{\LPProcessRow{当堂检测}{\LPTeacherPart{问题}{四道反馈题中，哪一题最能检验本节核心方法？}\LPTeacherPart{组织}{投放 10 分反馈卡：①2 分，有理数怎样按两种标准分类？ ②2 分，负整数是否都是负有理数？ ③2 分，判断：有理数只包括正整数和负分数。 ④4 分，某组数据为 $-1.5,2,0,-3,\frac12$，分别统计正、负和零的个数。}\LPTeacherPart{说明}{参考答案：①可分为整数和分数；也可分为正有理数、$0$ 和负有理数。 ②是，整数属于有理数。 ③错误；还包括负整数、正分数和 $0$。 ④正数 2 个，负数 2 个，零 1 个。}\LPTeacherPart{纠错}{公布答案后学生自评并举牌统计：9 分及以上完成提高任务；7—8 分订正；7 分以下接受针对性补练。}\LPTeacherPart{归纳}{达标标准：10 分制 9 分及以上完全达标，7—8 分基本达标，7 分以下补练。}\LPTeacherPart{意图}{用概念、技能、纠错和综合四类任务覆盖本节目标。}}{\LPStudentPart{活动}{独立完成，按答案自评；把错误标为概念、步骤、条件或表达问题。}\LPStudentPart{预期}{能完成四类题并用核心术语说明至少一道题的依据。}}{6}
+\LPProcessRow{回顾总结与作业}{\LPTeacherPart{问题}{本节研究了什么、关键步骤是什么、最容易错在哪里？}\LPTeacherPart{组织}{请学生各用一句话回答三个问题，教师据此补全板书并布置分层作业。}\LPTeacherPart{说明}{A 组：①$0.25$ 是分数还是整数？ ②负整数是否都是负有理数？ ③$0$ 是否属于整数集合？ ④判断：有理数只包括正整数和负分数。；答案：①是分数，因为 $0.25=\frac14$。 ②是，整数属于有理数。 ③属于整数，也属于有理数。 ④错误；还包括负整数、正分数和 $0$。。B 组：①将 $-2,0,1.6,-\frac79,5$ 按正、零、负分类。 ②某组数据为 $-1.5,2,0,-3,\frac12$，分别统计正、负和零的个数。；答案要点：①正有理数 $1.6,5$；$0$；负有理数 $-2,-\frac79$。 ②正数 2 个，负数 2 个，零 1 个。。C 组选做：围绕“有理数的概念与分类”自编一道含易错条件的题并给出解答与检查方法。}\LPTeacherPart{纠错}{作业答案必须包含必要步骤或依据；只写结果的题次日先口述方法再补写。}\LPTeacherPart{归纳}{核心方法：先看能否写成整数或分数，再按指定标准分类且不重不漏。课后反思区域由任课教师课后填写。}\LPTeacherPart{意图}{由学生完成结构化回顾，把课堂方法迁移到分层课后任务。}}{\LPStudentPart{活动}{说出一个结论、一个步骤和一个易错点，记录 A、B、C 三组作业。}\LPStudentPart{预期}{能用“先看能否写成整数或分数，再按指定标准分类且不重不漏”概括本节方法，并知道如何自查。}}{4}}
+}
+\end{document}

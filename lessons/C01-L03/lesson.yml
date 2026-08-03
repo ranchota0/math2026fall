@@ -1,0 +1,21 @@
+lesson_id: C01-L03
+chapter: 第一章 有理数
+section: "1.2 有理数及其大小比较"
+lesson_title: 数轴
+lesson_type: new_lesson
+textbook_page_start: 8
+textbook_page_end: 11
+period_minutes: 45
+prerequisite:
+  - 已认识正数、负数和 0
+  - 能用正负数表示相反意义的量
+  - 具有在直线上表示 0 和正数的经验
+learning_objectives:
+  - 理解数轴的原点、正方向和单位长度三个要素。
+  - 会画数轴，并在数轴上表示给定的有理数。
+  - 能借助数轴描述实际情境中的方向和距离。
+teacher_output: C01_L03_数轴_教学设计.tex
+student_output: C01_L03_数轴_学生学案.tex
+source_pdf: references/textbook.pdf
+source_pages: [8, 9, 10, 11]
+manual_review_status: pending

@@ -1,0 +1,1104 @@
+metadata:
+  status: pending_review
+  source_pdf: references/textbook.pdf
+  textbook_confirmed: true
+  approved: false
+  default_period_minutes: 45
+  generated_at: "2026-07-12"
+  total_chapters: 6
+  total_lessons: 53
+  notes: "课时清单已生成，等待人工审核；SAMPLE-L01 仅保留在 lessons/_sample，不混入正式 lessons 列表。"
+
+chapters:
+  - chapter_id: C01
+    chapter_title: 第一章 有理数
+    source_pages: [1, 23]
+    proposed_periods: 7
+    chapter_notes: "1.1 较完整，1.2 内含有理数概念、数轴、相反数、绝对值和大小比较，需拆分；图说数学史融入章末复习。"
+  - chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    source_pages: [24, 67]
+    proposed_periods: 14
+    chapter_notes: "运算法则、运算律、混合运算、乘方、科学记数法和近似数负荷较高；综合与实践独立设课。"
+  - chapter_id: C03
+    chapter_title: 第三章 代数式
+    source_pages: [68, 87]
+    proposed_periods: 5
+    chapter_notes: "3.1 按基础表达和数量关系应用拆分，3.2 单独设课，数学活动与章末复习独立安排。"
+  - chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    source_pages: [88, 109]
+    proposed_periods: 5
+    chapter_notes: "4.1 整式概念整体设课；4.2 按合并同类项、去括号与整式加减拆分。"
+  - chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    source_pages: [110, 148]
+    proposed_periods: 11
+    chapter_notes: "解方程按合并同类项、移项、去括号、去分母分课；实际问题按模型类型拆分。"
+  - chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    source_pages: [149, 193]
+    proposed_periods: 11
+    chapter_notes: "几何概念与操作活动较多，线段和角均按概念、比较运算、综合关系拆分；综合与实践独立设课。"
+
+lessons:
+  - id: C01-L01
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 1
+    lesson_title: 正数和负数
+    lesson_type: new_lesson
+    source_section: "1.1 正数和负数"
+    source_subsections: ["正数和负数的意义", "用正负数表示相反意义的量", "0 的意义", "阅读与思考：用正负数表示允许偏差"]
+    source_pages: [2, 3, 4, 5, 6]
+    period_minutes: 45
+    content_scope: ["认识正数、负数和 0", "用正负数表示具有相反意义的量", "理解允许偏差中的正负数表示"]
+    key_points: ["正数、负数和 0 的意义", "相反意义的量的表示"]
+    difficulties: ["结合实际情境准确确定正负方向和基准"]
+    prerequisites: ["小学阶段学习过自然数、小数、分数和 0"]
+    integrated_columns: ["阅读与思考：用正负数表示允许偏差"]
+    excluded_content: []
+    teacher_output: C01_L01_正数和负数_教学设计.tex
+    student_output: C01_L01_正数和负数_学生学案.tex
+    status: pending
+    review_notes: "1.1 内容完整，阅读材料与实际应用联系紧密，合并为一课时。"
+  - id: C01-L02
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 2
+    lesson_title: 有理数的概念与分类
+    lesson_type: new_lesson
+    source_section: "1.2 有理数及其大小比较"
+    source_subsections: ["1.2.1 有理数的概念"]
+    source_pages: [7, 8]
+    period_minutes: 45
+    content_scope: ["整数、分数和有理数", "正有理数、负有理数与整数分类"]
+    key_points: ["有理数的概念", "按不同标准进行有理数分类"]
+    difficulties: ["有限小数、无限循环小数与分数形式的关系"]
+    prerequisites: ["正数和负数", "整数、分数、小数"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C01_L02_有理数的概念与分类_教学设计.tex
+    student_output: C01_L02_有理数的概念与分类_学生学案.tex
+    status: pending
+    review_notes: "概念和分类是数轴、相反数等后续内容的基础，单独设课。"
+  - id: C01-L03
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 3
+    lesson_title: 数轴
+    lesson_type: new_lesson
+    source_section: "1.2 有理数及其大小比较"
+    source_subsections: ["1.2.2 数轴"]
+    source_pages: [8, 9, 10, 11]
+    period_minutes: 45
+    content_scope: ["数轴三要素", "用数轴上的点表示有理数", "借助数轴描述位置关系"]
+    key_points: ["数轴的原点、正方向、单位长度", "有理数与数轴上的点的对应表示"]
+    difficulties: ["单位长度选择和负方向位置表示"]
+    prerequisites: ["有理数的概念与分类", "小学阶段直线和刻度经验"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C01_L03_数轴_教学设计.tex
+    student_output: C01_L03_数轴_学生学案.tex
+    status: pending
+    review_notes: "数轴承接有理数概念，并服务于相反数、绝对值和大小比较，独立设课。"
+  - id: C01-L04
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 4
+    lesson_title: 相反数与绝对值
+    lesson_type: new_lesson
+    source_section: "1.2 有理数及其大小比较"
+    source_subsections: ["1.2.3 相反数", "1.2.4 绝对值"]
+    source_pages: [11, 12, 13, 14]
+    period_minutes: 45
+    content_scope: ["相反数的意义和表示", "绝对值的几何意义", "绝对值的求法"]
+    key_points: ["相反数", "绝对值"]
+    difficulties: ["符号化表示 -a 的意义", "负数绝对值与相反数的关系"]
+    prerequisites: ["数轴", "正数和负数"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C01_L04_相反数与绝对值_教学设计.tex
+    student_output: C01_L04_相反数与绝对值_学生学案.tex
+    status: pending
+    review_notes: "两个概念均依托数轴且联系紧密，可在一课时内形成完整知识链。"
+  - id: C01-L05
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 5
+    lesson_title: 有理数的大小比较
+    lesson_type: new_lesson
+    source_section: "1.2 有理数及其大小比较"
+    source_subsections: ["1.2.5 有理数的大小比较"]
+    source_pages: [14, 15, 16, 17]
+    period_minutes: 45
+    content_scope: ["数轴上的大小顺序", "正数、0、负数的大小关系", "两个负数大小比较"]
+    key_points: ["利用数轴比较有理数大小", "两个负数绝对值大的反而小"]
+    difficulties: ["负数大小比较中的绝对值反向关系"]
+    prerequisites: ["数轴", "绝对值"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C01_L05_有理数的大小比较_教学设计.tex
+    student_output: C01_L05_有理数的大小比较_学生学案.tex
+    status: pending
+    review_notes: "比较规则和练习密度较高，独立设课以保证训练时间。"
+  - id: C01-L06
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 6
+    lesson_title: 有理数数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["体重标准与正负数分析", "有理数猜数游戏"]
+    source_pages: [20]
+    period_minutes: 45
+    content_scope: ["用正负数分析实际数据", "在活动中巩固有理数表示和大小关系"]
+    key_points: ["活动数据中的正负数意义", "有理数综合应用"]
+    difficulties: ["从活动情境抽象出数学表示"]
+    prerequisites: ["正数和负数", "有理数大小比较"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C01_L06_有理数数学活动_教学设计.tex
+    student_output: C01_L06_有理数数学活动_学生学案.tex
+    status: pending
+    review_notes: "数学活动具有完整活动任务，独立设课。"
+  - id: C01-L07
+    chapter_id: C01
+    chapter_title: 第一章 有理数
+    lesson_index_in_chapter: 7
+    lesson_title: 有理数章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["图说数学史：漫漫长路识负数", "小结", "复习题"]
+    source_pages: [18, 19, 21, 22, 23]
+    period_minutes: 45
+    content_scope: ["梳理有理数概念体系", "复习数轴、相反数、绝对值和大小比较", "理解负数认识的发展"]
+    key_points: ["有理数知识结构", "数轴相关概念综合"]
+    difficulties: ["区分相反数、绝对值和大小比较中的符号关系"]
+    prerequisites: ["第一章全部新授内容"]
+    integrated_columns: ["图说数学史：漫漫长路识负数"]
+    excluded_content: []
+    teacher_output: C01_L07_有理数章末小结与复习_教学设计.tex
+    student_output: C01_L07_有理数章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "图说数学史不单独设课，融入章末复习以拓展数学文化。"
+  - id: C02-L01
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 1
+    lesson_title: 有理数加法法则
+    lesson_type: new_lesson
+    source_section: "2.1 有理数的加法与减法"
+    source_subsections: ["2.1.1 有理数的加法：加法法则"]
+    source_pages: [25, 26, 27, 28]
+    period_minutes: 45
+    content_scope: ["同号、异号有理数加法", "用数轴解释加法", "加法法则的初步应用"]
+    key_points: ["有理数加法法则", "符号和绝对值的处理"]
+    difficulties: ["异号两数相加时符号和绝对值差的判断"]
+    prerequisites: ["有理数大小比较", "绝对值"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L01_有理数加法法则_教学设计.tex
+    student_output: C02_L01_有理数加法法则_学生学案.tex
+    status: pending
+    review_notes: "加法法则是本章运算基础，单独设课。"
+  - id: C02-L02
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 2
+    lesson_title: 有理数加法运算律与应用
+    lesson_type: new_lesson
+    source_section: "2.1 有理数的加法与减法"
+    source_subsections: ["2.1.1 有理数的加法：运算律和应用"]
+    source_pages: [29, 30]
+    period_minutes: 45
+    content_scope: ["加法交换律和结合律", "利用运算律简化有理数加法", "实际问题中的有理数加法"]
+    key_points: ["有理数加法运算律", "加法应用题中的正负意义"]
+    difficulties: ["根据数的特点合理重组计算"]
+    prerequisites: ["有理数加法法则"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L02_有理数加法运算律与应用_教学设计.tex
+    student_output: C02_L02_有理数加法运算律与应用_学生学案.tex
+    status: pending
+    review_notes: "从法则过渡到运算律和应用，训练量适合作为第二课时。"
+  - id: C02-L03
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 3
+    lesson_title: 有理数减法法则
+    lesson_type: new_lesson
+    source_section: "2.1 有理数的加法与减法"
+    source_subsections: ["2.1.2 有理数的减法：减法法则"]
+    source_pages: [30, 31, 32]
+    period_minutes: 45
+    content_scope: ["减法是加法的逆运算", "减去一个数等于加上这个数的相反数", "减法法则应用"]
+    key_points: ["有理数减法法则", "减法转化为加法"]
+    difficulties: ["减负数和括号符号变化"]
+    prerequisites: ["相反数", "有理数加法"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L03_有理数减法法则_教学设计.tex
+    student_output: C02_L03_有理数减法法则_学生学案.tex
+    status: pending
+    review_notes: "减法转化思想重要，独立设课。"
+  - id: C02-L04
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 4
+    lesson_title: 有理数加减混合运算
+    lesson_type: new_lesson
+    source_section: "2.1 有理数的加法与减法"
+    source_subsections: ["2.1.2 有理数的减法：加减混合运算", "阅读与思考：我国古代的正负数加减运算法则"]
+    source_pages: [33, 34, 35, 36, 37]
+    period_minutes: 45
+    content_scope: ["加减混合式统一成加法", "省略括号和加号的书写", "加减混合运算应用"]
+    key_points: ["加减混合运算", "运算符号与性质符号的统一理解"]
+    difficulties: ["省略括号后的符号识别和运算顺序"]
+    prerequisites: ["有理数加法法则", "有理数减法法则"]
+    integrated_columns: ["阅读与思考：我国古代的正负数加减运算法则"]
+    excluded_content: []
+    teacher_output: C02_L04_有理数加减混合运算_教学设计.tex
+    student_output: C02_L04_有理数加减混合运算_学生学案.tex
+    status: pending
+    review_notes: "加减混合运算训练量大，阅读材料作为文化拓展融入。"
+  - id: C02-L05
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 5
+    lesson_title: 有理数乘法法则
+    lesson_type: new_lesson
+    source_section: "2.2 有理数的乘法与除法"
+    source_subsections: ["2.2.1 有理数的乘法：乘法法则"]
+    source_pages: [38, 39, 40]
+    period_minutes: 45
+    content_scope: ["有理数乘法符号规律", "乘法法则", "倒数的初步联系"]
+    key_points: ["有理数乘法法则", "积的符号判断"]
+    difficulties: ["负负得正的合理性理解"]
+    prerequisites: ["有理数加减运算", "绝对值"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L05_有理数乘法法则_教学设计.tex
+    student_output: C02_L05_有理数乘法法则_学生学案.tex
+    status: pending
+    review_notes: "乘法法则是后续除法、乘方的基础，独立设课。"
+  - id: C02-L06
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 6
+    lesson_title: 多个有理数相乘与乘法运算律
+    lesson_type: new_lesson
+    source_section: "2.2 有理数的乘法与除法"
+    source_subsections: ["2.2.1 有理数的乘法：多个数相乘", "乘法运算律"]
+    source_pages: [41, 42, 43]
+    period_minutes: 45
+    content_scope: ["多个有理数相乘的符号规律", "乘法交换律、结合律、分配律", "运算律简化计算"]
+    key_points: ["多个有理数相乘", "乘法运算律"]
+    difficulties: ["多个负因数个数与积的符号", "分配律的灵活使用"]
+    prerequisites: ["有理数乘法法则"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L06_多个有理数相乘与乘法运算律_教学设计.tex
+    student_output: C02_L06_多个有理数相乘与乘法运算律_学生学案.tex
+    status: pending
+    review_notes: "乘法法则后的运算律和多个因数训练需要独立时间。"
+  - id: C02-L07
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 7
+    lesson_title: 有理数除法
+    lesson_type: new_lesson
+    source_section: "2.2 有理数的乘法与除法"
+    source_subsections: ["2.2.2 有理数的除法：除法法则"]
+    source_pages: [43, 44, 45]
+    period_minutes: 45
+    content_scope: ["除法是乘法的逆运算", "除以一个非零数等于乘这个数的倒数", "有理数除法计算"]
+    key_points: ["有理数除法法则", "除法转化为乘法"]
+    difficulties: ["倒数、符号和除数不为 0 的综合处理"]
+    prerequisites: ["有理数乘法", "倒数"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L07_有理数除法_教学设计.tex
+    student_output: C02_L07_有理数除法_学生学案.tex
+    status: pending
+    review_notes: "除法法则和转化思想单独设课。"
+  - id: C02-L08
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 8
+    lesson_title: 有理数乘除混合运算
+    lesson_type: new_lesson
+    source_section: "2.2 有理数的乘法与除法"
+    source_subsections: ["2.2.2 有理数的除法：乘除混合运算", "探究与发现：从数系扩充看有理数乘法法则"]
+    source_pages: [46, 47, 48, 49, 50]
+    period_minutes: 45
+    content_scope: ["乘除混合运算", "计算器辅助计算", "从数系扩充理解乘法法则"]
+    key_points: ["乘除混合运算顺序", "将除法转化为乘法"]
+    difficulties: ["多步运算中的符号和转化"]
+    prerequisites: ["有理数乘法", "有理数除法"]
+    integrated_columns: ["探究与发现：从数系扩充看有理数乘法法则"]
+    excluded_content: []
+    teacher_output: C02_L08_有理数乘除混合运算_教学设计.tex
+    student_output: C02_L08_有理数乘除混合运算_学生学案.tex
+    status: pending
+    review_notes: "乘除混合训练与探究栏目相邻，合并为一课时。"
+  - id: C02-L09
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 9
+    lesson_title: 有理数的乘方
+    lesson_type: new_lesson
+    source_section: "2.3 有理数的乘方"
+    source_subsections: ["2.3.1 乘方"]
+    source_pages: [51, 52, 53]
+    period_minutes: 45
+    content_scope: ["乘方的意义", "幂、底数、指数", "有理数乘方运算"]
+    key_points: ["乘方概念", "负数乘方的符号"]
+    difficulties: ["-a^n 与 (-a)^n 的区别"]
+    prerequisites: ["有理数乘法", "多个有理数相乘"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L09_有理数的乘方_教学设计.tex
+    student_output: C02_L09_有理数的乘方_学生学案.tex
+    status: pending
+    review_notes: "新符号和易错符号较多，独立设课。"
+  - id: C02-L10
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 10
+    lesson_title: 科学记数法
+    lesson_type: new_lesson
+    source_section: "2.3 有理数的乘方"
+    source_subsections: ["2.3.2 科学记数法"]
+    source_pages: [54, 55]
+    period_minutes: 45
+    content_scope: ["大数的科学记数法表示", "10 的幂", "科学记数法应用"]
+    key_points: ["科学记数法的形式", "指数与小数点移动的关系"]
+    difficulties: ["确定 a x 10^n 中 n 的值"]
+    prerequisites: ["乘方", "十进制位值"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L10_科学记数法_教学设计.tex
+    student_output: C02_L10_科学记数法_学生学案.tex
+    status: pending
+    review_notes: "科学记数法与乘方相连但应用独立，单独设课。"
+  - id: C02-L11
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 11
+    lesson_title: 近似数
+    lesson_type: new_lesson
+    source_section: "2.3 有理数的乘方"
+    source_subsections: ["2.3.3 近似数"]
+    source_pages: [55, 56, 57]
+    period_minutes: 45
+    content_scope: ["准确数与近似数", "精确度", "按要求取近似数"]
+    key_points: ["近似数与精确度", "四舍五入取近似数"]
+    difficulties: ["根据精确度保留数位，区分 1.8 与 1.80"]
+    prerequisites: ["小数位值", "科学记数法"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L11_近似数_教学设计.tex
+    student_output: C02_L11_近似数_学生学案.tex
+    status: pending
+    review_notes: "近似数概念和精确度易混，需要独立训练。"
+  - id: C02-L12
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 12
+    lesson_title: 有理数运算数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["计算器与规律探究", "运算活动"]
+    source_pages: [58]
+    period_minutes: 45
+    content_scope: ["在活动中巩固有理数运算", "用计算和观察发现规律"]
+    key_points: ["有理数运算综合应用", "活动中的规律表达"]
+    difficulties: ["从计算结果中抽象规律"]
+    prerequisites: ["第二章新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L12_有理数运算数学活动_教学设计.tex
+    student_output: C02_L12_有理数运算数学活动_学生学案.tex
+    status: pending
+    review_notes: "活动页任务完整，独立设课。"
+  - id: C02-L13
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 13
+    lesson_title: 有理数运算章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["小结", "复习题"]
+    source_pages: [59, 60, 61, 62]
+    period_minutes: 45
+    content_scope: ["梳理有理数运算法则", "复习混合运算、乘方、科学记数法和近似数"]
+    key_points: ["有理数运算体系", "运算顺序与符号"]
+    difficulties: ["多步混合运算中的符号、括号和乘方处理"]
+    prerequisites: ["第二章全部新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L13_有理数运算章末小结与复习_教学设计.tex
+    student_output: C02_L13_有理数运算章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "章末小结和复习题独立设课。"
+  - id: C02-L14
+    chapter_id: C02
+    chapter_title: 第二章 有理数的运算
+    lesson_index_in_chapter: 14
+    lesson_title: 进位制的认识与探究
+    lesson_type: integrated_practice
+    source_section: "综合与实践"
+    source_subsections: ["进位制的认识与探究"]
+    source_pages: [63, 64, 65, 66, 67]
+    period_minutes: 45
+    content_scope: ["十进制位值", "其他进位制的认识", "进位制表示与转换的探究"]
+    key_points: ["进位制的基本思想", "用幂表示数位值"]
+    difficulties: ["不同进位制中的位值理解和转换"]
+    prerequisites: ["乘方", "有理数运算"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C02_L14_进位制的认识与探究_教学设计.tex
+    student_output: C02_L14_进位制的认识与探究_学生学案.tex
+    status: pending
+    review_notes: "综合与实践内容跨页且任务完整，独立设课。"
+  - id: C03-L01
+    chapter_id: C03
+    chapter_title: 第三章 代数式
+    lesson_index_in_chapter: 1
+    lesson_title: 用字母表示数与列代数式
+    lesson_type: new_lesson
+    source_section: "3.1 列代数式表示数量关系"
+    source_subsections: ["用字母表示数", "列代数式表示简单数量关系"]
+    source_pages: [69, 70, 71, 72]
+    period_minutes: 45
+    content_scope: ["用字母表示数", "用代数式表示数量和基本关系"]
+    key_points: ["代数式的意义", "用字母表示一般数量"]
+    difficulties: ["从具体数到字母表示的抽象过渡"]
+    prerequisites: ["有理数运算", "小学数量关系"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C03_L01_用字母表示数与列代数式_教学设计.tex
+    student_output: C03_L01_用字母表示数与列代数式_学生学案.tex
+    status: pending
+    review_notes: "3.1 前半部分聚焦基本表达，适合作为引入课。"
+  - id: C03-L02
+    chapter_id: C03
+    chapter_title: 第三章 代数式
+    lesson_index_in_chapter: 2
+    lesson_title: 列代数式表示数量关系
+    lesson_type: new_lesson
+    source_section: "3.1 列代数式表示数量关系"
+    source_subsections: ["数量关系的代数式表示", "阅读与思考：数字1与字母X的对话"]
+    source_pages: [73, 74, 75, 76, 77, 78]
+    period_minutes: 45
+    content_scope: ["用代数式表示复杂数量关系", "用表格和图形理解变量关系", "理解字母表示数的价值"]
+    key_points: ["列代数式表示数量关系", "实际情境中的代数表达"]
+    difficulties: ["识别问题中的运算关系和对应代数式"]
+    prerequisites: ["用字母表示数", "有理数运算"]
+    integrated_columns: ["阅读与思考：数字1与字母X的对话"]
+    excluded_content: []
+    teacher_output: C03_L02_列代数式表示数量关系_教学设计.tex
+    student_output: C03_L02_列代数式表示数量关系_学生学案.tex
+    status: pending
+    review_notes: "3.1 后半部分应用密度较高，阅读材料融入抽象意义理解。"
+  - id: C03-L03
+    chapter_id: C03
+    chapter_title: 第三章 代数式
+    lesson_index_in_chapter: 3
+    lesson_title: 代数式的值
+    lesson_type: new_lesson
+    source_section: "3.2 代数式的值"
+    source_subsections: ["代数式的值", "代入求值", "公式应用"]
+    source_pages: [79, 80, 81, 82]
+    period_minutes: 45
+    content_scope: ["代数式的值的意义", "给定字母取值时代入求值", "实际问题中的代数式求值"]
+    key_points: ["代数式的值", "代入求值步骤"]
+    difficulties: ["负数、分数代入时的括号和运算顺序"]
+    prerequisites: ["列代数式", "有理数混合运算"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C03_L03_代数式的值_教学设计.tex
+    student_output: C03_L03_代数式的值_学生学案.tex
+    status: pending
+    review_notes: "3.2 内容集中，可一课时完成。"
+  - id: C03-L04
+    chapter_id: C03
+    chapter_title: 第三章 代数式
+    lesson_index_in_chapter: 4
+    lesson_title: 代数式数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["代数式相关活动"]
+    source_pages: [83, 84]
+    period_minutes: 45
+    content_scope: ["在活动中经历列代数式和求值", "用代数式描述实际问题"]
+    key_points: ["代数式综合应用", "活动中的数量关系表达"]
+    difficulties: ["从活动问题抽象出代数式"]
+    prerequisites: ["3.1 和 3.2 内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C03_L04_代数式数学活动_教学设计.tex
+    student_output: C03_L04_代数式数学活动_学生学案.tex
+    status: pending
+    review_notes: "活动任务独立，设活动课。"
+  - id: C03-L05
+    chapter_id: C03
+    chapter_title: 第三章 代数式
+    lesson_index_in_chapter: 5
+    lesson_title: 代数式章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["小结", "复习题"]
+    source_pages: [85, 86, 87]
+    period_minutes: 45
+    content_scope: ["复习列代数式和代数式的值", "梳理用字母表示数量关系"]
+    key_points: ["代数式知识结构", "列式与求值"]
+    difficulties: ["实际问题中数量关系的准确表达"]
+    prerequisites: ["第三章全部新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C03_L05_代数式章末小结与复习_教学设计.tex
+    student_output: C03_L05_代数式章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "章末复习独立设课。"
+  - id: C04-L01
+    chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    lesson_index_in_chapter: 1
+    lesson_title: 整式
+    lesson_type: new_lesson
+    source_section: "4.1 整式"
+    source_subsections: ["单项式", "多项式", "整式"]
+    source_pages: [89, 90, 91, 92, 93, 94]
+    period_minutes: 45
+    content_scope: ["单项式及其系数、次数", "多项式的项和次数", "整式的概念"]
+    key_points: ["单项式和多项式", "系数、次数、项"]
+    difficulties: ["多项式项的符号和次数判断"]
+    prerequisites: ["代数式", "代数式的值"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C04_L01_整式_教学设计.tex
+    student_output: C04_L01_整式_学生学案.tex
+    status: pending
+    review_notes: "4.1 概念紧凑但项目多，整体设为一课时，后续通过练习巩固。"
+  - id: C04-L02
+    chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    lesson_index_in_chapter: 2
+    lesson_title: 合并同类项
+    lesson_type: new_lesson
+    source_section: "4.2 整式的加法与减法"
+    source_subsections: ["同类项", "合并同类项", "化简求值"]
+    source_pages: [95, 96, 97, 98]
+    period_minutes: 45
+    content_scope: ["同类项的识别", "合并同类项法则", "先化简再求值"]
+    key_points: ["同类项", "合并同类项"]
+    difficulties: ["相同字母及相同字母指数的准确判断"]
+    prerequisites: ["整式", "有理数加减运算"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C04_L02_合并同类项_教学设计.tex
+    student_output: C04_L02_合并同类项_学生学案.tex
+    status: pending
+    review_notes: "合并同类项是整式加减的核心基础，独立设课。"
+  - id: C04-L03
+    chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    lesson_index_in_chapter: 3
+    lesson_title: 去括号与整式加减
+    lesson_type: new_lesson
+    source_section: "4.2 整式的加法与减法"
+    source_subsections: ["去括号", "整式的加法与减法"]
+    source_pages: [98, 99, 100, 101, 102, 103]
+    period_minutes: 45
+    content_scope: ["去括号法则", "整式加减运算法则", "整式加减应用"]
+    key_points: ["去括号", "整式加减"]
+    difficulties: ["括号前为负号或负系数时的符号变化"]
+    prerequisites: ["合并同类项", "分配律"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C04_L03_去括号与整式加减_教学设计.tex
+    student_output: C04_L03_去括号与整式加减_学生学案.tex
+    status: pending
+    review_notes: "去括号与整式加减连续，合并为一课时但需关注训练密度。"
+  - id: C04-L04
+    chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    lesson_index_in_chapter: 4
+    lesson_title: 整式加减数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["信息技术应用：用电子表格进行数据计算", "数学活动"]
+    source_pages: [104, 105, 106]
+    period_minutes: 45
+    content_scope: ["用电子表格辅助数据计算", "通过活动巩固整式表达和计算"]
+    key_points: ["整式加减的活动应用", "数据计算中的代数表达"]
+    difficulties: ["从表格数据中建立代数关系"]
+    prerequisites: ["整式加减"]
+    integrated_columns: ["信息技术应用：用电子表格进行数据计算"]
+    excluded_content: []
+    teacher_output: C04_L04_整式加减数学活动_教学设计.tex
+    student_output: C04_L04_整式加减数学活动_学生学案.tex
+    status: pending
+    review_notes: "信息技术应用与数学活动相邻，合并为活动课。"
+  - id: C04-L05
+    chapter_id: C04
+    chapter_title: 第四章 整式的加减
+    lesson_index_in_chapter: 5
+    lesson_title: 整式加减章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["小结", "复习题"]
+    source_pages: [107, 108, 109]
+    period_minutes: 45
+    content_scope: ["复习整式概念", "复习合并同类项、去括号和整式加减"]
+    key_points: ["整式加减知识结构", "化简求值"]
+    difficulties: ["综合题中的符号和同类项处理"]
+    prerequisites: ["第四章全部新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C04_L05_整式加减章末小结与复习_教学设计.tex
+    student_output: C04_L05_整式加减章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "章末复习独立设课。"
+  - id: C05-L01
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 1
+    lesson_title: 从算式到方程
+    lesson_type: new_lesson
+    source_section: "5.1 方程"
+    source_subsections: ["5.1.1 从算式到方程"]
+    source_pages: [111, 112, 113]
+    period_minutes: 45
+    content_scope: ["从实际问题列出含未知数的等式", "方程的概念", "设未知数并列方程"]
+    key_points: ["方程的概念", "根据相等关系列方程"]
+    difficulties: ["从实际问题中找相等关系"]
+    prerequisites: ["代数式", "数量关系表达"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L01_从算式到方程_教学设计.tex
+    student_output: C05_L01_从算式到方程_学生学案.tex
+    status: pending
+    review_notes: "方程模型引入需要充分经历从算式到方程的过程，独立设课。"
+  - id: C05-L02
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 2
+    lesson_title: 方程的解与一元一次方程
+    lesson_type: new_lesson
+    source_section: "5.1 方程"
+    source_subsections: ["方程的解", "一元一次方程"]
+    source_pages: [114, 115]
+    period_minutes: 45
+    content_scope: ["方程的解", "解方程的意义", "一元一次方程的特征"]
+    key_points: ["方程的解", "一元一次方程"]
+    difficulties: ["判断一个方程是否为一元一次方程"]
+    prerequisites: ["方程的概念", "整式"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L02_方程的解与一元一次方程_教学设计.tex
+    student_output: C05_L02_方程的解与一元一次方程_学生学案.tex
+    status: pending
+    review_notes: "方程解和一元一次方程概念短而关键，可独立设课以衔接等式性质。"
+  - id: C05-L03
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 3
+    lesson_title: 等式的性质
+    lesson_type: new_lesson
+    source_section: "5.1 方程"
+    source_subsections: ["5.1.2 等式的性质"]
+    source_pages: [115, 116, 117, 118, 119]
+    period_minutes: 45
+    content_scope: ["等式的性质 1", "等式的性质 2", "利用等式性质解简单方程"]
+    key_points: ["等式的性质", "用等式性质解方程"]
+    difficulties: ["等式两边同乘或同除时条件的理解"]
+    prerequisites: ["方程的解", "有理数运算"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L03_等式的性质_教学设计.tex
+    student_output: C05_L03_等式的性质_学生学案.tex
+    status: pending
+    review_notes: "等式性质是解方程的依据，独立设课。"
+  - id: C05-L04
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 4
+    lesson_title: 合并同类项解一元一次方程
+    lesson_type: new_lesson
+    source_section: "5.2 解一元一次方程"
+    source_subsections: ["合并同类项解方程"]
+    source_pages: [120, 121]
+    period_minutes: 45
+    content_scope: ["含同类项的一元一次方程", "合并同类项和系数化为 1", "简单实际问题"]
+    key_points: ["合并同类项解方程", "系数化为 1"]
+    difficulties: ["根据实际问题列出可合并的方程"]
+    prerequisites: ["等式的性质", "合并同类项"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L04_合并同类项解一元一次方程_教学设计.tex
+    student_output: C05_L04_合并同类项解一元一次方程_学生学案.tex
+    status: pending
+    review_notes: "教材从合并同类项入手研究解方程，独立设课。"
+  - id: C05-L05
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 5
+    lesson_title: 移项解一元一次方程
+    lesson_type: new_lesson
+    source_section: "5.2 解一元一次方程"
+    source_subsections: ["移项", "移项后合并同类项"]
+    source_pages: [122, 123, 124]
+    period_minutes: 45
+    content_scope: ["移项的意义", "移项解方程", "移项在实际问题中的应用"]
+    key_points: ["移项", "移项、合并同类项、系数化为 1"]
+    difficulties: ["移项时变号"]
+    prerequisites: ["等式的性质", "合并同类项解方程"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L05_移项解一元一次方程_教学设计.tex
+    student_output: C05_L05_移项解一元一次方程_学生学案.tex
+    status: pending
+    review_notes: "移项是解方程常用步骤，易错点集中，独立设课。"
+  - id: C05-L06
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 6
+    lesson_title: 去括号解一元一次方程
+    lesson_type: new_lesson
+    source_section: "5.2 解一元一次方程"
+    source_subsections: ["去括号解方程"]
+    source_pages: [124, 125, 126]
+    period_minutes: 45
+    content_scope: ["含括号的一元一次方程", "去括号、移项、合并同类项", "行程和工程类简单应用"]
+    key_points: ["去括号解方程", "解方程步骤的组合"]
+    difficulties: ["括号前负号或系数导致的符号变化"]
+    prerequisites: ["移项解方程", "整式去括号"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L06_去括号解一元一次方程_教学设计.tex
+    student_output: C05_L06_去括号解一元一次方程_学生学案.tex
+    status: pending
+    review_notes: "去括号和移项组合后复杂度上升，独立设课。"
+  - id: C05-L07
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 7
+    lesson_title: 去分母解一元一次方程
+    lesson_type: new_lesson
+    source_section: "5.2 解一元一次方程"
+    source_subsections: ["去分母", "解一元一次方程的一般步骤", "探究与发现：无限循环小数化分数"]
+    source_pages: [126, 127, 128, 129, 130, 131, 132]
+    period_minutes: 45
+    content_scope: ["含分母的一元一次方程", "去分母步骤", "解一元一次方程的一般步骤", "用方程处理无限循环小数"]
+    key_points: ["去分母", "一元一次方程一般解法"]
+    difficulties: ["去分母时方程两边每一项都乘最小公倍数"]
+    prerequisites: ["去括号解方程", "分数运算"]
+    integrated_columns: ["探究与发现：无限循环小数化分数"]
+    excluded_content: []
+    teacher_output: C05_L07_去分母解一元一次方程_教学设计.tex
+    student_output: C05_L07_去分母解一元一次方程_学生学案.tex
+    status: pending
+    review_notes: "去分母和一般步骤是解方程收束课；探究栏目可作为拓展融入。"
+  - id: C05-L08
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 8
+    lesson_title: 实际问题与一元一次方程一
+    lesson_type: new_lesson
+    source_section: "5.3 实际问题与一元一次方程"
+    source_subsections: ["配套问题", "销售盈亏问题"]
+    source_pages: [133, 134, 135, 136]
+    period_minutes: 45
+    content_scope: ["用一元一次方程解决配套问题", "用一元一次方程解决销售盈亏问题", "检验答案的实际意义"]
+    key_points: ["实际问题中的相等关系", "配套和盈亏模型"]
+    difficulties: ["把实际语言转化为方程中的数量关系"]
+    prerequisites: ["一元一次方程一般解法", "百分数和利润率"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L08_实际问题与一元一次方程一_教学设计.tex
+    student_output: C05_L08_实际问题与一元一次方程一_学生学案.tex
+    status: pending
+    review_notes: "配套和盈亏是两个典型模型，合并为应用第一课。"
+  - id: C05-L09
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 9
+    lesson_title: 实际问题与一元一次方程二
+    lesson_type: new_lesson
+    source_section: "5.3 实际问题与一元一次方程"
+    source_subsections: ["球赛积分表问题", "不同能效空调的综合费用比较", "阅读与思考：初步认识数学模型"]
+    source_pages: [136, 137, 138, 139, 140, 141, 142]
+    period_minutes: 45
+    content_scope: ["用方程进行推理判断", "用方程比较方案", "初步认识数学模型"]
+    key_points: ["方程模型解决实际问题", "解的实际意义检验"]
+    difficulties: ["用方程进行方案比较和不可能性判断"]
+    prerequisites: ["实际问题与一元一次方程一", "代数式和方程求解"]
+    integrated_columns: ["阅读与思考：初步认识数学模型"]
+    excluded_content: []
+    teacher_output: C05_L09_实际问题与一元一次方程二_教学设计.tex
+    student_output: C05_L09_实际问题与一元一次方程二_学生学案.tex
+    status: pending
+    review_notes: "积分表和方案比较均强调模型意识，阅读材料融入本课。"
+  - id: C05-L10
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 10
+    lesson_title: 一元一次方程数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["阶梯计价问题", "木杆平衡实验"]
+    source_pages: [143, 144]
+    period_minutes: 45
+    content_scope: ["用一元一次方程研究阶梯计价", "用方程刻画实验中的平衡关系"]
+    key_points: ["方程模型活动应用", "实际问题中的变量和相等关系"]
+    difficulties: ["分段计价和实验关系的数学表达"]
+    prerequisites: ["5.3 实际问题与一元一次方程"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L10_一元一次方程数学活动_教学设计.tex
+    student_output: C05_L10_一元一次方程数学活动_学生学案.tex
+    status: pending
+    review_notes: "活动任务完整，独立设课。"
+  - id: C05-L11
+    chapter_id: C05
+    chapter_title: 第五章 一元一次方程
+    lesson_index_in_chapter: 11
+    lesson_title: 一元一次方程章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["小结", "复习题"]
+    source_pages: [145, 146, 147, 148]
+    period_minutes: 45
+    content_scope: ["复习方程概念和等式性质", "复习解一元一次方程", "复习实际问题建模"]
+    key_points: ["一元一次方程知识结构", "解方程和建模"]
+    difficulties: ["综合应用题中的相等关系和解的检验"]
+    prerequisites: ["第五章全部新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C05_L11_一元一次方程章末小结与复习_教学设计.tex
+    student_output: C05_L11_一元一次方程章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "章末小结与复习题独立设课。"
+  - id: C06-L01
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 1
+    lesson_title: 立体图形与平面图形
+    lesson_type: new_lesson
+    source_section: "6.1 几何图形"
+    source_subsections: ["6.1.1 立体图形与平面图形", "从不同方向看立体图形", "展开图"]
+    source_pages: [150, 151, 152, 153, 154]
+    period_minutes: 45
+    content_scope: ["认识立体图形和平面图形", "从不同方向观察立体图形", "认识展开图"]
+    key_points: ["立体图形和平面图形", "三视方向观察和展开图"]
+    difficulties: ["立体图形与平面图形之间的转化"]
+    prerequisites: ["小学几何图形经验"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L01_立体图形与平面图形_教学设计.tex
+    student_output: C06_L01_立体图形与平面图形_学生学案.tex
+    status: pending
+    review_notes: "观察和展开操作较多，需完整一课时。"
+  - id: C06-L02
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 2
+    lesson_title: 点线面体
+    lesson_type: new_lesson
+    source_section: "6.1 几何图形"
+    source_subsections: ["6.1.2 点、线、面、体", "图说数学史：几何的起源"]
+    source_pages: [155, 156, 157, 158, 159, 160, 161]
+    period_minutes: 45
+    content_scope: ["点、线、面、体的关系", "点动成线、线动成面、面动成体", "几何起源的数学文化"]
+    key_points: ["点、线、面、体", "图形构成元素"]
+    difficulties: ["从实际物体抽象出几何元素"]
+    prerequisites: ["立体图形与平面图形"]
+    integrated_columns: ["图说数学史：几何的起源"]
+    excluded_content: []
+    teacher_output: C06_L02_点线面体_教学设计.tex
+    student_output: C06_L02_点线面体_学生学案.tex
+    status: pending
+    review_notes: "图说数学史用于帮助理解几何源于现实测量和图形抽象，融入本课。"
+  - id: C06-L03
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 3
+    lesson_title: 直线射线线段
+    lesson_type: new_lesson
+    source_section: "6.2 直线、射线、线段"
+    source_subsections: ["6.2.1 直线、射线、线段"]
+    source_pages: [162, 163]
+    period_minutes: 45
+    content_scope: ["直线、射线、线段的概念和表示", "两点确定一条直线", "连接和延长"]
+    key_points: ["直线、射线、线段", "两点确定一条直线"]
+    difficulties: ["几何图形的符号表示和端点方向区别"]
+    prerequisites: ["点线面体", "小学线段经验"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L03_直线射线线段_教学设计.tex
+    student_output: C06_L03_直线射线线段_学生学案.tex
+    status: pending
+    review_notes: "基本概念和表示法是后续线段运算基础，独立设课。"
+  - id: C06-L04
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 4
+    lesson_title: 线段的比较与基本事实
+    lesson_type: new_lesson
+    source_section: "6.2 直线、射线、线段"
+    source_subsections: ["6.2.2 线段的比较与运算：比较", "两点之间线段最短"]
+    source_pages: [164, 165]
+    period_minutes: 45
+    content_scope: ["画一条线段等于已知线段", "比较线段长短", "两点之间线段最短", "两点间距离"]
+    key_points: ["线段比较", "两点之间线段最短"]
+    difficulties: ["尺规作图与线段比较方法的理解"]
+    prerequisites: ["直线、射线、线段"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L04_线段的比较与基本事实_教学设计.tex
+    student_output: C06_L04_线段的比较与基本事实_学生学案.tex
+    status: pending
+    review_notes: "比较和基本事实紧密相连，可合并。"
+  - id: C06-L05
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 5
+    lesson_title: 线段的运算与中点
+    lesson_type: new_lesson
+    source_section: "6.2 直线、射线、线段"
+    source_subsections: ["6.2.2 线段的比较与运算：线段运算", "线段中点", "阅读与思考：长度的测量"]
+    source_pages: [165, 166, 167, 168, 169]
+    period_minutes: 45
+    content_scope: ["线段和差", "线段中点和等分点", "长度测量拓展"]
+    key_points: ["线段的和差", "线段中点"]
+    difficulties: ["根据图形关系表示线段和差"]
+    prerequisites: ["线段比较", "两点间距离"]
+    integrated_columns: ["阅读与思考：长度的测量"]
+    excluded_content: []
+    teacher_output: C06_L05_线段的运算与中点_教学设计.tex
+    student_output: C06_L05_线段的运算与中点_学生学案.tex
+    status: pending
+    review_notes: "线段运算和中点需要作图与符号表达训练；阅读材料融入测量拓展。"
+  - id: C06-L06
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 6
+    lesson_title: 角的概念与度量
+    lesson_type: new_lesson
+    source_section: "6.3 角"
+    source_subsections: ["6.3.1 角的概念", "角的表示", "角的度量"]
+    source_pages: [170, 171, 172]
+    period_minutes: 45
+    content_scope: ["角的概念和表示", "角也可看作旋转形成", "度、分、秒与方向角"]
+    key_points: ["角的概念和表示", "角的度量单位"]
+    difficulties: ["角的不同表示方法和度分秒换算"]
+    prerequisites: ["射线", "小学角的初步认识"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L06_角的概念与度量_教学设计.tex
+    student_output: C06_L06_角的概念与度量_学生学案.tex
+    status: pending
+    review_notes: "角的概念、表示和度量构成完整入门课。"
+  - id: C06-L07
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 7
+    lesson_title: 角的比较与运算
+    lesson_type: new_lesson
+    source_section: "6.3 角"
+    source_subsections: ["6.3.2 角的比较与运算", "角平分线"]
+    source_pages: [173, 174, 175]
+    period_minutes: 45
+    content_scope: ["比较角的大小", "角的和差", "角平分线和等分线", "度分秒运算"]
+    key_points: ["角的比较", "角的和差与角平分线"]
+    difficulties: ["度分秒加减和角平分线关系"]
+    prerequisites: ["角的概念与度量", "线段比较与中点"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L07_角的比较与运算_教学设计.tex
+    student_output: C06_L07_角的比较与运算_学生学案.tex
+    status: pending
+    review_notes: "类比线段研究角，比较、运算和平分线联系紧密。"
+  - id: C06-L08
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 8
+    lesson_title: 余角和补角
+    lesson_type: new_lesson
+    source_section: "6.3 角"
+    source_subsections: ["6.3.3 余角和补角", "阅读与思考：角的度量"]
+    source_pages: [176, 177, 178, 179, 180, 181]
+    period_minutes: 45
+    content_scope: ["余角和补角", "利用余角补角解决角度问题", "角度量的历史拓展"]
+    key_points: ["余角", "补角"]
+    difficulties: ["结合图形识别互余、互补关系"]
+    prerequisites: ["角的比较与运算", "角平分线"]
+    integrated_columns: ["阅读与思考：角的度量"]
+    excluded_content: []
+    teacher_output: C06_L08_余角和补角_教学设计.tex
+    student_output: C06_L08_余角和补角_学生学案.tex
+    status: pending
+    review_notes: "余角补角题型变化较多，阅读材料融入文化拓展。"
+  - id: C06-L09
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 9
+    lesson_title: 几何图形数学活动
+    lesson_type: activity_lesson
+    source_section: "数学活动"
+    source_subsections: ["几何图形相关数学活动"]
+    source_pages: [182, 183]
+    period_minutes: 45
+    content_scope: ["通过活动巩固几何图形、线段和角", "动手操作与几何表达"]
+    key_points: ["几何活动探究", "图形关系表达"]
+    difficulties: ["从操作活动抽象几何关系"]
+    prerequisites: ["第六章几何图形、线段和角的基础内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L09_几何图形数学活动_教学设计.tex
+    student_output: C06_L09_几何图形数学活动_学生学案.tex
+    status: pending
+    review_notes: "数学活动独立设课。"
+  - id: C06-L10
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 10
+    lesson_title: 几何图形初步章末小结与复习
+    lesson_type: review_lesson
+    source_section: "小结"
+    source_subsections: ["小结", "复习题"]
+    source_pages: [184, 185, 186, 187, 188]
+    period_minutes: 45
+    content_scope: ["复习几何图形、直线射线线段和角", "梳理基本事实和几何表示"]
+    key_points: ["几何图形知识结构", "线段和角的综合"]
+    difficulties: ["图形语言、符号语言和文字语言的转换"]
+    prerequisites: ["第六章全部新授内容"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L10_几何图形初步章末小结与复习_教学设计.tex
+    student_output: C06_L10_几何图形初步章末小结与复习_学生学案.tex
+    status: pending
+    review_notes: "章末小结与复习题独立设课。"
+  - id: C06-L11
+    chapter_id: C06
+    chapter_title: 第六章 几何图形初步
+    lesson_index_in_chapter: 11
+    lesson_title: 设计学校田径运动会比赛场地
+    lesson_type: integrated_practice
+    source_section: "综合与实践"
+    source_subsections: ["设计学校田径运动会比赛场地"]
+    source_pages: [189, 190, 191, 192, 193]
+    period_minutes: 45
+    content_scope: ["用几何知识设计比赛场地", "综合运用长度、图形和比例意识", "表达设计方案"]
+    key_points: ["几何综合实践", "场地设计中的数学表达"]
+    difficulties: ["把实际设计约束转化为几何关系"]
+    prerequisites: ["第六章几何图形、线段和角", "基本测量经验"]
+    integrated_columns: []
+    excluded_content: []
+    teacher_output: C06_L11_设计学校田径运动会比赛场地_教学设计.tex
+    student_output: C06_L11_设计学校田径运动会比赛场地_学生学案.tex
+    status: pending
+    review_notes: "综合与实践内容跨页且任务完整，独立设课。"

@@ -1,0 +1,4 @@
+﻿lesson_id,title,v1_pages,v2_pages,v1_a4_portrait,v2_a4_portrait,v1_stages,v2_stages,v2_teacher_questions,v2_student_actions,v2_expected_responses,v2_design_intents,v2_minutes,v2_png_pages,reflection_blank,compile_warnings,overfull_boxes,compile_errors,background_sha256_match,status
+C01-L03,数轴,4,4,True,True,6,7,14,13,7,7,45,4,True,5,0,0,True,通过
+C05-L05,移项解一元一次方程,4,4,True,True,7,8,16,14,8,8,45,4,True,4,0,0,True,通过
+C06-L07,角的比较与运算,4,4,True,True,7,8,16,15,8,8,45,4,True,5,0,0,True,通过

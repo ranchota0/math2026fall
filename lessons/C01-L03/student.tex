@@ -1,0 +1,92 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+\usepackage{tex/course}
+\input{tex/commands.tex}
+
+\SetCourseDocType{学生学案}
+
+\begin{document}
+\CourseTitle{数轴}{C01-L03 学生学案}
+\StudentHeader
+
+\SectionTitle{学习目标}
+\ObjectiveList
+{我能说出数轴的三个基本要素。}
+{我能画数轴，并在数轴上表示给定的有理数。}
+{我能用数轴说明带有方向和距离的问题。}
+
+\SectionTitle{课前准备}
+准备直尺、铅笔。回顾：正数、负数和0分别可以表示什么意义？请写一个生活例子。
+\writeLines{2}
+
+\SectionTitle{情境导入}
+温度计上有0刻度，也有0以上和0以下的刻度。请思考：如果把温度计横放，它和一条直线刻度有什么相同之处？
+\writeLines{2}
+
+\SectionTitle{自主探究}
+\qitem{Q1}{一条直线要成为数轴，必须确定哪三个要素？请写在横线上。}
+\writeLines{2}
+
+\qitem{Q2}{读出下图中各点表示的数。}
+\begin{center}
+\NumberLine{-4.4}{4.6}{-4,-3,...,4}{
+  \foreach \x/\name in {-3/A,-1/B,2/C,4/D} {
+    \fill (\x,0) circle (2pt);
+    \node[above] at (\x,0.12) {\small \name};
+  }
+}
+\end{center}
+A：\makebox[0.12\linewidth]{\dotfill}\quad
+B：\makebox[0.12\linewidth]{\dotfill}\quad
+C：\makebox[0.12\linewidth]{\dotfill}\quad
+D：\makebox[0.12\linewidth]{\dotfill}
+
+\SectionTitle{合作交流}
+\qitem{Q3}{在下面的数轴上表示\(-4\)、\(-2.5\)、\(0\)、\(1.5\)、\(3\)。完成后与同伴互查：原点、方向、单位长度、点的位置是否一致。}
+\begin{center}
+\BlankNumberLine
+\end{center}
+\studentSpace[2]
+
+\SectionTitle{知识归纳}
+画数轴的步骤：
+\begin{enumerate}
+\item 画直线，确定\makebox[0.20\linewidth]{\dotfill}。
+\item 规定\makebox[0.20\linewidth]{\dotfill}。
+\item 选取\makebox[0.20\linewidth]{\dotfill}，并等距标刻度。
+\end{enumerate}
+
+\SectionTitle{例题研习}
+\qitem{Q4}{小明从校门口出发，向东走3米记作\(3\)，向西走2米可以怎样表示？请在数轴上标出这两个位置，并说出它们与原点的关系。}
+\begin{center}
+\NumberLine{-3.4}{3.6}{-3,-2,...,3}{}
+\end{center}
+\writeLines{2}
+
+\SectionTitle{当堂训练}
+\SubsectionTitle{基础}
+\qitem{Q5}{同学甲画的直线左边两个刻度间隔较短，右边两个刻度间隔较长。他能直接用这条线表示数轴吗？说明理由。}
+\SubsectionTitle{提高}
+\qitem{Q6}{请自选合适的单位长度，画数轴并表示\(-3\)、\(-\frac12\)、\(2.5\)。}
+\studentSpace[5]
+
+\SectionTitle{易错辨析}
+如果把\(-2.5\)画在\(-2\)和\(-1\)之间，问题出在哪里？
+\writeLines{2}
+
+\SectionTitle{分层提升}
+用数轴描述一次“先向右走4格，再向左走6格”的移动过程。你最后在原点的哪一侧？
+\writeLines{3}
+
+\SectionTitle{课堂小结}
+今天我学到的关键词：\makebox[0.72\linewidth]{\dotfill}
+\writeLines{2}
+
+\SectionTitle{自我评价}
+\CheckBoxLine{能说出数轴三要素}
+\CheckBoxLine{能规范画数轴}
+\CheckBoxLine{能表示分数和小数}
+
+\SectionTitle{课后作业}
+完成本节配套基础练习；另在生活中寻找一个类似数轴的实例，并说明它的原点、方向和单位长度。
+
+\end{document}

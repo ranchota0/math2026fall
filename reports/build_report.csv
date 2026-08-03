@@ -1,0 +1,5 @@
+﻿file,type,status,pdf_pages,compile_seconds,warnings,overfull_boxes,error_message,timestamp
+tests/smoke_student.tex,smoke_test,success,2,0.571,0,0,,2026-07-11T21:55:00
+tests/smoke_teacher.tex,smoke_test,success,2,0.537,0,0,,2026-07-11T21:55:00
+build/sample/SAMPLE-L01_student.tex,sample,success,1,0.65,0,0,,2026-07-11T21:55:01
+build/sample/SAMPLE-L01_teacher.tex,sample,success,1,0.563,0,0,,2026-07-11T21:55:02

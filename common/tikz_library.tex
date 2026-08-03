@@ -1,0 +1,29 @@
+% TikZ styles for number lines, coordinate systems, and geometry diagrams.
+
+\usetikzlibrary{arrows.meta,calc,intersections,positioning}
+
+\tikzset{
+  number line/.style={
+    -{Stealth[length=2.4mm]},
+    line width=0.8pt
+  },
+  number tick/.style={
+    line width=0.7pt
+  },
+  coordinate axis/.style={
+    -{Stealth[length=2.4mm]},
+    line width=0.8pt
+  },
+  grid line/.style={
+    line width=0.3pt,
+    draw=gray!45
+  },
+  geometry line/.style={
+    line width=0.8pt
+  },
+  point mark/.style={
+    circle,
+    fill=black,
+    inner sep=1.2pt
+  }
+}

@@ -1,0 +1,116 @@
+version: 1
+status: frozen_phase6_1_pending_batch_confirmation
+lesson_duration: 45
+page_count: 4
+page_size: A4_portrait
+background_template: templates/lessonplan/hepingjie_blank.pdf
+reflection_mode: blank
+
+tone:
+  concise: true
+  classroom_ready: true
+  avoid_academic_jargon: true
+  use_question_driven_flow: true
+  use_executable_teacher_language: true
+
+objectives:
+  min_items: 3
+  max_items: 4
+  observable_verbs:
+    - 说出
+    - 画出
+    - 判断
+    - 计算
+    - 说明
+    - 归纳
+    - 解决
+  avoid:
+    - 掌握并深刻理解
+    - 培养综合素养
+    - 提高数学思维能力
+
+process:
+  min_stages: 6
+  max_stages: 8
+  preferred_sequence:
+    - 复习或情境引入
+    - 新知探究
+    - 例题示范
+    - 对应练习
+    - 归纳提升
+    - 当堂检测
+    - 课堂总结
+    - 作业布置
+  require_teacher_questions: true
+  require_teacher_actions: true
+  require_expected_student_response: true
+  require_student_task: true
+  require_minutes: true
+  require_design_intent: true
+  design_intent_max_items: 2
+  design_intent_max_sentences: 2
+
+example_practice:
+  pattern: 例题-练习-归纳
+  max_continuous_examples_without_practice: 1
+  require_solution_key_steps: true
+  require_correction_strategy: true
+  keep_student_answer_separate_from_prompt: true
+
+board:
+  require_title: true
+  require_core_definition_or_rule: true
+  require_method_flow: true
+  require_error_warning: true
+  handwriting_friendly: true
+
+summary:
+  use_reflective_questions: true
+  max_questions: 4
+  preferred_questions:
+    - 本节研究了什么问题？
+    - 经历了怎样的过程？
+    - 得到了什么方法或结论？
+    - 哪一步最容易出错？
+
+homework:
+  use_tiered_tasks: true
+  levels:
+    - 基础巩固
+    - 提升思考
+  keep_within_textbook_scope: true
+
+layout:
+  first_page:
+    objectives_items: 3-4
+    key_points_items: 1
+    difficulties_items: 1
+    methods_items: 2-3
+    board_lines_max: 6
+  process_pages: [2, 3, 4]
+  process_stage_count: 6-8
+  body_font_minimum: 五号
+  reserve_reflection_area: true
+  forbid_fifth_page: true
+  forbid_background_redraw: true
+
+forbidden_patterns:
+  - 空白学生活动
+  - 空白估时
+  - 重复编号
+  - 错别字照搬
+  - 重点难点完全相同
+  - 只写教师讲解
+  - 答案直接填入题干空格
+  - 预先虚构课后反思
+  - 将初三题目或难度迁移到初一
+
+validation:
+  require_total_minutes: 45
+  require_exact_page_count: 4
+  require_a4_portrait: true
+  require_blank_reflection: true
+  require_rendered_png_count: 4
+  reject_latex_errors: true
+  reject_overfull_boxes: true
+  require_manual_render_review: true

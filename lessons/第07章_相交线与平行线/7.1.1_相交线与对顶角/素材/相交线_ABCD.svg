@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="white"/>
+  <g stroke="#334155" stroke-width="6" stroke-linecap="round">
+    <line x1="100" y1="215" x2="700" y2="215"/>
+    <line x1="175" y1="355" x2="625" y2="75"/>
+  </g>
+  <g fill="#0f766e" font-family="Arial, Noto Sans SC" font-size="34" font-weight="700">
+    <text x="70" y="205">A</text><text x="714" y="205">B</text>
+    <text x="148" y="385">C</text><text x="634" y="68">D</text>
+    <text x="410" y="252">O</text>
+  </g>
+  <g fill="none" stroke="#10B981" stroke-width="8">
+    <path d="M 355 215 A 55 55 0 0 1 376 169"/>
+    <path d="M 445 215 A 55 55 0 0 1 424 261"/>
+  </g>
+  <g fill="none" stroke="#F97316" stroke-width="8">
+    <path d="M 376 169 A 55 55 0 0 1 445 215"/>
+    <path d="M 424 261 A 55 55 0 0 1 355 215"/>
+  </g>
+</svg>

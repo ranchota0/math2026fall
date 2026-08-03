@@ -1,0 +1,80 @@
+{#-
+  Student worksheet template.
+  Required variables:
+  - lesson.id
+  - lesson.lesson_title
+  - lesson.chapter_title
+  - lesson.source_section
+  - lesson.period_minutes
+  - preamble_path
+  - commands_path
+  - tikz_library_path
+  - content_path
+-#}
+\input{ {{- preamble_path -}} }
+\input{ {{- commands_path -}} }
+\input{ {{- tikz_library_path -}} }
+
+\begin{document}
+
+\lessonTitle{ {{ lesson.lesson_title }} }{学生配套学案 \quad {{ lesson.period_minutes }} 分钟}
+
+\sectionTitle{学习目标}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{课前准备}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{情境导入}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{自主探究}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{合作交流}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{知识归纳}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{例题研习}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{当堂训练}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{易错辨析}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{分层提升}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{课堂小结}
+\placeholderText{本节内容待正式编写。}
+\studentSpace[2]
+
+\sectionTitle{自我评价}
+\begin{tabularx}{\linewidth}{|X|c|c|c|}
+\hline
+项目 & 已掌握 & 需巩固 & 仍有疑问 \\
+\hline
+学习目标达成情况 & & & \\
+\hline
+课堂参与情况 & & & \\
+\hline
+\end{tabularx}
+
+\sectionTitle{课后作业}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{内容占位}
+\input{ {{- content_path -}} }
+
+\end{document}

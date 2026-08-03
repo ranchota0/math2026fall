@@ -1,0 +1,78 @@
+{#-
+  Teacher lesson template.
+  Required variables:
+  - lesson.id
+  - lesson.lesson_title
+  - lesson.chapter_title
+  - lesson.source_section
+  - lesson.period_minutes
+  - preamble_path
+  - commands_path
+  - tikz_library_path
+  - content_path
+-#}
+\input{ {{- preamble_path -}} }
+\input{ {{- commands_path -}} }
+\input{ {{- tikz_library_path -}} }
+
+\begin{document}
+
+\lessonTitle{ {{ lesson.lesson_title }} }{教师教学设计 \quad {{ lesson.period_minutes }} 分钟}
+
+\sectionTitle{课题与课时}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{0.22\linewidth}X}
+课时编号 & {{ lesson.id }} \\
+章节 & {{ lesson.chapter_title }} \\
+教材小节 & {{ lesson.source_section }} \\
+课时 & {{ lesson.period_minutes }} 分钟 \\
+\end{tabularx}
+
+\sectionTitle{教材分析}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{学情分析}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学目标}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学重点与难点}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学方法及教学手段}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学准备}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学流程}
+\begin{longtable}{|p{0.12\linewidth}|p{0.18\linewidth}|p{0.18\linewidth}|p{0.18\linewidth}|p{0.10\linewidth}|p{0.12\linewidth}|}
+\hline
+教学环节 & 教师活动 & 学生活动 & 设计意图 & 预计时间 & 评价方式 \\
+\hline
+\placeholderText{待编写} & \placeholderText{待编写} & \placeholderText{待编写} & \placeholderText{待编写} & \placeholderText{待定} & \placeholderText{待定} \\
+\hline
+\end{longtable}
+
+\sectionTitle{典型例题}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{易错点与纠错策略}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{分层练习及答案}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{板书设计}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{作业设计}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{教学反思预设}
+\placeholderText{本节内容待正式编写。}
+
+\sectionTitle{内容占位}
+\input{ {{- content_path -}} }
+
+\end{document}

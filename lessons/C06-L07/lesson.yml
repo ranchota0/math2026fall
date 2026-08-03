@@ -1,0 +1,21 @@
+lesson_id: C06-L07
+chapter: 第六章 几何图形初步
+section: "6.3 角"
+lesson_title: 角的比较与运算
+lesson_type: new_lesson
+textbook_page_start: 173
+textbook_page_end: 175
+period_minutes: 45
+prerequisite:
+  - 理解角的概念和表示方法
+  - 会用度、分、秒度量角
+  - 了解线段比较、线段和差与线段中点
+learning_objectives:
+  - 会比较角的大小，并能用角的和、差表示图形中的角。
+  - 会进行简单的度分角度加减运算。
+  - 理解角平分线的意义，并能结合图形进行说理。
+teacher_output: C06_L07_角的比较与运算_教学设计.tex
+student_output: C06_L07_角的比较与运算_学生学案.tex
+source_pdf: references/textbook.pdf
+source_pages: [173, 174, 175]
+manual_review_status: pending

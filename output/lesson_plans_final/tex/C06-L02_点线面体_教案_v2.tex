@@ -1,0 +1,56 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+\setCJKmainfont[BoldFont={LXGW Neo XiHei}]{LXGW Neo ZhiSong}
+\setCJKsansfont[AutoFakeBold=2]{LXGW Neo XiHei}
+\setCJKmonofont{LXGW Neo XiHei}
+\setCJKfamilyfont{zhhei}[AutoFakeBold=2]{LXGW Neo XiHei}
+\providecommand{\heiti}{\CJKfamily{zhhei}}
+\input{tex/lessonplan/hepingjie_render.tex}
+\usetikzlibrary{calc}
+\begin{document}
+
+\LPBackgroundPage{1}{
+  \LPCenterBox{\LPDateYearX}{\LPDateY}{12mm}{5mm}{}
+  \LPCenterBox{\LPDateMonthX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPDateDayX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPRecordPageX}{\LPRecordPageY}{10mm}{5mm}{1}
+  \LPHeaderCell{\LPTopicX}{\LPTopicY}{\LPTopicW}{8mm}{点线面体}
+  \LPHeaderCell{\LPTypeX}{\LPTypeY}{\LPTypeW}{8mm}{几何探究课}
+  \LPCenterBox{\LPUnitTotalX}{\LPUnitTotalY}{12mm}{5mm}{11}
+  \LPCenterBox{\LPTopicTotalX}{\LPTopicTotalY}{12mm}{5mm}{2}
+  \LPCenterBox{\LPCurrentPeriodX}{\LPCurrentPeriodY}{12mm}{5mm}{2}
+  \LPTextBox{\LPBodyX}{\LPObjectiveY}{\LPBodyW}{\LPObjectiveH}{\LPPlainLine{说出并解释点、线、面、体的关系，使用本节规范术语表达。}\LPPlainLine{按规范步骤完成点、线、面、体，并说明关键依据。}\LPPlainLine{判断并订正与“从实际物体抽象出几何元素”有关的常见错误。}\LPPlainLine{在变式或实际情境中运用本节方法，完整写出过程和结论。}}
+  \LPTextBox{\LPBodyX}{\LPKeyPointY}{\LPBodyW}{\LPKeyPointH}{点、线、面、体；图形构成元素}
+  \LPTextBox{\LPBodyX}{\LPDifficultyY}{\LPBodyW}{\LPDifficultyH}{从实际物体抽象出几何元素}
+  \LPTextBox{\LPBodyX}{\LPMethodY}{\LPBodyW}{\LPMethodH}{观察操作；画图标注；图形说理}
+  \LPTextBox{\LPBodyX}{\LPMediaY}{\LPBodyW}{\LPMediaH}{PPT；黑板；反馈卡；直尺；量角器或透明纸}
+  \LPTextBox{\LPBodyX}{\LPBlackboardY}{\LPBodyW}{\LPBlackboardH}{\LPBoardTitle{点线面体}\LPBoardLine{1}{核心：体由面围成，面与面相交成线，线与线相交成点；它们也可由运动生成。}\LPBoardLine{2}{方法：从实物抽象基本元素，再用相交和运动解释图形生成。}\LPBoardLine{3}{例题：指出长方体中的点、线、面、体。 答：顶点体现点，棱体现线，表面体现面，整体是体。}\LPBoardLine{4}{易错：错说：几何中的点有实际大小。 纠正：错误；几何点只表示位置，不计大小。}\LPBoardLine{5}{检查：条件、依据、步骤、符号或单位逐项核对。}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{观察与操作}{\LPTeacherPart{问题}{笔尖移动形成什么，线移动又可能形成什么？}\LPTeacherPart{组织}{出示题目或情境，先让学生独立判断，再请两名学生说明依据。}\LPTeacherPart{说明}{点运动成线，线运动成面，面运动成体。}\LPTeacherPart{纠错}{若学生只报结论，追问基准、条件或运算依据，要求补成完整句。}\LPTeacherPart{归纳}{把情境中的信息转化为数学对象和关系。}\LPTeacherPart{意图}{用具体问题激活先修经验，并明确本节需要解决的核心矛盾。}}{\LPStudentPart{活动}{独立观察或计算，圈出关键信息后口头说明。}\LPStudentPart{预期}{点运动成线，线运动成面，面运动成体。}}{5}
+\LPProcessRow{概念形成}{\LPTeacherPart{问题}{点、线、面、体之间有什么关系？}\LPTeacherPart{组织}{组织观察、比较或试算，板书学生给出的共同点，并逐项核对术语。}\LPTeacherPart{说明}{体由面围成，面与面相交成线，线与线相交成点；它们也可由运动生成。}\LPFigureBlock{
+\begin{tikzpicture}[scale=.72,baseline=(current bounding box.center)]
+  \coordinate(A)at(0,0);\coordinate(B)at(3,0);\coordinate(C)at(3,2);\coordinate(D)at(0,2);
+  \coordinate(E)at(.7,.7);\coordinate(F)at(3.7,.7);\coordinate(G)at(3.7,2.7);\coordinate(H)at(.7,2.7);
+  \draw (A)--(B)--(C)--(D)--cycle (E)--(F)--(G)--(H)--cycle;
+  \foreach \p/\q in {A/E,B/F,C/G,D/H}{\draw (\p)--(\q);}
+  \fill (A)circle(1.6pt) node[below left]{$A$};
+  \node[below] at (1.5,0){\scriptsize 线}; \node at (2.6,1.5){\scriptsize 面};
+  \node[right] at (4.2,1.4){\scriptsize 体由面围成，面交成线，线交成点};
+\end{tikzpicture}
+}\LPTeacherPart{例题}{基础例题：指出长方体中的点、线、面、体。 规范解答：顶点体现点，棱体现线，表面体现面，整体是体。}\LPTeacherPart{对应练习}{即时练习：线与线相交一定形成几个点？ 答案：在本课典型情形中相交于一点；还要结合具体位置。}\LPTeacherPart{纠错}{用反例检查是否真正满足条件，提醒按“从实物抽象基本元素，再用相交和运动解释图形生成”说明。}\LPTeacherPart{归纳}{从实物抽象基本元素，再用相交和运动解释图形生成}\LPTeacherPart{意图}{让核心结论由可检验的观察或运算形成，而不是直接记忆。}}{\LPStudentPart{活动}{在图形、算式或表格中标注条件，与同桌归纳共同特征。}\LPStudentPart{预期}{体由面围成，面与面相交成线，线与线相交成点；它们也可由运动生成。}}{7}
+\LPProcessRow{图形表示}{\LPTeacherPart{问题}{解答“圆柱的侧面与底面相交形成什么？”前应先确定什么？}\LPTeacherPart{组织}{教师按题意、依据、步骤和结论顺序板演；学生在每一步旁标注作用。}\LPTeacherPart{说明}{规范解答：形成两条圆形曲线。}\LPTeacherPart{例题}{变式例题：圆柱的侧面与底面相交形成什么？ 解答：形成两条圆形曲线。}\LPTeacherPart{对应练习}{对应练习：面运动一定形成体吗？ 答案：按一定方向连续运动可形成体，如长方形平移成柱体。}\LPTeacherPart{纠错}{若一步跳到结论，要求补写关键关系或中间步骤，并用原题条件检验。}\LPTeacherPart{归纳}{解题流程：从实物抽象基本元素，再用相交和运动解释图形生成。}\LPTeacherPart{意图}{用完整例题建立可模仿的书写顺序和检查方法。}}{\LPStudentPart{活动}{先独立完成，再与板演对照步骤、符号、单位或图形标记。}\LPStudentPart{预期}{能得到 形成两条圆形曲线。，并说出关键依据。}}{7}}
+}
+
+\LPBackgroundPage{3}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{关系应用}{\LPTeacherPart{问题}{把一枚硬币绕直径旋转，想象形成的立体并说明生成过程。}\LPTeacherPart{组织}{要求学生先写条件关系或示意，再完成计算并解释结果；抽取两种方法比较。}\LPTeacherPart{说明}{圆面绕直径旋转可形成球体。}\LPTeacherPart{例题}{应用例题：把一枚硬币绕直径旋转，想象形成的立体并说明生成过程。 解答：圆面绕直径旋转可形成球体。}\LPTeacherPart{对应练习}{即时变式：举出曲线和曲面的实例。 答案：如圆周是曲线，球面是曲面。}\LPTeacherPart{纠错}{若答案脱离条件或单位，要求回到题干逐项对应并作合理性检查。}\LPTeacherPart{归纳}{先识别结构，再选择方法，最后解释结果。}\LPTeacherPart{意图}{把核心方法迁移到不同表示方式或实际情境中。}}{\LPStudentPart{活动}{独立列式或作图，小组内互查条件、步骤和答语。}\LPStudentPart{预期}{圆面绕直径旋转可形成球体。}}{6}
+\LPProcessRow{条件辨析}{\LPTeacherPart{问题}{错说：几何中的点有实际大小。}\LPTeacherPart{组织}{展示错解，要求学生只圈第一处错误，写出依据后再完整订正。}\LPTeacherPart{说明}{错误；几何点只表示位置，不计大小。}\LPTeacherPart{例题}{易错辨析：错说：几何中的点有实际大小。}\LPTeacherPart{对应练习}{纠错要求：写出第一处错误，并按“从实物抽象基本元素，再用相交和运动解释图形生成”重做。参考：错误；几何点只表示位置，不计大小。}\LPTeacherPart{纠错}{不接受只写“错”或只改答案；必须指出错误对象、正确规则和订正过程。}\LPTeacherPart{归纳}{纠错顺序：定位错误、说明依据、规范订正、回题检验。}\LPTeacherPart{意图}{利用典型错误暴露概念边界、符号习惯或条件遗漏。}}{\LPStudentPart{活动}{独立找错、写依据、完成订正，再与同桌互评理由是否完整。}\LPStudentPart{预期}{错误；几何点只表示位置，不计大小。}}{5}
+\LPProcessRow{综合探究}{\LPTeacherPart{问题}{三道练习分别考查哪个要点，先做哪一道能最快暴露问题？}\LPTeacherPart{组织}{组织限时题组：①线与线相交一定形成几个点？ ②面运动一定形成体吗？ ③举出曲线和曲面的实例。；完成后按答案自查。}\LPTeacherPart{说明}{答案：①在本课典型情形中相交于一点；还要结合具体位置。 ②按一定方向连续运动可形成体，如长方形平移成柱体。 ③如圆周是曲线，球面是曲面。}\LPTeacherPart{对应练习}{机动题：指出长方体中的点、线、面、体。 学有余力者换一种方法说明；答案要点：顶点体现点，棱体现线，表面体现面，整体是体。}\LPTeacherPart{纠错}{正确率低于 70\% 时暂停机动题，按核心方法示范一道，再让学生订正同类错题。}\LPTeacherPart{归纳}{从实物抽象基本元素，再用相交和运动解释图形生成}\LPTeacherPart{意图}{集中检查方法稳定性，并为反馈测试前的即时补救提供依据。}}{\LPStudentPart{活动}{限时完成三题，按概念、步骤或应用给错因分类，并订正一题。}\LPStudentPart{预期}{能够依据“从实物抽象基本元素，再用相交和运动解释图形生成”完成题组并说清错因。}}{5}}
+}
+
+\LPBackgroundPage{4}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessPageFourH}{\LPProcessRow{当堂检测}{\LPTeacherPart{问题}{四道反馈题中，哪一题最能检验本节核心方法？}\LPTeacherPart{组织}{投放 10 分反馈卡：①2 分，点、线、面、体之间有什么关系？ ②2 分，面运动一定形成体吗？ ③2 分，错说：几何中的点有实际大小。 ④4 分，把一枚硬币绕直径旋转，想象形成的立体并说明生成过程。}\LPTeacherPart{说明}{参考答案：①体由面围成，面与面相交成线，线与线相交成点；它们也可由运动生成。 ②按一定方向连续运动可形成体，如长方形平移成柱体。 ③错误；几何点只表示位置，不计大小。 ④圆面绕直径旋转可形成球体。}\LPTeacherPart{纠错}{公布答案后学生自评并举牌统计：9 分及以上完成提高任务；7—8 分订正；7 分以下接受针对性补练。}\LPTeacherPart{归纳}{达标标准：10 分制 9 分及以上完全达标，7—8 分基本达标，7 分以下补练。}\LPTeacherPart{意图}{用概念、技能、纠错和综合四类任务覆盖本节目标。}}{\LPStudentPart{活动}{独立完成，按答案自评；把错误标为概念、步骤、条件或表达问题。}\LPStudentPart{预期}{能完成四类题并用核心术语说明至少一道题的依据。}}{6}
+\LPProcessRow{回顾总结与作业}{\LPTeacherPart{问题}{本节研究了什么、关键步骤是什么、最容易错在哪里？}\LPTeacherPart{组织}{请学生各用一句话回答三个问题，教师据此补全板书并布置分层作业。}\LPTeacherPart{说明}{A 组：①线与线相交一定形成几个点？ ②面运动一定形成体吗？ ③举出曲线和曲面的实例。 ④错说：几何中的点有实际大小。；答案：①在本课典型情形中相交于一点；还要结合具体位置。 ②按一定方向连续运动可形成体，如长方形平移成柱体。 ③如圆周是曲线，球面是曲面。 ④错误；几何点只表示位置，不计大小。。B 组：①圆柱的侧面与底面相交形成什么？ ②把一枚硬币绕直径旋转，想象形成的立体并说明生成过程。；答案要点：①形成两条圆形曲线。 ②圆面绕直径旋转可形成球体。。C 组选做：围绕“点线面体”自编一道含易错条件的题并给出解答与检查方法。}\LPTeacherPart{纠错}{作业答案必须包含必要步骤或依据；只写结果的题次日先口述方法再补写。}\LPTeacherPart{归纳}{核心方法：从实物抽象基本元素，再用相交和运动解释图形生成。课后反思区域由任课教师课后填写。}\LPTeacherPart{意图}{由学生完成结构化回顾，把课堂方法迁移到分层课后任务。}}{\LPStudentPart{活动}{说出一个结论、一个步骤和一个易错点，记录 A、B、C 三组作业。}\LPStudentPart{预期}{能用“从实物抽象基本元素，再用相交和运动解释图形生成”概括本节方法，并知道如何自查。}}{4}}
+}
+\end{document}

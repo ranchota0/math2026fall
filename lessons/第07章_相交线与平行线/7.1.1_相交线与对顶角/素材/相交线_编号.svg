@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="white"/>
+  <g stroke="#334155" stroke-width="6" stroke-linecap="round">
+    <line x1="90" y1="210" x2="710" y2="210"/>
+    <line x1="170" y1="350" x2="630" y2="70"/>
+  </g>
+  <g fill="#475569" font-family="Arial, Noto Sans SC" font-size="30" font-style="italic">
+    <text x="60" y="200">a</text><text x="638" y="62">b</text><text x="410" y="247">O</text>
+  </g>
+  <g font-family="Arial" font-size="38" font-weight="700">
+    <text x="332" y="194" fill="#10B981">1</text>
+    <text x="407" y="154" fill="#F97316">2</text>
+    <text x="468" y="238" fill="#10B981">3</text>
+    <text x="389" y="292" fill="#F97316">4</text>
+  </g>
+  <g fill="none" stroke-width="8">
+    <path d="M 348 210 A 52 52 0 0 1 371 167" stroke="#10B981"/>
+    <path d="M 371 167 A 52 52 0 0 1 452 210" stroke="#F97316"/>
+    <path d="M 452 210 A 52 52 0 0 1 429 253" stroke="#10B981"/>
+    <path d="M 429 253 A 52 52 0 0 1 348 210" stroke="#F97316"/>
+  </g>
+</svg>

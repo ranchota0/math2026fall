@@ -1,0 +1,102 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tex/course}[2026/07/12 Math 7A course style]
+
+\RequirePackage[a4paper,left=20mm,right=20mm,top=22mm,bottom=22mm,headheight=15pt]{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{longtable}
+\RequirePackage{enumitem}
+\RequirePackage{tikz}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{xcolor}
+
+\usetikzlibrary{arrows.meta,calc,angles,quotes,positioning}
+
+\definecolor{CourseBlue}{RGB}{22,83,126}
+\definecolor{CourseGray}{gray}{0.25}
+\definecolor{CourseLight}{gray}{0.92}
+
+\linespread{1.16}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlength{\tabcolsep}{4pt}
+\setlist{nosep,leftmargin=2em}
+\emergencystretch=2em
+\sloppy
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{人教版七年级数学上册}
+\fancyhead[R]{\CourseDocType}
+\fancyfoot[C]{第 \thepage 页 / 共 \pageref{LastPage} 页}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\CourseDocType}{教学资源}
+\newcommand{\SetCourseDocType}[1]{\renewcommand{\CourseDocType}{#1}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand{\CourseTitle}[2]{%
+  \begin{center}
+    {\Large\bfseries #1}\\[0.35em]
+    {\normalsize #2}
+  \end{center}
+  \markboth{#1}{#1}
+}
+
+\newcommand{\SectionTitle}[1]{%
+  \section*{\color{CourseBlue}#1}
+  \addcontentsline{toc}{section}{#1}
+}
+
+\newcommand{\SubsectionTitle}[1]{%
+  \subsection*{\color{CourseGray}#1}
+}
+
+\newcommand{\InfoRow}[2]{\textbf{#1} & #2 \\}
+
+\newenvironment{InfoTable}
+  {\noindent\begin{tabular}{@{}p{0.22\linewidth}p{0.72\linewidth}@{}}}
+  {\end{tabular}}
+
+\newenvironment{FlowTable}
+  {\small\begin{longtable}{|L{0.13\linewidth}|L{0.25\linewidth}|L{0.21\linewidth}|L{0.25\linewidth}|C{0.08\linewidth}|}\hline
+  教学环节 & 教师活动 & 学生活动 & 设计意图 & 用时\\ \hline}
+  {\end{longtable}\normalsize}
+
+\newcommand{\flowrow}[5]{#1 & #2 & #3 & #4 & #5\\ \hline}
+
+\newcommand{\qitem}[2]{%
+  \par\noindent\textbf{#1.} #2\par
+}
+
+\newcommand{\answer}[2]{%
+  \par\noindent\textbf{#1.} #2\par
+}
+
+\newcommand{\studentSpace}[1][2]{\par\vspace{#1\baselineskip}}
+\newcommand{\writeLine}{\par\noindent\makebox[\linewidth]{\dotfill}\par}
+\newcommand{\writeLines}[1]{\par\foreach \n in {1,...,#1}{\noindent\makebox[\linewidth]{\dotfill}\par}}
+
+\newcommand{\Hint}[1]{\par\noindent{\bfseries 提示：}#1\par}
+\newcommand{\TeacherOnly}[1]{\par\noindent{\bfseries 教师说明：}#1\par}
+
+\newenvironment{PracticeTable}
+  {\small\begin{tabularx}{\linewidth}{|L{0.12\linewidth}|Y|L{0.20\linewidth}|}\hline 层次 & 任务 & 目标\\ \hline}
+  {\end{tabularx}\normalsize}
+
+\newcommand{\PracticeRow}[3]{#1 & #2 & #3\\ \hline}
+
+\tikzset{
+  course axis/.style={-{Stealth[length=2.4mm]}, line width=0.75pt},
+  course line/.style={line width=0.8pt},
+  course helper/.style={line width=0.45pt, dashed},
+  course point/.style={circle, fill=black, inner sep=1.2pt},
+  angle mark/.style={draw=CourseBlue, line width=0.7pt}
+}

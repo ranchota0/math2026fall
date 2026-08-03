@@ -1,0 +1,15 @@
+id: SAMPLE-L01
+sample: true
+not_for_teaching: true
+chapter_id: SAMPLE
+chapter_title: 示例章节
+source_section: 示例小节
+lesson_title: 示例课时
+source_pages: []
+period_minutes: 45
+teacher_output: ""
+student_output: ""
+key_points: []
+difficulties: []
+prerequisites: []
+status: sample_only

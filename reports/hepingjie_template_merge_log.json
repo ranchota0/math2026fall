@@ -1,0 +1,55 @@
+{
+  "zip": "C:\\Users\\RanchoTao\\Downloads\\hepingjie_lessonplan_template_package.zip",
+  "timestamp": "2026-07-19T21:47:49",
+  "records": [
+    {
+      "source": "hepingjie_lessonplan_package/tex/hepingjie_lessonplan.cls",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\tex\\hepingjie_lessonplan.cls",
+      "status": "extracted",
+      "bytes": 6446
+    },
+    {
+      "source": "hepingjie_lessonplan_package/templates/hepingjie_lessonplan/blank.tex",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\templates\\hepingjie_lessonplan\\blank.tex",
+      "status": "extracted",
+      "bytes": 957
+    },
+    {
+      "source": "hepingjie_lessonplan_package/templates/hepingjie_lessonplan/example.tex",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\templates\\hepingjie_lessonplan\\example.tex",
+      "status": "extracted",
+      "bytes": 2440
+    },
+    {
+      "source": "hepingjie_lessonplan_package/templates/hepingjie_lessonplan/README.md",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\templates\\hepingjie_lessonplan\\README.md",
+      "status": "extracted",
+      "bytes": 2297
+    },
+    {
+      "source": "hepingjie_lessonplan_package/dist/templates/hepingjie_lessonplan_blank.pdf",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\dist\\templates\\hepingjie_lessonplan_blank.pdf",
+      "status": "extracted",
+      "bytes": 19748
+    },
+    {
+      "source": "hepingjie_lessonplan_package/dist/templates/hepingjie_lessonplan_example.pdf",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\dist\\templates\\hepingjie_lessonplan_example.pdf",
+      "status": "extracted",
+      "bytes": 80489
+    },
+    {
+      "source": "hepingjie_lessonplan_package/scripts/compile_hepingjie_lessonplans.py",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\scripts\\compile_hepingjie_lessonplans.py",
+      "status": "extracted",
+      "bytes": 2373
+    },
+    {
+      "source": "hepingjie_lessonplan_package/INTEGRATE_WITH_CODEX.md",
+      "target": "C:\\Users\\RanchoTao\\Desktop\\郭立华2026秋数学\\INTEGRATE_WITH_CODEX.md",
+      "status": "extracted",
+      "bytes": 1256
+    }
+  ],
+  "blocked": []
+}

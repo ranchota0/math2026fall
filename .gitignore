@@ -1,0 +1,65 @@
+# Build outputs
+build/
+logs/
+dist/pdf/
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fls
+*.fdb_latexmk
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+~$*
+*.swp
+*.tmp
+
+# Keep source and review artifacts tracked by default:
+# dist/tex/
+# reports/
+# config/
+# templates/
+# lessons/
+# references/README.md
+# references/source_info.md
+
+# Official textbook binaries are reproducible downloads and must not enter version control.
+# Keep the adjacent metadata JSON and download reports tracked.
+references/textbooks/**/*.pdf
+/references/textbook.pdf
+/义务教育教科书*.pdf
+
+# Local browser/download state and sensitive authentication artifacts.
+temp/
+browser-profile/
+downloads/
+logs/*sensitive*
+*.cookie
+*.token
+
+# Historical safety copies are local-only and duplicate the tracked deliverables.
+backup/

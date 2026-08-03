@@ -1,0 +1,126 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{hepingjie_lessonplan}[2026/07/19 PDF overlay lesson-plan renderer]
+
+\RequirePackage{geometry}
+\RequirePackage{pdfpages}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{enumitem}
+\RequirePackage{amsmath}
+\RequirePackage{xcolor}
+
+\geometry{a4paper,margin=0mm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{5pt}
+
+\newcommand{\LPFieldFont}{\fontsize{10.5pt}{12.5pt}\selectfont}
+\newcommand{\LPBodyFont}{\fontsize{10.5pt}{13pt}\selectfont}
+\newcommand{\LPSmallFont}{\fontsize{9.5pt}{12pt}\selectfont}
+
+\newcommand{\LPTextBox}[5]{%
+  \node[anchor=north west,inner xsep=1.8mm,inner ysep=0.7mm,
+        text width=\dimexpr#3-3.6mm\relax,align=left]
+    at ([xshift=#1,yshift=-#2]current page.north west)
+    {{\LPBodyFont #5}};%
+}
+
+\newcommand{\LPHeaderCell}[5]{%
+  \node[anchor=north west,inner xsep=1.8mm,inner ysep=0.7mm,
+        text width=\dimexpr#3-3.6mm\relax,minimum height=#4,align=left]
+    at ([xshift=#1,yshift=-#2]current page.north west)
+    {{\LPFieldFont\raggedright\strut #5\par}};%
+}
+
+\newcommand{\LPCenterBox}[5]{%
+  \node[anchor=north west,inner sep=0pt,text width=#3,align=center]
+    at ([xshift=#1,yshift=-#2]current page.north west)
+    {{\LPFieldFont #5}};%
+}
+
+\newcommand{\LPBackgroundPage}[2]{%
+  \AddToShipoutPictureFG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      #2
+    \end{tikzpicture}%
+  }%
+  \includepdf[pages=#1,fitpaper=true,pagecommand={}]{\LPBackgroundPdf}%
+}
+
+\newcommand{\LPPlainLine}[1]{%
+  \noindent\strut #1\par\vspace{0.65mm}%
+}
+
+\newcommand{\LPBoardTitle}[1]{%
+  \noindent{\heiti #1}\par\vspace{0.7mm}%
+}
+
+\newcommand{\LPBoardLine}[2]{%
+  \noindent #1.\enspace #2\par\vspace{0.55mm}%
+}
+
+\newcommand{\LPTeacherPart}[2]{%
+  {\heiti #1：}#2\hspace{0.8em}%
+}
+
+\newcommand{\LPStudentPart}[2]{%
+  {\heiti #1：}#2\par\vspace{0.2mm}%
+}
+
+\newcommand{\LPTeacherActivityCell}[1]{%
+  \begingroup
+  \setlength{\parindent}{0pt}%
+  \setlength{\leftskip}{0pt}%
+  \setlength{\rightskip}{0pt plus 1fil}%
+  \hangindent=0pt\hangafter=1
+  \raggedright\hspace{0pt}\strut #1\par
+  \endgroup
+}
+
+\newcommand{\LPStudentActivityCell}[1]{%
+  \begingroup
+  \setlength{\parindent}{0pt}%
+  \setlength{\leftskip}{0pt}%
+  \setlength{\rightskip}{0pt plus 1fil}%
+  \hangindent=0pt\hangafter=1
+  \raggedright\hspace{0pt}\strut #1\par
+  \endgroup
+}
+
+\newcommand{\LPTimeCell}[1]{%
+  \begingroup
+  \setlength{\parindent}{0pt}%
+  \setlength{\leftskip}{0pt}%
+  \setlength{\rightskip}{0pt}%
+  \centering\strut #1\;分钟\par
+  \endgroup
+}
+
+\newcommand{\LPFigureBlock}[1]{%
+  \par\vspace{0.8mm}{\centering #1\par}\vspace{0.8mm}%
+}
+
+\newcommand{\LPProcessRow}[4]{%
+  \LPTeacherActivityCell{{\heiti #1}\par\vspace{0.45mm}#2} &
+  \LPStudentActivityCell{#3} &
+  \LPTimeCell{#4}\tabularnewline[1.2mm]
+}
+
+\newcommand{\LPProcessBox}[5]{%
+  \node[anchor=north west,inner sep=0pt,text width=#3,align=left]
+    at ([xshift=#1,yshift=-#2]current page.north west)
+    {%
+      \begin{minipage}[t][#4][t]{#3}
+      \LPBodyFont
+      \renewcommand{\arraystretch}{1.08}
+      \setlength{\extrarowheight}{2pt}
+      \setlength{\tabcolsep}{5pt}
+      \begin{tabular}{p{105.5mm}p{28.5mm}p{14.5mm}}
+      #5
+      \end{tabular}
+      \end{minipage}%
+    };%
+}

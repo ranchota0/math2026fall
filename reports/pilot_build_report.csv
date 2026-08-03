@@ -1,0 +1,4 @@
+﻿lesson_id,chapter,lesson_title,lesson_type,teacher_tex,student_tex,teacher_pdf,student_pdf,teacher_pages,student_pages,compile_status,warning_count,overfull_hbox_count,manual_review_status
+C01-L03,第一章 有理数,数轴,new_lesson,lessons/C01-L03/teacher.tex,lessons/C01-L03/student.tex,dist/C01-L03/teacher.pdf,dist/C01-L03/student.pdf,3,3,success,0,0,pending
+C05-L05,第五章 一元一次方程,移项解一元一次方程,new_lesson,lessons/C05-L05/teacher.tex,lessons/C05-L05/student.tex,dist/C05-L05/teacher.pdf,dist/C05-L05/student.pdf,3,3,success,0,0,pending
+C06-L07,第六章 几何图形初步,角的比较与运算,new_lesson,lessons/C06-L07/teacher.tex,lessons/C06-L07/student.tex,dist/C06-L07/teacher.pdf,dist/C06-L07/student.pdf,3,3,success,0,0,pending

@@ -1,0 +1,969 @@
+metadata:
+  version: 1
+  status: locked_for_grade7b_generation
+  textbook: 义务教育教科书·数学七年级下册
+  publisher: 人民教育出版社
+  source_pdf: 义务教育教科书_数学七年级下册_标准PDF.pdf
+  pdf_page_count: 202
+  printed_page_offset: 7
+  total_lessons: 59
+  period_minutes: 45
+
+chapters:
+  - {chapter_id: C07, chapter_number: 7, chapter_title: 相交线与平行线, printed_pages: [1, 38], proposed_periods: 13}
+  - {chapter_id: C08, chapter_number: 8, chapter_title: 实数, printed_pages: [39, 62], proposed_periods: 8}
+  - {chapter_id: C09, chapter_number: 9, chapter_title: 平面直角坐标系, printed_pages: [63, 86], proposed_periods: 7}
+  - {chapter_id: C10, chapter_number: 10, chapter_title: 二元一次方程组, printed_pages: [87, 119], proposed_periods: 10}
+  - {chapter_id: C11, chapter_number: 11, chapter_title: 不等式与不等式组, printed_pages: [120, 149], proposed_periods: 9}
+  - {chapter_id: C12, chapter_number: 12, chapter_title: 数据的收集、整理与描述, printed_pages: [150, 192], proposed_periods: 12}
+
+lessons:
+  - id: C07-L01
+    chapter_id: C07
+    lesson_index_in_chapter: 1
+    source_section: 7.1.1
+    lesson_title: 相交线与对顶角
+    lesson_type: new_lesson
+    source_pages: [1, 2, 3]
+    core_knowledge: [相交线, 邻补角, 对顶角及其性质]
+    prerequisites: [直线与角, 余角与补角]
+    key_points: [识别邻补角和对顶角, 运用对顶角相等]
+    difficulties: [从图形位置关系抽象角的关系]
+    examples: [教材7.1例1]
+    exercises: [教材第3页练习]
+    homework_scope: [教材7.1习题中对顶角基础题]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L02
+    chapter_id: C07
+    lesson_index_in_chapter: 2
+    source_section: 7.1.2
+    lesson_title: 垂线的概念与画法
+    lesson_type: new_lesson
+    source_pages: [4, 5]
+    core_knowledge: [垂直与垂线, 垂足, 过一点画已知直线的垂线]
+    prerequisites: [相交线, 直角]
+    key_points: [垂直的符号表示, 垂线基本事实与规范作图]
+    difficulties: [区分垂线、垂线段和垂足]
+    examples: [教材7.1例2]
+    exercises: [教材第5页练习]
+    homework_scope: [垂线画法与符号表示]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L03
+    chapter_id: C07
+    lesson_index_in_chapter: 3
+    source_section: 7.1.2
+    lesson_title: 垂线段与点到直线的距离
+    lesson_type: new_lesson
+    source_pages: [6]
+    core_knowledge: [垂线段最短, 点到直线的距离]
+    prerequisites: [垂线画法, 线段长度]
+    key_points: [用垂线段表示点到直线的距离]
+    difficulties: [把“最短”结论用于实际问题]
+    examples: [教材第6页引水渠问题]
+    exercises: [教材第6页练习]
+    homework_scope: [垂线段最短与距离应用]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L04
+    chapter_id: C07
+    lesson_index_in_chapter: 4
+    source_section: 7.1.3
+    lesson_title: 两条直线被第三条直线所截
+    lesson_type: new_lesson
+    source_pages: [7, 8, 9, 10]
+    core_knowledge: [同位角, 内错角, 同旁内角, 图形观察]
+    prerequisites: [相交线, 角的表示]
+    key_points: [按位置识别三类角]
+    difficulties: [在复杂图形中确定两直线和截线]
+    examples: [教材7.1例3, 观察与猜想“看图时的错觉”]
+    exercises: [教材7.1习题第1—7题]
+    homework_scope: [三线八角识别题]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L05
+    chapter_id: C07
+    lesson_index_in_chapter: 5
+    source_section: 7.2.1
+    lesson_title: 平行线与平行公理
+    lesson_type: new_lesson
+    source_pages: [11, 12]
+    core_knowledge: [平行线定义, 平行线画法, 平行公理及推论]
+    prerequisites: [同一平面内直线的位置关系]
+    key_points: [理解平行线基本事实并规范作图]
+    difficulties: [正确使用“同一平面内”条件]
+    examples: [教材第12页直尺三角尺画平行线]
+    exercises: [教材第12页练习]
+    homework_scope: [平行线定义与画法]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L06
+    chapter_id: C07
+    lesson_index_in_chapter: 6
+    source_section: 7.2.2
+    lesson_title: 平行线的判定
+    lesson_type: new_lesson
+    source_pages: [13, 14, 15]
+    core_knowledge: [同位角判定, 内错角判定, 同旁内角判定]
+    prerequisites: [三线八角, 平行线定义]
+    key_points: [三种判定方法及依据]
+    difficulties: [由角关系选择恰当判定方法]
+    examples: [教材7.2例1]
+    exercises: [教材第14—15页练习]
+    homework_scope: [平行线判定基础与说理]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L07
+    chapter_id: C07
+    lesson_index_in_chapter: 7
+    source_section: 7.2.3
+    lesson_title: 平行线的性质
+    lesson_type: new_lesson
+    source_pages: [16, 17, 18]
+    core_knowledge: [平行线三条性质, 性质与判定的区别]
+    prerequisites: [平行线判定, 三线八角]
+    key_points: [由平行推出角关系]
+    difficulties: [区分“条件”和“结论”的方向]
+    examples: [教材7.2例2, 教材7.2例3, 教材7.2例4]
+    exercises: [教材第16—18页练习]
+    homework_scope: [平行线性质及简单推理]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L08
+    chapter_id: C07
+    lesson_index_in_chapter: 8
+    source_section: 7.2
+    lesson_title: 平行线的判定与性质综合
+    lesson_type: practice_lesson
+    source_pages: [19, 20, 21]
+    core_knowledge: [判定与性质综合, 几何语言与推理链]
+    prerequisites: [平行线判定与性质]
+    key_points: [按已知和所求选择依据]
+    difficulties: [完整书写多步几何推理]
+    examples: [教材7.2习题典型说理题]
+    exercises: [教材7.2习题第1—13题]
+    homework_scope: [7.2习题分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+  - id: C07-L09
+    chapter_id: C07
+    lesson_index_in_chapter: 9
+    source_section: 7.3
+    lesson_title: 定义、命题、定理
+    lesson_type: new_lesson
+    source_pages: [22, 23, 24, 25]
+    core_knowledge: [定义, 命题的题设与结论, 真命题和假命题, 定理与证明, 反例]
+    prerequisites: [平行线判定与性质, 数学语句]
+    key_points: [把命题改写为“如果…那么…”并识别题设结论]
+    difficulties: [用证明或反例判断命题真假]
+    examples: [教材7.3证明例题]
+    exercises: [教材第24—25页练习]
+    homework_scope: [命题结构、真假判断与简单证明]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L10
+    chapter_id: C07
+    lesson_index_in_chapter: 10
+    source_section: 7.4
+    lesson_title: 平移的概念、性质与作图
+    lesson_type: new_lesson
+    source_pages: [26, 27, 28, 29]
+    core_knowledge: [平移, 对应点与对应线段, 平移性质, 平移作图]
+    prerequisites: [平行线, 全等直观, 基本作图]
+    key_points: [根据方向和距离作平移图形]
+    difficulties: [确定所有对应点的平移方向和距离]
+    examples: [教材7.4例题]
+    exercises: [教材第28—29页练习]
+    homework_scope: [方格纸平移与性质应用]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L11
+    chapter_id: C07
+    lesson_index_in_chapter: 11
+    source_section: 7.4-探究与发现
+    lesson_title: 利用平移设计图案
+    lesson_type: activity_lesson
+    source_pages: [30, 31]
+    core_knowledge: [基本图形, 连续平移, 图案设计]
+    prerequisites: [平移性质与作图]
+    key_points: [选择基本图形并设计平移序列]
+    difficulties: [用数学语言说明图案生成过程]
+    examples: [探究与发现“利用平移设计图案”]
+    exercises: [教材第30—31页设计任务]
+    homework_scope: [完成并说明一幅平移图案]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L12
+    chapter_id: C07
+    lesson_index_in_chapter: 12
+    source_section: 数学活动
+    lesson_title: 相交线与平行线数学活动
+    lesson_type: activity_lesson
+    source_pages: [32, 33]
+    core_knowledge: [平行线画法探究, 图案与建筑中的平行关系]
+    prerequisites: [平行线判定, 平移]
+    key_points: [用所学知识解释活动结果]
+    difficulties: [把操作结果组织成有依据的说明]
+    examples: [教材第32—33页数学活动]
+    exercises: [活动记录与小组展示]
+    homework_scope: [活动报告完善]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C07-L13
+    chapter_id: C07
+    lesson_index_in_chapter: 13
+    source_section: 小结与复习题7
+    lesson_title: 相交线与平行线章末复习
+    lesson_type: review_lesson
+    source_pages: [34, 35, 36, 37, 38]
+    core_knowledge: [相交线, 垂线, 平行线判定与性质, 命题证明, 平移]
+    prerequisites: [第七章全部内容]
+    key_points: [构建位置关系—角关系—推理方法知识网络]
+    difficulties: [综合图形中的多步推理与规范表达]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题7]
+    homework_scope: [复习题7分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+
+  - id: C08-L01
+    chapter_id: C08
+    lesson_index_in_chapter: 1
+    source_section: 8.1
+    lesson_title: 平方根
+    lesson_type: new_lesson
+    source_pages: [39, 40, 41]
+    core_knowledge: [平方根概念, 正数与0的平方根, 负数没有平方根]
+    prerequisites: [有理数乘方, 相反数]
+    key_points: [根据平方关系求平方根]
+    difficulties: [平方根的双值性]
+    examples: [教材8.1例1, 教材8.1例2]
+    exercises: [教材第41页练习]
+    homework_scope: [平方根概念与求值]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C08-L02
+    chapter_id: C08
+    lesson_index_in_chapter: 2
+    source_section: 8.1
+    lesson_title: 算术平方根
+    lesson_type: new_lesson
+    source_pages: [42, 43]
+    core_knowledge: [算术平方根, 根号与被开方数, 算术平方根的非负性]
+    prerequisites: [平方根]
+    key_points: [区分平方根与算术平方根]
+    difficulties: [正确理解根号表示的非负值]
+    examples: [教材8.1例3]
+    exercises: [教材第42—43页练习]
+    homework_scope: [算术平方根求值与辨析]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C08-L03
+    chapter_id: C08
+    lesson_index_in_chapter: 3
+    source_section: 8.1
+    lesson_title: 算术平方根的估算与应用
+    lesson_type: new_lesson
+    source_pages: [44, 45, 46, 47]
+    core_knowledge: [计算器求平方根, 估算无理数范围, 算术平方根实际应用]
+    prerequisites: [算术平方根, 近似数]
+    key_points: [用夹逼和计算器求近似值]
+    difficulties: [结合实际条件解释近似结果]
+    examples: [教材8.1例4, 教材8.1例5]
+    exercises: [教材第44—47页练习与8.1习题]
+    homework_scope: [估算、计算器与面积应用]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C08-L04
+    chapter_id: C08
+    lesson_index_in_chapter: 4
+    source_section: 8.2
+    lesson_title: 立方根
+    lesson_type: new_lesson
+    source_pages: [48, 49, 50, 51]
+    core_knowledge: [立方根, 开立方, 正负数和0的立方根]
+    prerequisites: [有理数立方, 平方根]
+    key_points: [利用立方关系求立方根]
+    difficulties: [理解负数有负的立方根]
+    examples: [教材8.2例1, 教材8.2例2]
+    exercises: [教材第50页练习与8.2习题]
+    homework_scope: [立方根求值与规律]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C08-L05
+    chapter_id: C08
+    lesson_index_in_chapter: 5
+    source_section: 8.3
+    lesson_title: 无理数与实数
+    lesson_type: new_lesson
+    source_pages: [52, 53, 54]
+    core_knowledge: [无理数, 实数分类, 实数与数轴上点的一一对应]
+    prerequisites: [有理数分类, 平方根和立方根, 数轴]
+    key_points: [按定义区分有理数与无理数]
+    difficulties: [理解无限不循环小数与无理数]
+    examples: [教材第52—54页分类与数轴探究]
+    exercises: [教材第54页练习]
+    homework_scope: [实数分类与数轴表示]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C08-L06
+    chapter_id: C08
+    lesson_index_in_chapter: 6
+    source_section: 8.3
+    lesson_title: 实数的性质与简单运算
+    lesson_type: new_lesson
+    source_pages: [55, 56, 57]
+    core_knowledge: [实数的相反数与绝对值, 实数大小, 实数运算]
+    prerequisites: [有理数性质与运算, 算术平方根]
+    key_points: [把有理数运算规则迁移到实数]
+    difficulties: [含根号数的近似运算和结果表示]
+    examples: [教材8.3例1, 教材8.3例2, 教材8.3例3]
+    exercises: [教材第55—57页练习]
+    homework_scope: [实数性质、比较与简单运算]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C08-L07
+    chapter_id: C08
+    lesson_index_in_chapter: 7
+    source_section: 阅读与思考、数学活动
+    lesson_title: 根号2的无理性与实数数学活动
+    lesson_type: activity_lesson
+    source_pages: [58, 59]
+    core_knowledge: [反证思想直观, 无理数认识, 实数活动探究]
+    prerequisites: [无理数与实数]
+    key_points: [读懂根号2不是有理数的论证思路]
+    difficulties: [在初中阶段理解反证思路而不过度形式化]
+    examples: [阅读与思考“为什么√2不是有理数”, 教材第59页数学活动]
+    exercises: [阅读记录与活动任务]
+    homework_scope: [活动结论整理]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C08-L08
+    chapter_id: C08
+    lesson_index_in_chapter: 8
+    source_section: 小结与复习题8
+    lesson_title: 实数章末复习
+    lesson_type: review_lesson
+    source_pages: [60, 61, 62]
+    core_knowledge: [平方根, 立方根, 无理数与实数, 实数运算]
+    prerequisites: [第八章全部内容]
+    key_points: [构建开方与实数知识网络]
+    difficulties: [综合运用估算、分类和运算]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题8]
+    homework_scope: [复习题8分层选题]
+    needs_figure: false
+    suitable_for_inquiry: false
+
+  - id: C09-L01
+    chapter_id: C09
+    lesson_index_in_chapter: 1
+    source_section: 9.1
+    lesson_title: 平面直角坐标系与点的坐标
+    lesson_type: new_lesson
+    source_pages: [63, 64, 65]
+    core_knowledge: [平面直角坐标系, 坐标轴与原点, 象限, 有序数对]
+    prerequisites: [数轴, 垂直]
+    key_points: [由点确定坐标并由坐标描点]
+    difficulties: [有序数对的顺序和象限符号]
+    examples: [教材9.1例1]
+    exercises: [教材第65页练习]
+    homework_scope: [描点、读点与象限判断]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L02
+    chapter_id: C09
+    lesson_index_in_chapter: 2
+    source_section: 9.1
+    lesson_title: 用坐标描述图形和位置
+    lesson_type: new_lesson
+    source_pages: [66, 67, 68, 69, 70, 71]
+    core_knowledge: [用关键点坐标描述图形, 建立适当坐标系, 经纬度表示位置]
+    prerequisites: [点的坐标, 简单平面图形]
+    key_points: [选择原点和坐标轴简化坐标]
+    difficulties: [不同坐标系下坐标的变化]
+    examples: [教材9.1例2, 阅读与思考“用经纬度表示地理位置”]
+    exercises: [教材第68—70页练习与9.1习题]
+    homework_scope: [建立坐标系描述实际位置]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L03
+    chapter_id: C09
+    lesson_index_in_chapter: 3
+    source_section: 9.2
+    lesson_title: 用方向和距离描述位置
+    lesson_type: new_lesson
+    source_pages: [72, 73]
+    core_knowledge: [位置描述, 方位角, 方向与距离]
+    prerequisites: [平面直角坐标系, 角与线段]
+    key_points: [用方向和距离唯一确定位置]
+    difficulties: [规范表达方位角和实际距离]
+    examples: [教材9.2例1]
+    exercises: [教材第73页练习]
+    homework_scope: [实际位置示意图]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L04
+    chapter_id: C09
+    lesson_index_in_chapter: 4
+    source_section: 9.2
+    lesson_title: 点的平移与坐标变化
+    lesson_type: new_lesson
+    source_pages: [74, 75, 76]
+    core_knowledge: [点左右平移横坐标变化, 点上下平移纵坐标变化, 图形连续平移]
+    prerequisites: [平移, 点的坐标]
+    key_points: [由平移方向和距离写出新坐标]
+    difficulties: [符号变化与方向的对应]
+    examples: [教材9.2例2]
+    exercises: [教材第76页练习]
+    homework_scope: [点与简单图形的坐标平移]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L05
+    chapter_id: C09
+    lesson_index_in_chapter: 5
+    source_section: 9.2
+    lesson_title: 坐标变化与图形平移
+    lesson_type: new_lesson
+    source_pages: [77, 78, 79, 80, 81]
+    core_knowledge: [整体坐标变化, 图形平移方向与距离, 坐标方法应用]
+    prerequisites: [点的平移与坐标变化]
+    key_points: [由顶点坐标变化判断图形平移]
+    difficulties: [从多个点的坐标差归纳统一平移]
+    examples: [教材9.2例3]
+    exercises: [教材第78页练习与9.2习题]
+    homework_scope: [坐标平移综合题]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L06
+    chapter_id: C09
+    lesson_index_in_chapter: 6
+    source_section: 数学活动
+    lesson_title: 平面直角坐标系数学活动
+    lesson_type: activity_lesson
+    source_pages: [82]
+    core_knowledge: [坐标确定位置, 坐标变化规律]
+    prerequisites: [第九章新授内容]
+    key_points: [用坐标方法完成活动并解释结果]
+    difficulties: [从操作结果抽象坐标规律]
+    examples: [教材第82页数学活动]
+    exercises: [活动记录与展示]
+    homework_scope: [活动报告完善]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C09-L07
+    chapter_id: C09
+    lesson_index_in_chapter: 7
+    source_section: 小结与复习题9
+    lesson_title: 平面直角坐标系章末复习
+    lesson_type: review_lesson
+    source_pages: [83, 84, 85, 86]
+    core_knowledge: [点的坐标, 坐标描述位置, 坐标与平移]
+    prerequisites: [第九章全部内容]
+    key_points: [建立“位置—坐标—变化”知识结构]
+    difficulties: [选择适当坐标方法解决综合问题]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题9]
+    homework_scope: [复习题9分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+
+  - id: C10-L01
+    chapter_id: C10
+    lesson_index_in_chapter: 1
+    source_section: 10.1
+    lesson_title: 二元一次方程组的概念
+    lesson_type: new_lesson
+    source_pages: [87, 88, 89, 90]
+    core_knowledge: [二元一次方程, 二元一次方程组, 方程组的解]
+    prerequisites: [一元一次方程, 有序数对]
+    key_points: [识别二元一次方程组并检验解]
+    difficulties: [理解方程组的解必须同时满足两个方程]
+    examples: [教材10.1情境与概念例]
+    exercises: [教材第89—90页练习与习题10.1]
+    homework_scope: [概念辨析与解的检验]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C10-L02
+    chapter_id: C10
+    lesson_index_in_chapter: 2
+    source_section: 10.2.1
+    lesson_title: 代入消元法
+    lesson_type: new_lesson
+    source_pages: [91, 92, 93, 94]
+    core_knowledge: [消元思想, 代入消元法, 代入法步骤]
+    prerequisites: [二元一次方程组, 等式变形, 一元一次方程]
+    key_points: [选取易表示的未知数完成代入]
+    difficulties: [规范变形并防止代入符号错误]
+    examples: [教材10.2例1, 教材10.2例2, 教材10.2例3, 教材10.2例4]
+    exercises: [教材第93—94页练习]
+    homework_scope: [代入法解方程组]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C10-L03
+    chapter_id: C10
+    lesson_index_in_chapter: 3
+    source_section: 10.2.2
+    lesson_title: 加减消元法的基本应用
+    lesson_type: new_lesson
+    source_pages: [95, 96]
+    core_knowledge: [加减消元法, 系数相等或互为相反数时消元]
+    prerequisites: [等式性质, 代入消元法]
+    key_points: [判断相加还是相减]
+    difficulties: [整式整体相加减时的符号]
+    examples: [教材10.2例5, 教材10.2例6]
+    exercises: [教材第96页练习]
+    homework_scope: [直接加减消元]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C10-L04
+    chapter_id: C10
+    lesson_index_in_chapter: 4
+    source_section: 10.2.2
+    lesson_title: 加减消元法的灵活应用
+    lesson_type: new_lesson
+    source_pages: [97, 98, 99, 100]
+    core_knowledge: [方程倍乘后消元, 消元方法选择, 二元一次方程组应用]
+    prerequisites: [加减消元法基本步骤]
+    key_points: [构造相等或相反系数]
+    difficulties: [选择简便消元方案并保证方程整体同乘]
+    examples: [教材10.2例7, 教材古代“牛羊问价”问题]
+    exercises: [教材第98页练习与习题10.2]
+    homework_scope: [代入法与加减法综合选用]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C10-L05
+    chapter_id: C10
+    lesson_index_in_chapter: 5
+    source_section: 10.3
+    lesson_title: 实际问题与二元一次方程组（一）
+    lesson_type: new_lesson
+    source_pages: [101, 102, 103]
+    core_knowledge: [两个未知量的建模, 相等关系, 检验实际意义]
+    prerequisites: [二元一次方程组解法, 列一元一次方程]
+    key_points: [从两个数量关系列方程组]
+    difficulties: [从文字、图形和比例中提取相等关系]
+    examples: [教材10.3探究1, 教材10.3探究2]
+    exercises: [教材第101—103页练习]
+    homework_scope: [基础实际问题建模]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C10-L06
+    chapter_id: C10
+    lesson_index_in_chapter: 6
+    source_section: 10.3
+    lesson_title: 实际问题与二元一次方程组（二）
+    lesson_type: new_lesson
+    source_pages: [104, 105, 106]
+    core_knowledge: [表格建模, 费用与产量关系, 方程组应用检验]
+    prerequisites: [实际问题与二元一次方程组基础]
+    key_points: [借助表格整理复杂数量关系]
+    difficulties: [单位统一和实际答案解释]
+    examples: [教材10.3探究3]
+    exercises: [教材10.3习题]
+    homework_scope: [复杂数量关系与综合应用]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C10-L07
+    chapter_id: C10
+    lesson_index_in_chapter: 7
+    source_section: 10.4
+    lesson_title: 三元一次方程组的解法
+    lesson_type: new_lesson
+    source_pages: [107, 108, 109, 110, 111]
+    core_knowledge: [三元一次方程组, 逐步消元, 选学内容]
+    prerequisites: [二元一次方程组消元法]
+    key_points: [把三元方程组转化为二元方程组]
+    difficulties: [设计合理的逐步消元顺序]
+    examples: [教材10.4例题]
+    exercises: [教材10.4练习]
+    homework_scope: [三元一次方程组选学题]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C10-L08
+    chapter_id: C10
+    lesson_index_in_chapter: 8
+    source_section: 图说数学史、阅读与思考
+    lesson_title: 中国古代的多元一次方程组
+    lesson_type: activity_lesson
+    source_pages: [112, 113, 114]
+    core_knowledge: [中国古代消元思想, 一次不定方程组问题]
+    prerequisites: [二元与三元一次方程组]
+    key_points: [用现代语言解释古代算法]
+    difficulties: [区分确定方程组与不定方程问题]
+    examples: [图说数学史“解多元一次方程组”, 阅读与思考“一次不定方程组问题”]
+    exercises: [阅读记录与探究问题]
+    homework_scope: [数学史短报告]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C10-L09
+    chapter_id: C10
+    lesson_index_in_chapter: 9
+    source_section: 数学活动
+    lesson_title: 二元一次方程组数学活动
+    lesson_type: activity_lesson
+    source_pages: [115, 116]
+    core_knowledge: [方程组建模, 数据与关系探究]
+    prerequisites: [第十章新授内容]
+    key_points: [合作完成建模、求解和解释]
+    difficulties: [评价模型是否符合实际]
+    examples: [教材第115—116页数学活动]
+    exercises: [活动记录与展示]
+    homework_scope: [活动报告完善]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C10-L10
+    chapter_id: C10
+    lesson_index_in_chapter: 10
+    source_section: 小结与复习题10
+    lesson_title: 二元一次方程组章末复习
+    lesson_type: review_lesson
+    source_pages: [117, 118, 119]
+    core_knowledge: [方程组概念, 代入与加减消元, 实际应用, 三元方程组]
+    prerequisites: [第十章全部内容]
+    key_points: [构建“建模—消元—求解—检验”流程]
+    difficulties: [综合选择解法并解释实际结果]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题10]
+    homework_scope: [复习题10分层选题]
+    needs_figure: false
+    suitable_for_inquiry: false
+
+  - id: C11-L01
+    chapter_id: C11
+    lesson_index_in_chapter: 1
+    source_section: 11.1
+    lesson_title: 不等式及其解集
+    lesson_type: new_lesson
+    source_pages: [120, 121, 122, 123]
+    core_knowledge: [不等式, 不等式的解, 解集, 用数轴表示解集]
+    prerequisites: [等式, 数轴, 大小比较]
+    key_points: [区分一个解与解集]
+    difficulties: [把文字范围、符号和数轴表示互相转换]
+    examples: [教材11.1例1, 教材11.1例2]
+    exercises: [教材第122—123页练习]
+    homework_scope: [不等式列式、解与解集辨析]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L02
+    chapter_id: C11
+    lesson_index_in_chapter: 2
+    source_section: 11.1
+    lesson_title: 不等式的性质
+    lesson_type: new_lesson
+    source_pages: [124, 125, 126]
+    core_knowledge: [不等式三条性质, 利用性质解简单不等式]
+    prerequisites: [等式性质, 数的大小]
+    key_points: [乘除负数时改变不等号方向]
+    difficulties: [理解性质3并避免方向错误]
+    examples: [教材11.1例3]
+    exercises: [教材第125—126页练习]
+    homework_scope: [不等式性质与简单解集]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L03
+    chapter_id: C11
+    lesson_index_in_chapter: 3
+    source_section: 11.1
+    lesson_title: 不等式的应用与比较大小
+    lesson_type: new_lesson
+    source_pages: [127, 128, 129, 130]
+    core_knowledge: [实际问题中的不等关系, 解集范围, 求差法比较大小]
+    prerequisites: [不等式性质]
+    key_points: [从实际限制列不等式并解释解集]
+    difficulties: [确定是否包含端点]
+    examples: [教材11.1例4, 阅读与思考“用求差法比较大小”]
+    exercises: [教材11.1习题]
+    homework_scope: [不等式实际应用与比较]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L04
+    chapter_id: C11
+    lesson_index_in_chapter: 4
+    source_section: 11.2
+    lesson_title: 解一元一次不等式
+    lesson_type: new_lesson
+    source_pages: [131, 132]
+    core_knowledge: [一元一次不等式, 解法步骤, 数轴表示]
+    prerequisites: [一元一次方程, 不等式性质]
+    key_points: [按步骤解不等式并表示解集]
+    difficulties: [去分母、去括号和系数化1中的方向变化]
+    examples: [教材11.2例1]
+    exercises: [教材第132页练习]
+    homework_scope: [一元一次不等式计算]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L05
+    chapter_id: C11
+    lesson_index_in_chapter: 5
+    source_section: 11.2
+    lesson_title: 一元一次不等式的应用
+    lesson_type: new_lesson
+    source_pages: [133, 134, 135, 136, 137]
+    core_knowledge: [不等式建模, 至少至多问题, 方案比较]
+    prerequisites: [解一元一次不等式]
+    key_points: [由限制条件建立不等式模型]
+    difficulties: [结合整数性和实际意义确定答案]
+    examples: [教材11.2例2, 教材11.2例3, 教材11.2例4]
+    exercises: [教材11.2习题]
+    homework_scope: [一元一次不等式应用分层题]
+    needs_figure: false
+    suitable_for_inquiry: true
+  - id: C11-L06
+    chapter_id: C11
+    lesson_index_in_chapter: 6
+    source_section: 11.3
+    lesson_title: 一元一次不等式组
+    lesson_type: new_lesson
+    source_pages: [138, 139, 140, 141]
+    core_knowledge: [一元一次不等式组, 公共解集, 数轴法, 整数解]
+    prerequisites: [一元一次不等式]
+    key_points: [分别求解并取解集公共部分]
+    difficulties: [正确判断无解和端点取舍]
+    examples: [教材11.3例1, 教材11.3例2]
+    exercises: [教材第140页练习与11.3习题]
+    homework_scope: [不等式组与整数解]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L07
+    chapter_id: C11
+    lesson_index_in_chapter: 7
+    source_section: 数学活动
+    lesson_title: 不等式与不等式组数学活动
+    lesson_type: activity_lesson
+    source_pages: [142]
+    core_knowledge: [不等关系探究, 解集表示]
+    prerequisites: [第十一章新授内容]
+    key_points: [用不等式模型解释活动结果]
+    difficulties: [从活动条件归纳变量范围]
+    examples: [教材第142页数学活动]
+    exercises: [活动记录与展示]
+    homework_scope: [活动报告完善]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C11-L08
+    chapter_id: C11
+    lesson_index_in_chapter: 8
+    source_section: 小结与复习题11
+    lesson_title: 不等式与不等式组章末复习
+    lesson_type: review_lesson
+    source_pages: [143, 144, 145]
+    core_knowledge: [不等式, 一元一次不等式, 不等式组, 实际应用]
+    prerequisites: [第十一章全部内容]
+    key_points: [构建“列式—求解—表示—解释”流程]
+    difficulties: [综合处理端点、整数解和实际限制]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题11]
+    homework_scope: [复习题11分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+  - id: C11-L09
+    chapter_id: C11
+    lesson_index_in_chapter: 9
+    source_section: 综合与实践
+    lesson_title: 低碳生活
+    lesson_type: integrated_practice
+    source_pages: [146, 147, 148, 149]
+    core_knowledge: [数据收集, 碳足迹计算, 不等式决策, 合作研究]
+    prerequisites: [不等式与不等式组, 百分数与统计表]
+    key_points: [把低碳目标转化为可计算方案]
+    difficulties: [数据来源、单位统一和方案评价]
+    examples: [综合与实践“低碳生活”]
+    exercises: [团队任务、成果展示与多元评价]
+    homework_scope: [个人低碳行动方案]
+    needs_figure: true
+    suitable_for_inquiry: true
+
+  - id: C12-L01
+    chapter_id: C12
+    lesson_index_in_chapter: 1
+    source_section: 12.1
+    lesson_title: 全面调查与数据整理
+    lesson_type: new_lesson
+    source_pages: [150, 151, 152, 153]
+    core_knowledge: [统计调查步骤, 全面调查, 划记法, 频数与百分比, 条形图和扇形图]
+    prerequisites: [百分数, 简单统计表和统计图]
+    key_points: [经历收集、整理、描述和分析数据全过程]
+    difficulties: [根据调查目的设计合理问题和表格]
+    examples: [教材12.1课外活动调查]
+    exercises: [教材第153页练习]
+    homework_scope: [小型全面调查]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L02
+    chapter_id: C12
+    lesson_index_in_chapter: 2
+    source_section: 12.1
+    lesson_title: 抽样调查
+    lesson_type: new_lesson
+    source_pages: [154, 155]
+    core_knowledge: [总体, 个体, 样本, 样本容量, 简单随机抽样]
+    prerequisites: [全面调查, 百分比]
+    key_points: [判断调查方式并识别总体和样本]
+    difficulties: [理解样本代表性和随机性]
+    examples: [教材育人中学抽样调查]
+    exercises: [教材第155页练习]
+    homework_scope: [抽样概念与调查方式辨析]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L03
+    chapter_id: C12
+    lesson_index_in_chapter: 3
+    source_section: 12.1-探究与发现
+    lesson_title: 统计调查的选择与实践
+    lesson_type: activity_lesson
+    source_pages: [156, 157, 158, 159]
+    core_knowledge: [调查方式选择, 样本代表性, 用样本估计总体]
+    prerequisites: [全面调查与抽样调查]
+    key_points: [根据对象、成本和精度选择调查方式]
+    difficulties: [评价抽样方案是否合理]
+    examples: [探究与发现“瓶子中有多少粒豆子”]
+    exercises: [教材12.1习题与豆子实验]
+    homework_scope: [调查方案设计与反思]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L04
+    chapter_id: C12
+    lesson_index_in_chapter: 4
+    source_section: 12.2
+    lesson_title: 条形图与扇形图
+    lesson_type: new_lesson
+    source_pages: [160, 161, 162]
+    core_knowledge: [条形图, 扇形图, 圆心角计算, 统计图选择]
+    prerequisites: [频数与百分比, 圆周角度]
+    key_points: [根据数据特点选择并绘制统计图]
+    difficulties: [把百分比准确转化为圆心角]
+    examples: [教材12.2例1]
+    exercises: [教材第162页练习]
+    homework_scope: [条形图与扇形图绘制]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L05
+    chapter_id: C12
+    lesson_index_in_chapter: 5
+    source_section: 12.2
+    lesson_title: 复合条形图与复合折线图
+    lesson_type: new_lesson
+    source_pages: [163, 164]
+    core_knowledge: [复合条形图, 复合折线图, 多组数据比较]
+    prerequisites: [条形图, 折线图]
+    key_points: [用同一图表比较两组数据]
+    difficulties: [读图时区分图例、单位和变化趋势]
+    examples: [教材12.2例2]
+    exercises: [教材第164页练习]
+    homework_scope: [复合统计图读图与绘图]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L06
+    chapter_id: C12
+    lesson_index_in_chapter: 6
+    source_section: 12.2
+    lesson_title: 频数分布表与直方图
+    lesson_type: new_lesson
+    source_pages: [165, 166, 167]
+    core_knowledge: [极差, 组距与组数, 频数分布表, 频数分布直方图]
+    prerequisites: [数据整理, 条形图]
+    key_points: [按步骤整理分组数据并绘制直方图]
+    difficulties: [分组边界与左闭右开区间]
+    examples: [教材仪仗队身高数据]
+    exercises: [教材第167页练习]
+    homework_scope: [频数分布表与直方图]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L07
+    chapter_id: C12
+    lesson_index_in_chapter: 7
+    source_section: 12.2
+    lesson_title: 直方图的应用与解释
+    lesson_type: new_lesson
+    source_pages: [168, 169, 170]
+    core_knowledge: [分组数据整理, 直方图解释, 用样本估计总体分布]
+    prerequisites: [频数分布表与直方图]
+    key_points: [从直方图描述数据集中范围]
+    difficulties: [由样本分布作合理而有限的推断]
+    examples: [教材12.2例3]
+    exercises: [教材第169—170页练习]
+    homework_scope: [直方图综合应用]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L08
+    chapter_id: C12
+    lesson_index_in_chapter: 8
+    source_section: 12.2
+    lesson_title: 用趋势图描述两个量的关系
+    lesson_type: new_lesson
+    source_pages: [171, 172, 173, 174]
+    core_knowledge: [散点直观, 趋势图, 两个量的变化关系, 预测]
+    prerequisites: [坐标系, 折线图, 数据描述]
+    key_points: [从散点分布判断总体趋势]
+    difficulties: [理解趋势表示近似关系而非精确函数]
+    examples: [教材冷饮销量与最高气温问题]
+    exercises: [教材第174页练习]
+    homework_scope: [趋势读图、描述与预测]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L09
+    chapter_id: C12
+    lesson_index_in_chapter: 9
+    source_section: 12.2
+    lesson_title: 统计图的选择与综合应用
+    lesson_type: practice_lesson
+    source_pages: [175, 176, 177]
+    core_knowledge: [统计图选择, 数据比较, 分组数据, 趋势解释]
+    prerequisites: [12.2各种统计图]
+    key_points: [根据问题目的选择合适图表]
+    difficulties: [综合判断图表是否准确表达数据]
+    examples: [教材12.2习题典型题]
+    exercises: [教材12.2习题]
+    homework_scope: [12.2习题分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+  - id: C12-L10
+    chapter_id: C12
+    lesson_index_in_chapter: 10
+    source_section: 信息技术应用、图说数学史、数学活动
+    lesson_title: 统计图的信息技术应用与数学活动
+    lesson_type: activity_lesson
+    source_pages: [178, 179, 180, 181, 182]
+    core_knowledge: [用信息技术画统计图, 统计学发展, 统计活动]
+    prerequisites: [条形图、扇形图、折线图和直方图]
+    key_points: [选择工具准确录入数据并核对图表]
+    difficulties: [判断工具输出与原始数据是否一致]
+    examples: [信息技术应用“利用信息技术工具画统计图”, 图说数学史“统计学点滴”, 教材第182页数学活动]
+    exercises: [上机任务、阅读记录与活动展示]
+    homework_scope: [统计图电子作品与说明]
+    needs_figure: true
+    suitable_for_inquiry: true
+  - id: C12-L11
+    chapter_id: C12
+    lesson_index_in_chapter: 11
+    source_section: 小结与复习题12
+    lesson_title: 数据的收集、整理与描述章末复习
+    lesson_type: review_lesson
+    source_pages: [183, 184, 185, 186, 187]
+    core_knowledge: [统计调查, 抽样, 统计表与统计图, 直方图, 趋势图]
+    prerequisites: [第十二章全部内容]
+    key_points: [构建“收集—整理—描述—分析”统计流程]
+    difficulties: [针对实际目的选择方法并作合理推断]
+    examples: [教材小结典型问题]
+    exercises: [教材复习题12]
+    homework_scope: [复习题12分层选题]
+    needs_figure: true
+    suitable_for_inquiry: false
+  - id: C12-L12
+    chapter_id: C12
+    lesson_index_in_chapter: 12
+    source_section: 综合与实践
+    lesson_title: 白昼时长规律的探究
+    lesson_type: integrated_practice
+    source_pages: [188, 189, 190, 191, 192]
+    core_knowledge: [数据收集, 统计图, 趋势描述, 周期规律, 合作研究]
+    prerequisites: [第十二章统计方法, 平面直角坐标系]
+    key_points: [用数据和图表描述白昼时长变化规律]
+    difficulties: [控制变量、解释地区差异并评价结论]
+    examples: [综合与实践“白昼时长规律的探究”]
+    exercises: [团队方案、数据图表、成果展示与评价]
+    homework_scope: [完善探究报告]
+    needs_figure: true
+    suitable_for_inquiry: true

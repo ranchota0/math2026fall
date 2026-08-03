@@ -1,0 +1,32 @@
+% Common XeLaTeX preamble for this project.
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+
+\usepackage[a4paper,left=22mm,right=22mm,top=24mm,bottom=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\definecolor{projectblue}{RGB}{24,78,119}
+\definecolor{projectgray}{gray}{0.25}
+
+\linespread{1.18}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlist{nosep,leftmargin=2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{七年级数学上册}
+\fancyhead[R]{\leftmark}
+\fancyfoot[C]{第 \thepage 页 / 共 \pageref{LastPage} 页}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\tikzset{every picture/.style={line width=0.8pt}}

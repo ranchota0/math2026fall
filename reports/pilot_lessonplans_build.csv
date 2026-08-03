@@ -1,0 +1,4 @@
+﻿lesson_id,title,status,build_pdf,dist_pdf,compile_seconds,log,timestamp
+C01-L03,数轴,compiled,build\lessonplans\C01-L03\lessonplan.pdf,dist\lessonplans\C01-L03_数轴_教案.pdf,8.02,build\lessonplans\C01-L03\lessonplan.compile.log,2026-07-19T23:16:53
+C05-L05,移项解一元一次方程,compiled,build\lessonplans\C05-L05\lessonplan.pdf,dist\lessonplans\C05-L05_移项解一元一次方程_教案.pdf,7.94,build\lessonplans\C05-L05\lessonplan.compile.log,2026-07-19T23:17:01
+C06-L07,角的比较与运算,compiled,build\lessonplans\C06-L07\lessonplan.pdf,dist\lessonplans\C06-L07_角的比较与运算_教案.pdf,8.11,build\lessonplans\C06-L07\lessonplan.compile.log,2026-07-19T23:17:09

@@ -1,0 +1,79 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+\setCJKmainfont[BoldFont={LXGW Neo XiHei}]{LXGW Neo ZhiSong}
+\setCJKsansfont[AutoFakeBold=2]{LXGW Neo XiHei}
+\setCJKmonofont{LXGW Neo XiHei}
+\setCJKfamilyfont{zhhei}[AutoFakeBold=2]{LXGW Neo XiHei}
+\providecommand{\heiti}{\CJKfamily{zhhei}}
+\input{tex/lessonplan/hepingjie_render.tex}
+\usetikzlibrary{calc}
+\begin{document}
+
+\LPBackgroundPage{1}{
+  \LPCenterBox{\LPDateYearX}{\LPDateY}{12mm}{5mm}{}
+  \LPCenterBox{\LPDateMonthX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPDateDayX}{\LPDateY}{10mm}{5mm}{}
+  \LPCenterBox{\LPRecordPageX}{\LPRecordPageY}{10mm}{5mm}{1}
+  \LPHeaderCell{\LPTopicX}{\LPTopicY}{\LPTopicW}{8mm}{数轴}
+  \LPHeaderCell{\LPTypeX}{\LPTypeY}{\LPTypeW}{8mm}{概念形成课}
+  \LPCenterBox{\LPUnitTotalX}{\LPUnitTotalY}{12mm}{5mm}{7}
+  \LPCenterBox{\LPTopicTotalX}{\LPTopicTotalY}{12mm}{5mm}{1}
+  \LPCenterBox{\LPCurrentPeriodX}{\LPCurrentPeriodY}{12mm}{5mm}{1}
+  \LPTextBox{\LPBodyX}{\LPObjectiveY}{\LPBodyW}{\LPObjectiveH}{\LPPlainLine{说出数轴的定义，指出原点、正方向和单位长度三个要素。}\LPPlainLine{画出规范数轴，并判断常见图形是否符合数轴要求。}\LPPlainLine{在数轴上表示整数、分数和小数，说明点的方向和到原点的距离。}\LPPlainLine{借助数轴解释数与点的对应关系，体会数形结合。}}
+  \LPTextBox{\LPBodyX}{\LPKeyPointY}{\LPBodyW}{\LPKeyPointH}{从具体位置情境抽象出数轴三要素，并规范画数轴、表示数。}
+  \LPTextBox{\LPBodyX}{\LPDifficultyY}{\LPBodyW}{\LPDifficultyH}{统一单位长度后准确表示负数、分数和小数，并用方向与距离说明位置。}
+  \LPTextBox{\LPBodyX}{\LPMethodY}{\LPBodyW}{\LPMethodH}{问题引导；观察归纳；作图互评}
+  \LPTextBox{\LPBodyX}{\LPMediaY}{\LPBodyW}{\LPMediaH}{PPT；黑板；直尺；温度计示意}
+  \LPTextBox{\LPBodyX}{\LPBlackboardY}{\LPBodyW}{\LPBlackboardH}{\LPBoardTitle{数轴}\LPBoardLine{1}{定义：规定了原点、正方向和单位长度的直线。}\LPBoardLine{2}{三要素：原点；正方向；单位长度。}\LPBoardLine{3}{画法：画直线 → 定原点 → 标正方向 → 取单位长度 → 标刻度。}\LPBoardLine{4}{表示数：先定方向，再定到原点的距离。}\LPBoardLine{5}{易错：漏箭头；刻度不均；负数方向写反。}}
+}
+
+\LPBackgroundPage{2}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{情境引入}{\LPTeacherPart{问题}{某站牌东侧 3 m 有树，西侧 4.5 m 有电线杆，怎样在一条直线上同时表示方向和距离？；温度计上的 0、向上方向和相邻刻度分别起什么作用？}\LPTeacherPart{组织}{展示站牌与温度计简图，先让学生口述位置，再把信息逐项写在直线上。}\LPTeacherPart{说明}{表示相反方向的位置，需要先确定基准点、方向和统一的距离标准。}\LPTeacherPart{纠错}{若学生只写正负数而未说明基准点，追问“这个数相对哪里、朝哪个方向”。}\LPTeacherPart{归纳}{从实际位置图中抽取“基准点、方向、单位距离”。}\LPTeacherPart{意图}{用熟悉的位置情境产生统一表示正数、0 和负数的需要。}}{\LPStudentPart{活动}{观察简图，用“东/西、距站牌多少米”描述两个位置。；尝试在直线上标出站牌、树和电线杆。}\LPStudentPart{预期}{站牌可作为 0；向东可规定为正方向；相同间距表示 1 m。}}{5}
+\LPProcessRow{新知探究}{\LPTeacherPart{问题}{站牌图和温度计有哪些共同要素？；如果没有原点、正方向或统一单位长度，还能唯一确定一个数的位置吗？}\LPTeacherPart{组织}{在黑板上依次确定原点、正方向和单位长度，边画边让学生说每一步的作用。}\LPTeacherPart{说明}{规定了原点、正方向和单位长度的直线叫作数轴；原点右侧是正半轴，左侧是负半轴。}\LPFigureBlock{
+\begin{tikzpicture}[x=8mm,y=8mm,baseline=(current bounding box.center)]
+  \draw[->] (-3.6,0)--(3.8,0);
+  \foreach \x in {-3,-2,...,3}{\draw (\x,.11)--(\x,-.11) node[below]{\scriptsize \x};}
+  \node[above] at (0,.12) {\scriptsize 原点};
+  \draw[<->] (0,-.72)--(1,-.72) node[midway,below]{\scriptsize 单位长度};
+  \node[above] at (3.25,.08) {\scriptsize 正方向};
+\end{tikzpicture}
+}\LPTeacherPart{对应练习}{口答：一条有 0 和等距刻度但没有箭头的直线是不是数轴？说明理由。}\LPTeacherPart{纠错}{将“有刻度的直线就是数轴”改为“必须同时具备三个要素”。}\LPTeacherPart{归纳}{数轴三要素缺一不可。}\LPTeacherPart{意图}{由具体图形比较共同点，让定义从学生观察中自然形成。}}{\LPStudentPart{活动}{对照图形圈出原点、正方向和单位长度。；用完整句复述数轴定义，并回答判断题。}\LPStudentPart{预期}{不是数轴，因为没有规定正方向；三个要素共同确定数的位置。}}{8}
+\LPProcessRow{判断与规范作图}{\LPTeacherPart{问题}{三幅错图分别缺少或违反了哪个要素？；画数轴时，原点、箭头、单位长度和刻度的先后怎样安排更不易错？}\LPTeacherPart{组织}{出示漏箭头、刻度不均、负方向数字顺序错误的图；示范一次规范画法。}\LPTeacherPart{说明}{画法为“画直线、定原点、标正方向、取单位长度、标刻度与数”。}\LPFigureBlock{
+\begin{tikzpicture}[x=4.8mm,y=4.8mm,baseline=(current bounding box.center)]
+  \begin{scope}
+    \draw (-3,0)--(3,0);
+    \foreach \x in {-2,-1,0,1,2}{\draw(\x,.12)--(\x,-.12);}
+    \node[below] at (0,-.2){\scriptsize 图1：缺箭头};
+  \end{scope}
+  \begin{scope}[xshift=38mm]
+    \draw[->] (-3,0)--(3,0);
+    \foreach \x in {-2,-.7,0,1.6,2.4}{\draw(\x,.12)--(\x,-.12);}
+    \node[below] at (0,-.2){\scriptsize 图2：刻度不均};
+  \end{scope}
+  \begin{scope}[xshift=76mm]
+    \draw[->] (-3,0)--(3,0);
+    \foreach \x/\t in {-2/{-1},-1/{-2},0/0,1/1,2/2}
+      {\draw(\x,.12)--(\x,-.12)node[below]{\scriptsize $\t$};}
+    \node[below] at (0,-.8){\scriptsize 图3：负数顺序错};
+  \end{scope}
+\end{tikzpicture}
+}\LPTeacherPart{例题}{判断错图并说明依据，不以“看着不对”代替数学理由。}\LPTeacherPart{对应练习}{独立画一条数轴，至少标出 $-2,-1,0,1,2$。}\LPTeacherPart{纠错}{巡视时只按三要素提示，不直接替学生重画；要求同桌指出第一处错误。}\LPTeacherPart{归纳}{判断与作图都按三要素逐项检查。}\LPTeacherPart{意图}{用正反例和同伴互查强化定义的判定作用与规范作图习惯。}}{\LPStudentPart{活动}{在错图旁写出“缺箭头”“刻度不等”或“负数顺序反了”。；用直尺画数轴，与同桌按三要素互查并订正。}\LPStudentPart{预期}{从左到右数值增大；负数应位于原点左侧，且越向左数值越小。}}{7}}
+}
+
+\LPBackgroundPage{3}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessFullH}{\LPProcessRow{例题示范与对应练习}{\LPTeacherPart{问题}{表示一个数时，先确定方向还是先数单位长度？；$-2.5$ 为什么在 $-3$ 与 $-2$ 的中点？}\LPTeacherPart{组织}{板演在同一数轴上表示 $3,-2,0.5,-2.5$，每标一点都口述方向和距离。}\LPTeacherPart{说明}{正数在正半轴，负数在负半轴；点到原点的距离等于该数去掉符号后的大小。}\LPFigureBlock{
+\begin{tikzpicture}[x=8mm,y=8mm,baseline=(current bounding box.center)]
+  \draw[->] (-4.2,0)--(4.4,0);
+  \foreach \x in {-4,-3,...,4}{\draw(\x,.11)--(\x,-.11)node[below]{\scriptsize \x};}
+  \foreach \x/\t in {-2.5/{-\frac52},-2/{-2},.5/{0.5},3/{3}}
+    {\fill(\x,0)circle(1.35pt)node[above]{\scriptsize $\t$};}
+\end{tikzpicture}
+}\LPTeacherPart{例题}{画数轴表示 $3,-2,0.5,-2.5$；解题步骤为确定单位、判断方向、确定距离、标点写数。}\LPTeacherPart{对应练习}{在同一数轴上表示 $-3,1.5,2,-0.5$，并任选一点说明位置。}\LPTeacherPart{纠错}{若分数或小数定位错误，先让学生把相邻两个整数标清，再细分单位长度。}\LPTeacherPart{归纳}{“方向 + 到原点的距离”决定点的位置。}\LPTeacherPart{意图}{用一例一练把定义转化为可执行的表示步骤。}}{\LPStudentPart{活动}{先口述每个数所在半轴和距离，再独立标点。；一名学生板演，其余学生用单位长度和位置关系评价。}\LPStudentPart{预期}{$-2.5$ 在负半轴，距原点 2.5 个单位，因此位于 $-3$ 与 $-2$ 中间。}}{9}
+\LPProcessRow{读数、迁移与纠错}{\LPTeacherPart{问题}{点 $P$ 在原点左侧 4 个单位、点 $Q$ 在右侧 0.5 个单位，各表示什么数？；从表示 $-2$ 的点沿数轴移动 5 个单位，终点只有一个吗？}\LPTeacherPart{组织}{组织学生先画方向箭头再列出可能位置；抽取“只算 $-2+5$”的答案进行讨论。}\LPTeacherPart{说明}{未说明移动方向时要分向左、向右两种情况；读点仍需同时看方向和距离。}\LPTeacherPart{例题}{$P$ 表示 $-4$，$Q$ 表示 $0.5$，所以 $-4<0.5$。}\LPTeacherPart{对应练习}{从 $-2$ 出发移动 5 个单位，终点表示 $3$ 或 $-7$。}\LPTeacherPart{纠错}{对把负号理解为“距离为负”的学生，要求重新用“方向”和“距离”两句话表述。}\LPTeacherPart{归纳}{数轴能同时呈现数的符号、位置和距离。}\LPTeacherPart{意图}{从表示数迁移到读数和移动，深化数形结合并暴露方向遗漏。}}{\LPStudentPart{活动}{先画草图，再写出点表示的数和大小关系。；讨论移动方向不确定时为何有两个答案，订正遗漏情况。}\LPStudentPart{预期}{向右 5 个单位到 $3$，向左 5 个单位到 $-7$；方向不同，终点不同。}}{6}}
+}
+
+\LPBackgroundPage{4}{
+  \LPProcessBox{\LPProcessX}{\LPProcessY}{\LPProcessW}{\LPProcessPageFourH}{\LPProcessRow{当堂检测}{\LPTeacherPart{问题}{哪一道题最能检验你是否真正理解三要素？}\LPTeacherPart{组织}{投放 4 题反馈卡：①写三要素；②判断缺箭头的图；③画数轴表示 $-1.5,2$；④点 $A$ 在原点左侧 3 个单位，写数并与 1 比较。}\LPTeacherPart{说明}{参考答案：原点、正方向、单位长度；不是数轴；按统一单位标点；$A=-3$ 且 $-3<1$。}\LPTeacherPart{纠错}{同桌互判后举手统计；正确率低于 70\% 的学生按三要素重画并复述一次。}\LPTeacherPart{归纳}{达标标准：4 题正确 3 题及以上；未达标者完成针对性补画。}\LPTeacherPart{意图}{用短检测覆盖定义、判断、作图和读数，及时决定是否补救。}}{\LPStudentPart{活动}{独立完成反馈卡，同桌交换检查并标出错误要素。}\LPStudentPart{预期}{能用完整术语作答，并在图上准确表示 $-1.5$ 与 $2$。}}{6}
+\LPProcessRow{回顾总结与作业}{\LPTeacherPart{问题}{本节从什么实际问题出发，抽象出了什么工具？；画数轴和表示数各要检查什么？；最容易出现的错误是什么？}\LPTeacherPart{组织}{根据学生回答完成板书结构，布置分层作业。}\LPTeacherPart{说明}{基础巩固：画数轴表示 $-4,-1.5,0,2.5$；判断两幅错图并改正。提升思考：自编一个含基准点、方向和距离的情境，用数轴表示。}\LPTeacherPart{纠错}{若总结只背定义，追问“定义怎样帮助你判断和作图”。}\LPTeacherPart{归纳}{数轴把有理数与直线上的点联系起来，是数形结合的基本工具。}\LPTeacherPart{意图}{用回顾性问题梳理概念形成过程，并把方法迁移到课后任务。}}{\LPStudentPart{活动}{用一句话概括数轴的作用，说出一个作图检查点和一个易错点。；记录分层作业。}\LPStudentPart{预期}{先检查三要素，再按方向和距离标点；常见错误是漏箭头或刻度不等。}}{4}}
+}
+\end{document}
